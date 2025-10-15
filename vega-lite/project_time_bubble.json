@@ -4,7 +4,7 @@
   "width": 800,
   "height": 500,
   "data": {
-    "url": "../data/project_time_data.json"
+    "url": "data/project_time_data.json"
   },
   "mark": {
     "type": "circle",

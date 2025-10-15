@@ -3,7 +3,7 @@
   "width": 800,
   "height": 400,
   "data": {
-    "url": "../data/Energy_split_History.json"
+    "url": "data/Energy_split_History.json"
   },
 
   "params": [
