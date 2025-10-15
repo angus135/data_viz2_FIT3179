@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Power Station Installations by Capacity and Average Output",
+  "width": 800,
+  "height": 500,
+  "data": {
+    "url": "../data/project_time_data.json"
+  },
+  "mark": {
+    "type": "circle",
+    "opacity": 0.7
+  },
+  "encoding": {
+    "x": {
+      "field": "Accreditation_Date_ISO",
+      "type": "temporal",
+      "title": "Accreditation Date",
+      "axis": {
+        "format": "%Y",
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "Installed_Capacity_MW",
+      "type": "quantitative",
+      "title": "Installed Capacity (MW)",
+      "scale": {
+        "type": "log"
+      }
+    },
+    "size": {
+      "field": "Avg_MW",
+      "type": "quantitative",
+      "title": "Average Output (MW)",
+      "scale": {
+        "range": [50, 2000]
+      }
+    },
+    "color": {
+      "field": "Fuel_Source",
+      "type": "nominal",
+      "title": "Fuel Source",
+      "scale": {
+        "scheme": "category20"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "AEMO_Station_Name",
+        "type": "nominal",
+        "title": "Station Name"
+      },
+      {
+        "field": "State",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "Fuel_Source",
+        "type": "nominal",
+        "title": "Fuel Source"
+      },
+      {
+        "field": "Accreditation_Date_ISO",
+        "type": "temporal",
+        "title": "Accreditation Date",
+        "format": "%d/%m/%Y"
+      },
+      {
+        "field": "Installed_Capacity_MW",
+        "type": "quantitative",
+        "title": "Installed Capacity (MW)",
+        "format": ".2f"
+      },
+      {
+        "field": "Avg_MW",
+        "type": "quantitative",
+        "title": "Average Output (MW)",
+        "format": ".2f"
+      }
+    ]
+  }
+}

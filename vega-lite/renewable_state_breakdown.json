@@ -1,0 +1,190 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Renewable Energy Capacity by Australian State (2023-24)",
+    "fontSize": 18,
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 400,
+  "data": { "url": "../data/renewable_energy_by_state.csv" },
+
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "tech_select",
+          "select": { "type": "point", "fields": ["technology"] },
+          "bind": "legend"
+        }
+      ],
+      "transform": [
+        {
+          "filter": { "param": "tech_select" }
+        }
+      ],
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "state",
+          "type": "nominal",
+          "sort": { "field": "value", "order": "descending" },
+          "axis": { "title": "State/Territory", "labelAngle": 0, "labelFontSize": 12 }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": { "title": "Energy (GWh)", "labelFontSize": 11 }
+        },
+        "color": {
+          "field": "technology",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Biofuels", "Hydro", "Wind", "Solar"],
+            "range": ["#8B4513", "#1f77b4", "#2ca02c", "#ff7f0e"]
+          },
+          "legend": { "title": "Technology", "titleFontSize": 13, "labelFontSize": 11 }
+        },
+        "tooltip": [
+          { "field": "state", "type": "nominal", "title": "State" },
+          { "field": "technology", "type": "nominal", "title": "Technology" },
+          { "field": "value", "type": "quantitative", "title": "Energy (GWh)", "format": ",.2f" }
+        ]
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "fontSize": 12,
+        "dx": -10,
+        "dy": 10,
+        "lineHeight": 16
+      },
+      "encoding": {
+        "x": { "value": 270 },
+        "y": { "value": 50 },
+        "text": {
+          "condition": {
+            "test": "!length(data('tech_select_store'))",
+            "value": ["South Australia is one of the largest", "producers of wind power, yet produces", "no hydro power"]
+          },
+          "value": ""
+        },
+        "color": { "value": "black" }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 1,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 250 },
+        "y": { "value": 110 },
+        "x2": { "value": 250 },
+        "y2": { "value": 240 },
+        "opacity": {
+          "condition": {
+            "test": "!length(data('tech_select_store'))",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 180,
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 250 },
+        "y": { "value": 240 },
+        "opacity": {
+          "condition": {
+            "test": "!length(data('tech_select_store'))",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "fontSize": 12,
+        "dx": -10,
+        "dy": 10,
+        "lineHeight": 16
+      },
+      "encoding": {
+        "x": { "value": 400 },
+        "y": { "value": 150 },
+        "text": {
+          "condition": {
+            "test": "!length(data('tech_select_store'))",
+            "value": ["Tasmania produces the largest amount", "of renewable electricity per capita"]
+          },
+          "value": ""
+        },
+        "color": { "value": "black" }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 1,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 375 },
+        "y": { "value": 200 },
+        "x2": { "value": 330 },
+        "y2": { "value": 250 },
+        "opacity": {
+          "condition": {
+            "test": "!length(data('tech_select_store'))",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 220,
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 330 },
+        "y": { "value": 250 },
+        "opacity": {
+          "condition": {
+            "test": "!length(data('tech_select_store'))",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    }
+  ]
+}

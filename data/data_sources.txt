@@ -2,3 +2,6 @@ historical-accredited-power-stations-and-projects-0.csv    https://cer.gov.au/ma
 https://github.com/Elkfox/Australian-Postcode-Data au_postcodes
 ne_10m_rivers_australia.json https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-graticules/
 Australian Energy Statistics 2025 All tables https://www.energy.gov.au/publications/australian-energy-update-2025
+Energy_split_History.json/.csv https://explore.openelectricity.org.au/
+aemo_2018.csv https://anero.id/energy/data
+NEM Registration and Exemption List https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/participate-in-the-market/registration

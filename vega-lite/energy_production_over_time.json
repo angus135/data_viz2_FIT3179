@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "../data/Energy_split_History.json"
+  },
+
+  "params": [
+    {
+      "name": "source_select",
+      "select": {
+        "type": "point",
+        "fields": ["Source"]
+      },
+      "bind": "legend"
+    }
+  ],
+
+  "transform": [
+    {
+      "fold": ["Coal", "Gas", "Biofuels", "Battery", "Hydro", "Wind", "Solar"],
+      "as": ["Source", "GWh"]
+    },
+    {
+      "filter": { "param": "source_select" }
+    }
+  ],
+
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "axis": { "title": "Year", "format": "d" }
+    },
+    "y": {
+      "field": "GWh",
+      "type": "quantitative",
+      "axis": { "title": "Energy Generation (GWh)" },
+      "stack": "zero"
+    },
+    "color": {
+      "field": "Source",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Coal", "Gas", "Biofuels", "Battery", "Hydro", "Wind", "Solar"],
+        "range": ["#8B4513", "#FF6B6B", "#4CAF50", "#9C27B0", "#2196F3", "#00BCD4", "#FFC107"]
+      },
+      "legend": { "title": "Energy Source" }
+    },
+    "order": {
+      "field": "Source",
+      "type": "nominal",
+      "sort": ["Coal", "Gas", "Biofuels", "Battery", "Hydro", "Wind", "Solar"]
+    },
+    "tooltip": [
+      { "field": "Source", "type": "nominal", "title": "Energy Source" },
+      { "field": "Year", "type": "quantitative", "title": "Year" },
+      { "field": "GWh", "type": "quantitative", "title": "Generation (GWh)", "format": ",.2f" }
+    ]
+  },
+
+  "title": {
+    "text": "Energy Generation by Source Over Time",
+    "fontSize": 18
+  }
+}

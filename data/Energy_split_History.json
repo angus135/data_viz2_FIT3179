@@ -1,0 +1,252 @@
+[
+  {
+    "Year": 2000,
+    "Coal": 155772.82,
+    "Gas": 9538.03,
+    "Biofuels": 0,
+    "Battery": 0,
+    "Hydro": 6936.88,
+    "Wind": 0,
+    "Solar": 0
+  },
+  {
+    "Year": 2001,
+    "Coal": 158695.42,
+    "Gas": 10047.58,
+    "Biofuels": 0,
+    "Battery": 0,
+    "Hydro": 5937.81,
+    "Wind": 0,
+    "Solar": 0
+  },
+  {
+    "Year": 2002,
+    "Coal": 163340.22,
+    "Gas": 9903.22,
+    "Biofuels": 0,
+    "Battery": 0,
+    "Hydro": 5189.8,
+    "Wind": 0,
+    "Solar": 0
+  },
+  {
+    "Year": 2003,
+    "Coal": 166879.01,
+    "Gas": 8005.26,
+    "Biofuels": 0,
+    "Battery": 0,
+    "Hydro": 7069.47,
+    "Wind": 0,
+    "Solar": 0
+  },
+  {
+    "Year": 2004,
+    "Coal": 173408.48,
+    "Gas": 9717.51,
+    "Biofuels": 0,
+    "Battery": 0,
+    "Hydro": 4787.43,
+    "Wind": 0,
+    "Solar": 0
+  },
+  {
+    "Year": 2005,
+    "Coal": 172540.15,
+    "Gas": 10999.64,
+    "Biofuels": 0,
+    "Battery": 0,
+    "Hydro": 12346.51,
+    "Wind": 0,
+    "Solar": 0
+  },
+  {
+    "Year": 2006,
+    "Coal": 177858.23,
+    "Gas": 12738.66,
+    "Biofuels": 0,
+    "Battery": 0,
+    "Hydro": 14424.57,
+    "Wind": 0,
+    "Solar": 0
+  },
+  {
+    "Year": 2007,
+    "Coal": 175697.5,
+    "Gas": 19461.71,
+    "Biofuels": 0,
+    "Battery": 0,
+    "Hydro": 12697.21,
+    "Wind": 74.05,
+    "Solar": 0
+  },
+  {
+    "Year": 2008,
+    "Coal": 179135.38,
+    "Gas": 17975.21,
+    "Biofuels": 0,
+    "Battery": 0,
+    "Hydro": 11269.74,
+    "Wind": 775.89,
+    "Solar": 0
+  },
+  {
+    "Year": 2009,
+    "Coal": 173187.98,
+    "Gas": 19396.5,
+    "Biofuels": 219.33,
+    "Battery": 0,
+    "Hydro": 12094.06,
+    "Wind": 2932.59,
+    "Solar": 0
+  },
+  {
+    "Year": 2010,
+    "Coal": 164594.98,
+    "Gas": 23647.73,
+    "Biofuels": 208.66,
+    "Battery": 0,
+    "Hydro": 15755.29,
+    "Wind": 4469.02,
+    "Solar": 0
+  },
+  {
+    "Year": 2011,
+    "Coal": 163015.2,
+    "Gas": 23056.1,
+    "Biofuels": 389.6,
+    "Battery": 0,
+    "Hydro": 13390.36,
+    "Wind": 5666,
+    "Solar": 0
+  },
+  {
+    "Year": 2012,
+    "Coal": 153502.03,
+    "Gas": 24500.57,
+    "Biofuels": 334.28,
+    "Battery": 0,
+    "Hydro": 15970.23,
+    "Wind": 6352.48,
+    "Solar": 0
+  },
+  {
+    "Year": 2013,
+    "Coal": 145856.85,
+    "Gas": 22781.25,
+    "Biofuels": 305,
+    "Battery": 0,
+    "Hydro": 18571.45,
+    "Wind": 7991.34,
+    "Solar": 0
+  },
+  {
+    "Year": 2014,
+    "Coal": 145263.36,
+    "Gas": 25333.31,
+    "Biofuels": 377.47,
+    "Battery": 0,
+    "Hydro": 13896.49,
+    "Wind": 8507.25,
+    "Solar": 0
+  },
+  {
+    "Year": 2015,
+    "Coal": 151456.53,
+    "Gas": 20667.73,
+    "Biofuels": 346.84,
+    "Battery": 0,
+    "Hydro": 13377.28,
+    "Wind": 10042.08,
+    "Solar": 3662.74
+  },
+  {
+    "Year": 2016,
+    "Coal": 151084.52,
+    "Gas": 17030.85,
+    "Biofuels": 333.53,
+    "Battery": 0,
+    "Hydro": 17070.64,
+    "Wind": 11185.73,
+    "Solar": 8868.32
+  },
+  {
+    "Year": 2017,
+    "Coal": 148320.54,
+    "Gas": 22221.16,
+    "Biofuels": 348.41,
+    "Battery": 2.64,
+    "Hydro": 12924.27,
+    "Wind": 11362.94,
+    "Solar": 7428.48
+  },
+  {
+    "Year": 2018,
+    "Coal": 146279.55,
+    "Gas": 16271.45,
+    "Biofuels": 232.06,
+    "Battery": 41.51,
+    "Hydro": 16706.44,
+    "Wind": 14312.95,
+    "Solar": 10080.67
+  },
+  {
+    "Year": 2019,
+    "Coal": 140049.55,
+    "Gas": 18740,
+    "Biofuels": 237.36,
+    "Battery": 67.33,
+    "Hydro": 13729.98,
+    "Wind": 16934.11,
+    "Solar": 15768.9
+  },
+  {
+    "Year": 2020,
+    "Coal": 133920.19,
+    "Gas": 15177.52,
+    "Biofuels": 183.13,
+    "Battery": 85.42,
+    "Hydro": 14314.99,
+    "Wind": 19673.95,
+    "Solar": 19744.61
+  },
+  {
+    "Year": 2021,
+    "Coal": 127992.21,
+    "Gas": 11801.21,
+    "Biofuels": 182.08,
+    "Battery": 128.76,
+    "Hydro": 15805.62,
+    "Wind": 22963.2,
+    "Solar": 24992.46
+  },
+  {
+    "Year": 2022,
+    "Coal": 121487.59,
+    "Gas": 13803.73,
+    "Biofuels": 151.3,
+    "Battery": 276.39,
+    "Hydro": 16641.2,
+    "Wind": 25936.14,
+    "Solar": 30129.84
+  },
+  {
+    "Year": 2023,
+    "Coal": 118192.46,
+    "Gas": 10096.25,
+    "Biofuels": 239.97,
+    "Battery": 354.36,
+    "Hydro": 15289.56,
+    "Wind": 27646.4,
+    "Solar": 37764.19
+  },
+  {
+    "Year": 2024,
+    "Coal": 120259.5,
+    "Gas": 11590.81,
+    "Biofuels": 387.77,
+    "Battery": 659.04,
+    "Hydro": 13542.68,
+    "Wind": 28198.71,
+    "Solar": 42161.73
+  }
+]

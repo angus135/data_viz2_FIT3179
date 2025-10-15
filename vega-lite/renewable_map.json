@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Australian Renewable Energy Installations Over 10 Mega Watts (2024)",
+  "width": 800,
+  "height": 600,
+  "background": "#cce6ff",  
+  "projection": {
+    "type": "mercator",
+    "center": [133, -28],
+    "scale": 850
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "../data/STE_2021_AUST_GDA2020.json",
+        "format": {
+          "type": "topojson",
+          "feature": "STE_2021_AUST_GDA2020"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f0e6d6", 
+        "stroke": "black",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "data": {
+        "url": "../data/ne_110m_graticules_5.json",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_110m_graticules_5"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "darkgray",
+        "strokeWidth": 0.2
+      }
+    },
+    {
+        "data": {
+            "url": "../data/ne_10m_rivers_australia.json",
+            "format": {"type": "topojson", "feature": "ne_10m_rivers_australia"}
+        },
+        "mark": {
+            "type": "geoshape",
+            "stroke": "#004991",
+            "strokeWidth": 0.25,
+            "fill": "f0e6d6"
+        }
+    },
+    {
+      "data": {
+        "url": "../data/historical-accredited-power-stations-and-projects-0.csv"
+      },
+      "transform": [
+        {
+          "lookup": "Postcode",
+          "from": {
+            "data": {
+              "url": "../data/au_postcodes.csv"
+            },
+            "key": "postcode",
+            "fields": ["latitude", "longitude"]
+          }
+        },
+        {
+          "filter": "datum['Installed capacity'] >= 10"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "tooltip": true,
+        "opacity": 0.75
+      },
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "color": {
+          "field": "Fuel source(s)",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Biomass", "Hydro", "Wind", "Solar"],
+            "range": ["#2ca02c", "#08306b", "#1f77b4", "#ff7f0e"]
+          },
+          "legend": {"title": "Primary Fuel Source"}
+        },
+        "size": {
+            "field": "Installed capacity",
+            "type": "quantitative",
+            "scale": {
+                "type": "linear",
+                "domain": [10, 2000],
+                "range": [20, 200] 
+            },
+            "legend": {
+                "title": "Capacity (MW)",
+                "values": [10, 100, 500, 1000, 2000]
+            }
+        },
+        "tooltip": [
+            {"field": "Power station name", "type": "nominal"},
+            {"field": "Fuel source(s)", "type": "nominal"},
+            {
+                "field": "Installed capacity",
+                "type": "quantitative",
+                "format": ".1f",
+                "title": "Installed capacity (MW)"
+            },
+            {"field": "State", "type": "nominal"},
+            {"field": "Postcode", "type": "ordinal"}
+        ]
+      }
+    }
+  ]
+}

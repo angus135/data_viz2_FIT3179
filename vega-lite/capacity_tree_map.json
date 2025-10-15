@@ -1,0 +1,179 @@
+{ 
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "title": {
+    "text": "Australian Renewable Energy Installations by Capacity (2024)",
+    "anchor": "middle",
+    "fontSize": 20,
+    "font": "Helvetica Neue, Arial"
+  },
+  "description": "Australian Renewable Energy Installations by Capacity (2024)",
+  "width": 1000,
+  "height": 600,
+  "padding": {"top": 50, "left": 5, "right": 5, "bottom": 5},
+  "autosize": "none",
+  "background": "#cce6ff",
+
+  "signals": [
+    {
+      "name": "layout", "value": "squarify",
+      "bind": {
+        "input": "select",
+        "options": ["squarify", "binary"]
+      }
+    }
+  ],
+
+  "data": [
+    {
+      "name": "rawData",
+      "url": "../data/historical-accredited-power-stations-and-projects-0.csv",
+      "format": {"type": "csv"},
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum['Installed capacity']) && datum['Installed capacity'] > 0"
+        },
+        {
+          "type": "formula",
+          "as": "id",
+          "expr": "datum['Power station name']"
+        },
+        {
+          "type": "formula",
+          "as": "parent",
+          "expr": "datum['Fuel source(s)']"
+        },
+        {
+          "type": "formula",
+          "as": "size",
+          "expr": "datum['Installed capacity']"
+        }
+      ]
+    },
+    {
+      "name": "categories",
+      "values": [
+        {"id": "root", "parent": null},
+        {"id": "Biomass", "parent": "root"},
+        {"id": "Hydro", "parent": "root"},
+        {"id": "Wind", "parent": "root"},
+        {"id": "Solar", "parent": "root"}
+      ]
+    },
+    {
+      "name": "combined",
+      "source": ["categories", "rawData"]
+    },
+    {
+      "name": "tree",
+      "source": "combined",
+      "transform": [
+        {
+          "type": "stratify",
+          "key": "id",
+          "parentKey": "parent"
+        },
+        {
+          "type": "treemap",
+          "field": "size",
+          "sort": {"field": "value", "order": "descending"},
+          "round": true,
+          "method": {"signal": "layout"},
+          "padding": 0,
+          "paddingOuter": 2,
+          "paddingInner": 0,
+          "size": [{"signal": "width"}, {"signal": "height"}]
+        }
+      ]
+    },
+    {
+      "name": "nodes",
+      "source": "tree",
+      "transform": [
+        { "type": "filter", "expr": "datum.children && datum.depth === 1" }
+      ]
+    },
+    {
+      "name": "leaves",
+      "source": "tree",
+      "transform": [
+        { "type": "filter", "expr": "!datum.children" }
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["Biomass", "Hydro", "Wind", "Solar"],
+      "range": ["#2ca02c", "#08306b", "#1f77b4", "#ff7f0e"]
+    },
+    {
+      "name": "labelColor",
+      "type": "ordinal",
+      "domain": ["Biomass", "Hydro", "Wind", "Solar"],
+      "range": ["#ffffff", "#ffffff", "#ffffff", "#000000"]
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "rect",
+      "from": {"data": "leaves"},
+      "encode": {
+        "enter": {
+          "stroke": {"value": "white"},
+          "strokeWidth": {"value": 0.5},
+          "tooltip": {
+            "signal": "{'Power Station': datum.id, 'Fuel Source': datum.parent, 'Installed Capacity (MW)': format(datum.size, '.1f')}"
+          }
+        },
+        "update": {
+          "x": {"field": "x0"},
+          "y": {"field": "y0"},
+          "x2": {"field": "x1"},
+          "y2": {"field": "y1"},
+          "fill": {"scale": "color", "field": "parent"}
+        },
+        "hover": {
+          "fillOpacity": {"value": 0.8}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "nodes"},
+      "encode": {
+        "enter": {
+          "font": {"value": "Helvetica Neue, Arial"},
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"},
+          "fontWeight": {"value": "bold"},
+          "fontSize": {"value": 32},
+          "text": {"field": "id"}
+        },
+        "update": {
+          "x": {"signal": "0.5 * (datum.x0 + datum.x1)"},
+          "y": {"signal": "0.5 * (datum.y0 + datum.y1)"},
+          "fill": {"scale": "labelColor", "field": "id"}
+        }
+      }
+    }
+  ],
+
+  "legends": [
+    {
+      "fill": "color",
+      "title": "Primary Fuel Source",
+      "orient": "right",
+      "encode": {
+        "symbols": {
+          "enter": {
+            "strokeWidth": {"value": 0}
+          }
+        }
+      }
+    }
+  ]
+}
