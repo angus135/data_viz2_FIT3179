@@ -12,7 +12,7 @@
   "layer": [
     {
       "data": {
-        "url": "data/STE_2021_AUST_GDA2020.json",
+        "url": "https://angus135.github.io/data_viz2_FIT3179/data/STE_2021_AUST_GDA2020.json",
         "format": {
           "type": "topojson",
           "feature": "STE_2021_AUST_GDA2020"
@@ -27,7 +27,7 @@
     },
     {
       "data": {
-        "url": "data/ne_110m_graticules_5.json",
+        "url": "https://angus135.github.io/data_viz2_FIT3179/data/ne_110m_graticules_5.json",
         "format": {
           "type": "topojson",
           "feature": "ne_110m_graticules_5"
@@ -41,7 +41,7 @@
     },
     {
         "data": {
-            "url": "data/ne_10m_rivers_australia.json",
+            "url": "https://angus135.github.io/data_viz2_FIT3179/data/ne_10m_rivers_australia.json",
             "format": {"type": "topojson", "feature": "ne_10m_rivers_australia"}
         },
         "mark": {
@@ -53,14 +53,14 @@
     },
     {
       "data": {
-        "url": "data/historical-accredited-power-stations-and-projects-0.csv"
+        "url": "https://angus135.github.io/data_viz2_FIT3179/data/historical-accredited-power-stations-and-projects-0.csv"
       },
       "transform": [
         {
           "lookup": "Postcode",
           "from": {
             "data": {
-              "url": "data/au_postcodes.csv"
+              "url": "https://angus135.github.io/data_viz2_FIT3179/data/au_postcodes.csv"
             },
             "key": "postcode",
             "fields": ["latitude", "longitude"]

@@ -7,7 +7,7 @@
   },
   "width": 500,
   "height": 400,
-  "data": { "url": "data/renewable_energy_by_state.csv" },
+  "data": { "url": "https://angus135.github.io/data_viz2_FIT3179/data/renewable_energy_by_state.csv" },
 
   "layer": [
     {
