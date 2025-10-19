@@ -1,6 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Australian Renewable Energy Installations Over 10 Mega Watts (2024)",
+  "title": {
+    "text": "Australian Renewable Energy Installations Over 10 Mega Watts (2024)",
+    "fontSize": 20,
+    "anchor": "middle",
+    "font": "Helvetica Neue, Arial"
+  },
   "width": 800,
   "height": 600,
   "background": "#FFFFFF",  

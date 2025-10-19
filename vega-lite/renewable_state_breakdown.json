@@ -2,8 +2,9 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Renewable Energy Capacity by Australian State (2023-24)",
-    "fontSize": 18,
-    "anchor": "start"
+    "fontSize": 20,
+    "anchor": "middle",
+    "font": "Helvetica Neue, Arial"
   },
   "width": 500,
   "height": 400,

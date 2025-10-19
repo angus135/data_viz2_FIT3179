@@ -63,6 +63,8 @@
 
   "title": {
     "text": "Energy Generation by Source Over Time",
-    "fontSize": 18
+    "fontSize": 20,
+    "anchor": "middle",
+    "font": "Helvetica Neue, Arial"
   }
 }

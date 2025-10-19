@@ -1,6 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Power Station Installations by Capacity and Average Output",
+  "title": {
+    "text": "Power Station Installations by Capacity and Average Output",
+    "fontSize": 20,
+    "anchor": "middle",
+    "font": "Helvetica Neue, Arial"
+  },
   "width": 800,
   "height": 500,
   "data": {

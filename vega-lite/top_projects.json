@@ -1,8 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Top 20 Australian Power Stations by Installed Capacity",
-  "width": 400,
-  "height": 300,
+  "title": {
+    "text": "Top 20 Australian Power Stations by Installed Capacity",
+    "fontSize": 20,
+    "anchor": "middle",
+    "font": "Helvetica Neue, Arial"
+  },
+  "width": 300,
+  "height": 250,
   "background": "#FFFFFF",
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/historical-accredited-power-stations-and-projects-0.csv"
@@ -36,8 +41,8 @@
       "field": "Fuel source(s)",
       "type": "nominal",
       "scale": {
-        "domain": ["Biomass", "Hydro", "Wind", "Solar"],
-        "range": ["#2ca02c", "#08306b", "#1f77b4", "#ff7f0e"]
+        "domain": ["Hydro", "Wind", "Solar"],
+        "range": ["#08306b", "#1f77b4", "#ff7f0e"]
       },
       "legend": {"title": "Primary Fuel Source"}
     },

@@ -1,6 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Renewable vs Non-Renewable Energy Generation by State",
+  "title": {
+    "text": "Renewable vs Non-Renewable Energy Generation by State",
+    "fontSize": 20,
+    "anchor": "middle",
+    "font": "Helvetica Neue, Arial"
+  },
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/state_renewable_vs_non_renewable.json"
   },
@@ -84,6 +89,6 @@
       {"field": "Value", "type": "quantitative", "title": "Value", "format": ",.2f"}
     ]
   },
-  "width": 600,
+  "width": 500,
   "height": 400
 }
