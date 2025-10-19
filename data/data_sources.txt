@@ -5,3 +5,4 @@ Australian Energy Statistics 2025 All tables https://www.energy.gov.au/publicati
 Energy_split_History.json/.csv https://explore.openelectricity.org.au/
 aemo_2018.csv https://anero.id/energy/data
 NEM Registration and Exemption List https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/participate-in-the-market/registration
+state_renewable_vs_non_renewable.csv https://www.energy.gov.au/publications/australian-energy-update-2025, https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/latest-release, https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-state-accounts

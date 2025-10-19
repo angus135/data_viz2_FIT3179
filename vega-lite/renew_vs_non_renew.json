@@ -1,0 +1,218 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 900,
+  "height": 480,
+  "padding": 5,
+
+  "data": [
+    {
+      "name": "table",
+      "url": "https://angus135.github.io/data_viz2_FIT3179/data/state_renewable_vs_non_renewable.json",
+      "format": {"type": "json"}
+    },
+    {
+      "name": "table_max",
+      "source": "table",
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "max(+datum[renew_field], +datum[nonrenew_field])",
+          "as": "rowmax"
+        },
+        {
+          "type": "aggregate",
+          "groupby": [],
+          "fields": ["rowmax"],
+          "ops": ["max"],
+          "as": ["ymax"]
+        }
+      ]
+    }
+  ],
+
+  "signals": [
+    {
+      "name": "metric",
+      "value": "Raw",
+      "bind": {
+        "input": "select",
+        "name": "Metric: ",
+        "options": ["Raw", "Per Capita", "Per GDP"],
+        "labels": ["Raw Energy (GWh)", "Energy Per Capita (Wh/person)", "Energy Per GDP (Wh/$)"]
+      }
+    },
+    {
+      "name": "renew_field",
+      "update": "metric === 'Raw' ? 'Renewable' : (metric === 'Per Capita' ? 'Renewable per capita' : 'Renewable per GDP')"
+    },
+    {
+      "name": "nonrenew_field",
+      "update": "metric === 'Raw' ? 'Non-Renewable' : (metric === 'Per Capita' ? 'Non-Renewable per capita' : 'Non-Renewable per GDP')"
+    },
+    {
+      "name": "y_title",
+      "update": "metric === 'Raw' ? 'Energy Generation (GWh)' : (metric === 'Per Capita' ? 'Energy (Wh/person)' : 'Energy (Wh/$)')"
+    },
+    {
+      "name": "ymax",
+      "update": "data('table_max')[0] ? data('table_max')[0].ymax : 1"
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "x",
+      "type": "band",
+      "domain": {"data": "table", "field": "State"},
+      "range": "width",
+      "padding": 0.2
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": [0, {"signal": "ymax"}],
+      "nice": true,
+      "range": [{"signal": "height - 80"}, 20]
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["Renewable", "Non-Renewable"],
+      "range": ["#2ca02c", "#d62728"]
+    }
+  ],
+
+  "axes": [
+    {"orient": "bottom", "scale": "x", "zindex": 0, "labelOverlap": true, "title": "State"},
+    {"orient": "left", "scale": "y", "title": {"signal": "y_title"}}
+  ],
+
+  "marks": [
+    {
+      "name": "renewable_bars",
+      "type": "rect",
+      "from": {"data": "table"},
+      "encode": {
+        "enter": {
+          "x": {"signal": "scale('x', datum.State) + (bandwidth('x') * 0.08)"},
+          "x2": {"signal": "scale('x', datum.State) + (bandwidth('x') * 0.48)"},
+          "y": {"signal": "scale('y', +datum[renew_field])"},
+          "y2": {"signal": "scale('y', 0)"},
+          "fill": {"scale": "color", "value": "Renewable"},
+          "cornerRadius": {"value": 2}
+        },
+        "update": {"opacity": {"value": 1}},
+        "hover": {"opacity": {"value": 0.7}}
+      }
+    },
+
+    {
+      "name": "nonrenewable_bars",
+      "type": "rect",
+      "from": {"data": "table"},
+      "encode": {
+        "enter": {
+          "x": {"signal": "scale('x', datum.State) + (bandwidth('x') * 0.52)"},
+          "x2": {"signal": "scale('x', datum.State) + (bandwidth('x') * 0.92)"},
+          "y": {"signal": "scale('y', +datum[nonrenew_field])"},
+          "y2": {"signal": "scale('y', 0)"},
+          "fill": {"scale": "color", "value": "Non-Renewable"},
+          "cornerRadius": {"value": 2}
+        },
+        "update": {"opacity": {"value": 1}},
+        "hover": {"opacity": {"value": 0.7}}
+      }
+    },
+
+    {
+      "type": "group",
+      "encode": {
+        "enter": {
+          "x": {"signal": "width - 180"},
+          "y": {"value": 8},
+          "width": {"value": 160},
+          "height": {"value": 60}
+        }
+      },
+      "marks": [
+        {
+          "type": "rect",
+          "encode": {
+            "enter": {
+              "x": {"value": 0},
+              "y": {"value": 0},
+              "width": {"signal": "width"},
+              "height": {"value": 60},
+              "stroke": {"value": "#ccc"},
+              "fill": {"value": "#ffffff"},
+              "fillOpacity": {"value": 0.9}
+            }
+          }
+        },
+        {
+          "type": "symbol",
+          "encode": {
+            "enter": {
+              "x": {"value": 10},
+              "y": {"value": 18},
+              "size": {"value": 140},
+              "shape": {"value": "square"},
+              "fill": {"value": "#2ca02c"}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "encode": {
+            "enter": {
+              "x": {"value": 30},
+              "y": {"value": 22},
+              "text": {"value": "Renewable"},
+              "align": {"value": "left"},
+              "baseline": {"value": "middle"},
+              "fontSize": {"value": 12}
+            }
+          }
+        },
+        {
+          "type": "symbol",
+          "encode": {
+            "enter": {
+              "x": {"value": 10},
+              "y": {"value": 42},
+              "size": {"value": 140},
+              "shape": {"value": "square"},
+              "fill": {"value": "#d62728"}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "encode": {
+            "enter": {
+              "x": {"value": 30},
+              "y": {"value": 46},
+              "text": {"value": "Non-Renewable"},
+              "align": {"value": "left"},
+              "baseline": {"value": "middle"},
+              "fontSize": {"value": 12}
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {"value": 12},
+          "y": {"value": 22},
+          "text": {"value": "Renewable vs Non-Renewable Energy Generation by State"},
+          "fontSize": {"value": 16},
+          "fontWeight": {"value": "bold"}
+        }
+      }
+    }
+  ]
+}

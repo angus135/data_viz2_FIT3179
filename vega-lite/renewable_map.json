@@ -3,7 +3,7 @@
   "title": "Australian Renewable Energy Installations Over 10 Mega Watts (2024)",
   "width": 800,
   "height": 600,
-  "background": "#cce6ff",  
+  "background": "#FFFFFF",  
   "projection": {
     "type": "mercator",
     "center": [133, -28],

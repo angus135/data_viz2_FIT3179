@@ -1,0 +1,79 @@
+[
+  {
+    "State": "NSW",
+    "Renewable": 26596.802,
+    "Non-Renewable": 47636.092,
+    "Population": 9063000.0,
+    "Renewable per capita": 2934657.619,
+    "Non-Renewable per capita": 5256106.367,
+    "GDP": 841861000000.0,
+    "Renewable per GDP": 31.59286628,
+    "Non-Renewable per GDP": 56.58427223
+  },
+  {
+    "State": "VIC",
+    "Renewable": 21621.509,
+    "Non-Renewable": 33829.791,
+    "Population": 7053100.0,
+    "Renewable per capita": 3065532.744,
+    "Non-Renewable per capita": 4796442.841,
+    "GDP": 580918000000.0,
+    "Renewable per GDP": 37.21955422,
+    "Non-Renewable per GDP": 58.23505383
+  },
+  {
+    "State": "QLD",
+    "Renewable": 20511.721,
+    "Non-Renewable": 53745.21,
+    "Population": 5647500.0,
+    "Renewable per capita": 3632000.177,
+    "Non-Renewable per capita": 9516637.45,
+    "GDP": 515895000000.0,
+    "Renewable per GDP": 39.75948788,
+    "Non-Renewable per GDP": 104.1785829
+  },
+  {
+    "State": "WA",
+    "Renewable": 8209.293,
+    "Non-Renewable": 37449.701,
+    "Population": 3030200.0,
+    "Renewable per capita": 2709158.801,
+    "Non-Renewable per capita": 12358821.53,
+    "GDP": 448207000000.0,
+    "Renewable per GDP": 18.31585183,
+    "Non-Renewable per GDP": 83.55447595
+  },
+  {
+    "State": "SA",
+    "Renewable": 10722.261,
+    "Non-Renewable": 3871.74,
+    "Population": 1898600.0,
+    "Renewable per capita": 5647456.547,
+    "Non-Renewable per capita": 2039260.508,
+    "GDP": 142175000000.0,
+    "Renewable per GDP": 75.4159381,
+    "Non-Renewable per GDP": 27.23221382
+  },
+  {
+    "State": "TAS",
+    "Renewable": 9834.09,
+    "Non-Renewable": 307.819,
+    "Population": 576100.0,
+    "Renewable per capita": 17070109.36,
+    "Non-Renewable per capita": 534315.2231,
+    "GDP": 40620000000.0,
+    "Renewable per GDP": 242.0997046,
+    "Non-Renewable per GDP": 7.578015756
+  },
+  {
+    "State": "NT",
+    "Renewable": 358.467,
+    "Non-Renewable": 5014.061,
+    "Population": 263400.0,
+    "Renewable per capita": 1360922.551,
+    "Non-Renewable per capita": 19035918.75,
+    "GDP": 34581000000.0,
+    "Renewable per GDP": 10.36601024,
+    "Non-Renewable per GDP": 144.9946792
+  }
+]

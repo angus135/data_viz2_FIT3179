@@ -1,4 +1,4 @@
-{ 
+{
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "title": {
     "text": "Australian Renewable Energy Installations by Capacity (2024)",
@@ -9,25 +9,21 @@
   "description": "Australian Renewable Energy Installations by Capacity (2024)",
   "width": 1000,
   "height": 600,
-  "padding": {"top": 50, "left": 5, "right": 5, "bottom": 5},
+  "padding": { "top": 50, "left": 5, "right": 5, "bottom": 5 },
   "autosize": "none",
-  "background": "#cce6ff",
-
+  "background": "#FFFFFF",
   "signals": [
     {
-      "name": "layout", "value": "squarify",
-      "bind": {
-        "input": "select",
-        "options": ["squarify", "binary"]
-      }
+      "name": "layout",
+      "value": "squarify",
+      "bind": { "input": "select", "options": ["squarify", "binary"] }
     }
   ],
-
   "data": [
     {
       "name": "rawData",
       "url": "https://angus135.github.io/data_viz2_FIT3179/data/historical-accredited-power-stations-and-projects-0.csv",
-      "format": {"type": "csv"},
+      "format": { "type": "csv" },
       "transform": [
         {
           "type": "filter",
@@ -40,8 +36,18 @@
         },
         {
           "type": "formula",
-          "as": "parent",
+          "as": "category",
           "expr": "datum['Fuel source(s)']"
+        },
+        {
+          "type": "formula",
+          "as": "parentState",
+          "expr": "datum['Fuel source(s)'] + ' - ' + datum['State']"
+        },
+        {
+          "type": "formula",
+          "as": "parent",
+          "expr": "datum['Fuel source(s)'] + ' - ' + datum['State']"
         },
         {
           "type": "formula",
@@ -53,16 +59,40 @@
     {
       "name": "categories",
       "values": [
-        {"id": "root", "parent": null},
-        {"id": "Biomass", "parent": "root"},
-        {"id": "Hydro", "parent": "root"},
-        {"id": "Wind", "parent": "root"},
-        {"id": "Solar", "parent": "root"}
+        { "id": "root", "parent": null },
+        { "id": "Biomass", "parent": "root" },
+        { "id": "Hydro", "parent": "root" },
+        { "id": "Wind", "parent": "root" },
+        { "id": "Solar", "parent": "root" }
+      ]
+    },
+    {
+      "name": "states",
+      "source": "rawData",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": ["parentState"]
+        },
+        {
+          "type": "formula",
+          "as": "id",
+          "expr": "datum.parentState"
+        },
+        {
+          "type": "formula",
+          "as": "parent",
+          "expr": "split(datum.parentState, ' - ')[0]"
+        },
+        {
+          "type": "project",
+          "fields": ["id", "parent"]
+        }
       ]
     },
     {
       "name": "combined",
-      "source": ["categories", "rawData"]
+      "source": ["categories", "states", "rawData"]
     },
     {
       "name": "tree",
@@ -76,13 +106,13 @@
         {
           "type": "treemap",
           "field": "size",
-          "sort": {"field": "value", "order": "descending"},
+          "sort": { "field": "value", "order": "descending" },
           "round": true,
-          "method": {"signal": "layout"},
+          "method": { "signal": "layout" },
           "padding": 0,
           "paddingOuter": 2,
           "paddingInner": 0,
-          "size": [{"signal": "width"}, {"signal": "height"}]
+          "size": [{ "signal": "width" }, { "signal": "height" }]
         }
       ]
     },
@@ -94,6 +124,13 @@
       ]
     },
     {
+      "name": "stateNodes",
+      "source": "tree",
+      "transform": [
+        { "type": "filter", "expr": "datum.children && datum.depth === 2" }
+      ]
+    },
+    {
       "name": "leaves",
       "source": "tree",
       "transform": [
@@ -101,7 +138,6 @@
       ]
     }
   ],
-
   "scales": [
     {
       "name": "color",
@@ -116,52 +152,73 @@
       "range": ["#ffffff", "#ffffff", "#ffffff", "#000000"]
     }
   ],
-
   "marks": [
     {
       "type": "rect",
-      "from": {"data": "leaves"},
+      "from": { "data": "leaves" },
       "encode": {
         "enter": {
-          "stroke": {"value": "white"},
-          "strokeWidth": {"value": 0.5},
+          "stroke": { "value": "white" },
+          "strokeWidth": { "value": 0.5 },
           "tooltip": {
-            "signal": "{'Power Station': datum.id, 'Fuel Source': datum.parent, 'Installed Capacity (MW)': format(datum.size, '.1f')}"
+            "signal": "{'Power Station': datum.id, 'Fuel Source': datum.category, 'State': split(datum.parent, ' - ')[1], 'Installed Capacity (MW)': format(datum.size, '.1f')}"
           }
         },
         "update": {
-          "x": {"field": "x0"},
-          "y": {"field": "y0"},
-          "x2": {"field": "x1"},
-          "y2": {"field": "y1"},
-          "fill": {"scale": "color", "field": "parent"}
+          "x": { "field": "x0" },
+          "y": { "field": "y0" },
+          "x2": { "field": "x1" },
+          "y2": { "field": "y1" },
+          "fill": { "scale": "color", "field": "category" }
         },
         "hover": {
-          "fillOpacity": {"value": 0.8}
+          "fillOpacity": { "value": 0.8 }
         }
       }
     },
     {
       "type": "text",
-      "from": {"data": "nodes"},
+      "from": { "data": "nodes" },
       "encode": {
         "enter": {
-          "font": {"value": "Helvetica Neue, Arial"},
-          "align": {"value": "center"},
-          "baseline": {"value": "middle"},
-          "fontWeight": {"value": "bold"},
-          "fontSize": {"value": 32},
-          "text": {"field": "id"}
+          "font": { "value": "Helvetica Neue, Arial" },
+          "align": { "value": "center" },
+          "baseline": { "value": "middle" },
+          "fontWeight": { "value": "bold" },
+          "fontSize": { "value": 32 },
+          "text": { "field": "id" }
         },
         "update": {
-          "x": {"signal": "0.5 * (datum.x0 + datum.x1)"},
-          "y": {"signal": "0.5 * (datum.y0 + datum.y1)"},
-          "fill": {"scale": "labelColor", "field": "id"}
+          "x": { "signal": "0.5 * (datum.x0 + datum.x1)" },
+          "y": { "signal": "0.5 * (datum.y0 + datum.y1)" },
+          "fill": { "scale": "labelColor", "field": "id" },
+          "limit": { "signal": "datum.x1 - datum.x0 - 8" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": { "data": "stateNodes" },
+      "encode": {
+        "enter": {
+          "font": { "value": "Helvetica Neue, Arial" },
+          "align": { "value": "left" },
+          "baseline": { "value": "top" },
+          "fontWeight": { "value": "600" },
+          "fontSize": { "value": 12 },
+          "dx": { "value": 4 },
+          "dy": { "value": 4 },
+          "text": { "signal": "split(datum.id, ' - ')[1]" }
+        },
+        "update": {
+          "x": { "signal": "datum.x0 + 4" },
+          "y": { "signal": "datum.y0 + 4" },
+          "fill": { "value": "#000000" },
+          "limit": { "signal": "datum.x1 - datum.x0 - 8" }
         }
       }
     }
   ],
-
   "legends": [
     {
       "fill": "color",
@@ -169,9 +226,7 @@
       "orient": "right",
       "encode": {
         "symbols": {
-          "enter": {
-            "strokeWidth": {"value": 0}
-          }
+          "enter": { "strokeWidth": { "value": 0 } }
         }
       }
     }
