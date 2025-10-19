@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Top 20 Australian Power Stations by Installed Capacity",
+  "width": 400,
+  "height": 300,
+  "background": "#FFFFFF",
+  "data": {
+    "url": "https://angus135.github.io/data_viz2_FIT3179/data/historical-accredited-power-stations-and-projects-0.csv"
+  },
+  "transform": [
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "Installed capacity", "order": "descending"}]
+    },
+    {
+      "filter": "datum.rank <= 10"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "y": {
+      "field": "Power station name",
+      "type": "nominal",
+      "sort": "-x",
+      "title": "Power Station Name"
+    },
+    "x": {
+      "field": "Installed capacity",
+      "type": "quantitative",
+      "title": "Installed Capacity (MW)"
+    },
+    "color": {
+      "field": "Fuel source(s)",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Biomass", "Hydro", "Wind", "Solar"],
+        "range": ["#2ca02c", "#08306b", "#1f77b4", "#ff7f0e"]
+      },
+      "legend": {"title": "Primary Fuel Source"}
+    },
+    "tooltip": [
+      {"field": "Power station name", "type": "nominal", "title": "Power Station"},
+      {"field": "Fuel source(s)", "type": "nominal", "title": "Fuel Source"},
+      {
+        "field": "Installed capacity",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Installed Capacity (MW)"
+      },
+      {"field": "State", "type": "nominal"}
+    ]
+  }
+}

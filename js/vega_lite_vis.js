@@ -22,3 +22,13 @@ var vg_5 = "vega-lite/capacity_tree_map.json";
 vegaEmbed("#capacity_tree_map", vg_5).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
+
+var vg_6 = "vega-lite/renew_vs_non_renew.json";
+vegaEmbed("#renew_vs_non_renew", vg_6).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+var vg_7 = "vega-lite/top_projects.json";
+vegaEmbed("#top_projects", vg_7).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
