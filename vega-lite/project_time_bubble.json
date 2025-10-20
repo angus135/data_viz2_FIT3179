@@ -46,7 +46,8 @@
       "type": "nominal",
       "title": "Fuel Source",
       "scale": {
-        "scheme": "category20"
+        "domain": ["Biomass", "Hydro", "Wind", "Solar"],
+        "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
       }
     },
     "tooltip": [

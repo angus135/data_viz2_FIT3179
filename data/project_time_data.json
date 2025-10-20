@@ -297,17 +297,6 @@
     "Accreditation_Year": 2018
   },
   {
-    "Avg_MW": 2.194532896,
-    "Fuel_Source": "Solar",
-    "State": "QLD",
-    "AEMO_Station_Name": "Collinsville Solar PV Power Station",
-    "CER_Power_Station_Name": "Collinsville Hydro Treatment Plant - Solar - QLD",
-    "Installed_Capacity_MW": 0.2527,
-    "Accreditation_Start_Date": "8/07/2024",
-    "Accreditation_Date_ISO": "2024-07-08",
-    "Accreditation_Year": 2024
-  },
-  {
     "Avg_MW": 12.4405333,
     "Fuel_Source": "Wind",
     "State": "NSW",
@@ -416,17 +405,6 @@
     "Accreditation_Start_Date": "1/04/2001",
     "Accreditation_Date_ISO": "2001-04-01",
     "Accreditation_Year": 2001
-  },
-  {
-    "Avg_MW": 4.53775353,
-    "Fuel_Source": "Solar",
-    "State": "NSW",
-    "AEMO_Station_Name": "Griffith Solar Farm",
-    "CER_Power_Station_Name": "SV - Griffith - Solar - NSW",
-    "Installed_Capacity_MW": 0.1519,
-    "Accreditation_Start_Date": "8/12/2017",
-    "Accreditation_Date_ISO": "2017-12-08",
-    "Accreditation_Year": 2017
   },
   {
     "Avg_MW": 18.9587567,
