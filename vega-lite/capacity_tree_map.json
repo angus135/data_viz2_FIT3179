@@ -15,8 +15,7 @@
   "signals": [
     {
       "name": "layout",
-      "value": "squarify",
-      "bind": { "input": "select", "options": ["squarify", "binary"] }
+      "value": "squarify"
     }
   ],
   "data": [
