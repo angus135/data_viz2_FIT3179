@@ -51,7 +51,7 @@ print(f"Loaded {len(mapping_data)} mapping records")
 # Define renewable energy sources
 RENEWABLE_SOURCES = [
     'Solar', 'Wind', 'Hydro', 'Battery', 'Biomass', 
-    'Geothermal', 'Wave', 'Tidal', 'Renewable'
+    'Geothermal', 'Wave', 'Tidal', 'Renewable', 'Water', 'Bagasse', 'Biogas - sludge', 'Grid'
 ]
 
 # Filter mapping data to only include renewables

@@ -44,6 +44,39 @@
     "Accreditation_Year": 2017
   },
   {
+    "Avg_MW": 23.35549467,
+    "Fuel_Source": "Hydro",
+    "State": "QLD",
+    "AEMO_Station_Name": "Barron Gorge Power Station",
+    "CER_Power_Station_Name": "Barron Gorge",
+    "Installed_Capacity_MW": 60.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
+    "Avg_MW": 38.02996538,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Bastyan Power Station",
+    "CER_Power_Station_Name": "Bastyan",
+    "Installed_Capacity_MW": 79.9,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
+    "Avg_MW": 22.96706538,
+    "Fuel_Source": "Hydro",
+    "State": "NSW",
+    "AEMO_Station_Name": "Blowering Power Station",
+    "CER_Power_Station_Name": "Blowering",
+    "Installed_Capacity_MW": 80.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 18.18028387,
     "Fuel_Source": "Wind",
     "State": "SA",
@@ -110,6 +143,17 @@
     "Accreditation_Year": 2015
   },
   {
+    "Avg_MW": 9.152886187,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Butlers Gorge Power Station",
+    "CER_Power_Station_Name": "Butlers Gorge",
+    "Installed_Capacity_MW": 14.4,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 41.39028082,
     "Fuel_Source": "Wind",
     "State": "NSW",
@@ -132,15 +176,26 @@
     "Accreditation_Year": 2005
   },
   {
+    "Avg_MW": 48.7381647,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Cethana Power Station",
+    "CER_Power_Station_Name": "Cethana",
+    "Installed_Capacity_MW": 85.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 15.56497699,
     "Fuel_Source": "Wind",
     "State": "VIC",
     "AEMO_Station_Name": "Challicum Hills Wind Farm",
-    "CER_Power_Station_Name": "Bald Hills Wind Farm - VIC",
-    "Installed_Capacity_MW": 106.6,
-    "Accreditation_Start_Date": "24/02/2015",
-    "Accreditation_Date_ISO": "2015-02-24",
-    "Accreditation_Year": 2015
+    "CER_Power_Station_Name": "Challicum Hills Wind Farm",
+    "Installed_Capacity_MW": 52.5,
+    "Accreditation_Start_Date": "13/12/2002",
+    "Accreditation_Date_ISO": "2002-12-13",
+    "Accreditation_Year": 2002
   },
   {
     "Avg_MW": 0.0,
@@ -174,6 +229,28 @@
     "Accreditation_Start_Date": "14/08/2009",
     "Accreditation_Date_ISO": "2009-08-14",
     "Accreditation_Year": 2009
+  },
+  {
+    "Avg_MW": 5.313896689,
+    "Fuel_Source": "Hydro",
+    "State": "VIC",
+    "AEMO_Station_Name": "Clover Power Station",
+    "CER_Power_Station_Name": "Clover",
+    "Installed_Capacity_MW": 24.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
+    "Avg_MW": 8.344606022,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Cluny Power Station",
+    "CER_Power_Station_Name": "Cluny",
+    "Installed_Capacity_MW": 17.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
   },
   {
     "Avg_MW": 14.37009267,
@@ -224,11 +301,11 @@
     "Fuel_Source": "Solar",
     "State": "QLD",
     "AEMO_Station_Name": "Collinsville Solar PV Power Station",
-    "CER_Power_Station_Name": "Ratch-Collinsville Solar PV - Qld",
-    "Installed_Capacity_MW": 58.6827,
-    "Accreditation_Start_Date": "1/08/2018",
-    "Accreditation_Date_ISO": "2018-08-01",
-    "Accreditation_Year": 2018
+    "CER_Power_Station_Name": "Collinsville Hydro Treatment Plant - Solar - QLD",
+    "Installed_Capacity_MW": 0.2527,
+    "Accreditation_Start_Date": "8/07/2024",
+    "Accreditation_Date_ISO": "2024-07-08",
+    "Accreditation_Year": 2024
   },
   {
     "Avg_MW": 12.4405333,
@@ -240,6 +317,17 @@
     "Accreditation_Start_Date": "15/06/2009",
     "Accreditation_Date_ISO": "2009-06-15",
     "Accreditation_Year": 2009
+  },
+  {
+    "Avg_MW": 46.41523592,
+    "Fuel_Source": "Hydro",
+    "State": "VIC",
+    "AEMO_Station_Name": "Dartmouth Power Station",
+    "CER_Power_Station_Name": "Dartmouth",
+    "Installed_Capacity_MW": 150.0,
+    "Accreditation_Start_Date": "20/06/2001",
+    "Accreditation_Date_ISO": "2001-06-20",
+    "Accreditation_Year": 2001
   },
   {
     "Avg_MW": 2.777701675,
@@ -264,6 +352,28 @@
     "Accreditation_Year": 2018
   },
   {
+    "Avg_MW": 30.93898869,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Devils Gate Power Station",
+    "CER_Power_Station_Name": "Devils Gate",
+    "Installed_Capacity_MW": 63.5,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
+    "Avg_MW": 24.00335408,
+    "Fuel_Source": "Hydro",
+    "State": "VIC",
+    "AEMO_Station_Name": "Eildon Power Station",
+    "CER_Power_Station_Name": "Eildon Power Station",
+    "Installed_Capacity_MW": 135.0,
+    "Accreditation_Start_Date": "20/06/2001",
+    "Accreditation_Date_ISO": "2001-06-20",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 3.774115858,
     "Fuel_Source": "Solar",
     "State": "QLD",
@@ -273,6 +383,17 @@
     "Accreditation_Start_Date": "18/09/2018",
     "Accreditation_Date_ISO": "2018-09-18",
     "Accreditation_Year": 2018
+  },
+  {
+    "Avg_MW": 28.26858333,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Fisher Power Station",
+    "CER_Power_Station_Name": "Fisher",
+    "Installed_Capacity_MW": 43.2,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
   },
   {
     "Avg_MW": 7.834673821,
@@ -286,37 +407,26 @@
     "Accreditation_Year": 2018
   },
   {
+    "Avg_MW": 192.9445523,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Gordon Power Station",
+    "CER_Power_Station_Name": "Gordon",
+    "Installed_Capacity_MW": 432.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 4.53775353,
     "Fuel_Source": "Solar",
     "State": "NSW",
     "AEMO_Station_Name": "Griffith Solar Farm",
-    "CER_Power_Station_Name": "Griffith Solar Farm - NSW - Solar",
-    "Installed_Capacity_MW": 34.9424,
-    "Accreditation_Start_Date": "11/01/2018",
-    "Accreditation_Date_ISO": "2018-01-11",
-    "Accreditation_Year": 2018
-  },
-  {
-    "Avg_MW": 2.375907486,
-    "Fuel_Source": "Solar",
-    "State": "NSW",
-    "AEMO_Station_Name": "Gullen Range Solar Farm",
-    "CER_Power_Station_Name": "Gullen Range Wind and Solar Farm - NSW",
-    "Installed_Capacity_MW": 293.8056,
-    "Accreditation_Start_Date": "25/11/2013",
-    "Accreditation_Date_ISO": "2013-11-25",
-    "Accreditation_Year": 2013
-  },
-  {
-    "Avg_MW": 55.38719581,
-    "Fuel_Source": "Wind",
-    "State": "NSW",
-    "AEMO_Station_Name": "Gullen Range Wind Farm",
-    "CER_Power_Station_Name": "Gullen Range Wind and Solar Farm - NSW",
-    "Installed_Capacity_MW": 293.8056,
-    "Accreditation_Start_Date": "25/11/2013",
-    "Accreditation_Date_ISO": "2013-11-25",
-    "Accreditation_Year": 2013
+    "CER_Power_Station_Name": "SV - Griffith - Solar - NSW",
+    "Installed_Capacity_MW": 0.1519,
+    "Accreditation_Start_Date": "8/12/2017",
+    "Accreditation_Date_ISO": "2017-12-08",
+    "Accreditation_Year": 2017
   },
   {
     "Avg_MW": 18.9587567,
@@ -328,6 +438,17 @@
     "Accreditation_Start_Date": "23/03/2011",
     "Accreditation_Date_ISO": "2011-03-23",
     "Accreditation_Year": 2011
+  },
+  {
+    "Avg_MW": 15.32780897,
+    "Fuel_Source": "Hydro",
+    "State": "NSW",
+    "AEMO_Station_Name": "Guthega Power Station",
+    "CER_Power_Station_Name": "Guthega",
+    "Installed_Capacity_MW": 65.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
   },
   {
     "Avg_MW": 37.0099434,
@@ -418,6 +539,39 @@
     "Accreditation_Year": 2018
   },
   {
+    "Avg_MW": 23.66677715,
+    "Fuel_Source": "Hydro",
+    "State": "NSW",
+    "AEMO_Station_Name": "Hume (NSW) Hydro Power Station",
+    "CER_Power_Station_Name": "Hume Power Station",
+    "Installed_Capacity_MW": 58.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
+    "Avg_MW": 80.22675865,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "John Butters Power Station",
+    "CER_Power_Station_Name": "John Butters",
+    "Installed_Capacity_MW": 144.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
+    "Avg_MW": 55.85143495,
+    "Fuel_Source": "Hydro",
+    "State": "QLD",
+    "AEMO_Station_Name": "Kareeya Power Station",
+    "CER_Power_Station_Name": "Kareeya",
+    "Installed_Capacity_MW": 86.4,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 3.817273782,
     "Fuel_Source": "Solar",
     "State": "VIC",
@@ -451,6 +605,17 @@
     "Accreditation_Year": 2017
   },
   {
+    "Avg_MW": 48.51155365,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Lemonthyme / Wilmot Power Station",
+    "CER_Power_Station_Name": "Lemonthyme/Wilmot",
+    "Installed_Capacity_MW": 81.6,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 0.0,
     "Fuel_Source": "Solar",
     "State": "QLD",
@@ -460,6 +625,17 @@
     "Accreditation_Start_Date": "15/02/2019",
     "Accreditation_Date_ISO": "2019-02-15",
     "Accreditation_Year": 2019
+  },
+  {
+    "Avg_MW": 103.9540512,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Catagunya / Liapootah / Wayatinah Power Station",
+    "CER_Power_Station_Name": "Catagunya / Liapootah / Wayatinah Power Station - TAS",
+    "Installed_Capacity_MW": 173.6,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
   },
   {
     "Avg_MW": 22.61293003,
@@ -495,6 +671,17 @@
     "Accreditation_Year": 2010
   },
   {
+    "Avg_MW": 8.585588376,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Lake Echo Power Station",
+    "CER_Power_Station_Name": "Lake Echo",
+    "Installed_Capacity_MW": 32.4,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 1.997454509,
     "Fuel_Source": "Solar",
     "State": "QLD",
@@ -517,6 +704,17 @@
     "Accreditation_Year": 2012
   },
   {
+    "Avg_MW": 42.63010369,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Mackintosh Power Station",
+    "CER_Power_Station_Name": "Mackintosh",
+    "Installed_Capacity_MW": 79.9,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 5.741224135,
     "Fuel_Source": "Solar",
     "State": "NSW",
@@ -526,6 +724,28 @@
     "Accreditation_Start_Date": "1/05/2018",
     "Accreditation_Date_ISO": "2018-05-01",
     "Accreditation_Year": 2018
+  },
+  {
+    "Avg_MW": 19.20860037,
+    "Fuel_Source": "Hydro",
+    "State": "VIC",
+    "AEMO_Station_Name": "Bogong / Mackay Power Station",
+    "CER_Power_Station_Name": "Bogong Hydro - VIC",
+    "Installed_Capacity_MW": 147.6,
+    "Accreditation_Start_Date": "5/10/2009",
+    "Accreditation_Date_ISO": "2009-10-05",
+    "Accreditation_Year": 2009
+  },
+  {
+    "Avg_MW": 19.87194253,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Meadowbank Power Station",
+    "CER_Power_Station_Name": "Meadowbank",
+    "Installed_Capacity_MW": 40.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
   },
   {
     "Avg_MW": 42.7410683,
@@ -548,6 +768,17 @@
     "Accreditation_Start_Date": "20/08/2018",
     "Accreditation_Date_ISO": "2018-08-20",
     "Accreditation_Year": 2018
+  },
+  {
+    "Avg_MW": 2.945334989,
+    "Fuel_Source": "Solar",
+    "State": "NSW",
+    "AEMO_Station_Name": "Mugga Lane Solar Park",
+    "CER_Power_Station_Name": "Mugga Lane Solar Park - ACT",
+    "Installed_Capacity_MW": 12.85,
+    "Accreditation_Start_Date": "8/12/2016",
+    "Accreditation_Date_ISO": "2016-12-08",
+    "Accreditation_Year": 2016
   },
   {
     "Avg_MW": 7.572089983,
@@ -594,6 +825,17 @@
     "Accreditation_Year": 2005
   },
   {
+    "Avg_MW": 203.8390434,
+    "Fuel_Source": "Hydro",
+    "State": "VIC",
+    "AEMO_Station_Name": "Murray Power Station",
+    "CER_Power_Station_Name": "Murray Power Station",
+    "Installed_Capacity_MW": 1722.6,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 66.37091498,
     "Fuel_Source": "Wind",
     "State": "TAS",
@@ -638,6 +880,17 @@
     "Accreditation_Year": 2011
   },
   {
+    "Avg_MW": 15.57374886,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Paloona Power Station",
+    "CER_Power_Station_Name": "Paloona",
+    "Installed_Capacity_MW": 28.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 11.31201623,
     "Fuel_Source": "Solar",
     "State": "NSW",
@@ -647,6 +900,50 @@
     "Accreditation_Start_Date": "20/12/2017",
     "Accreditation_Date_ISO": "2017-12-20",
     "Accreditation_Year": 2017
+  },
+  {
+    "Avg_MW": 156.3261267,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Poatina Power Station",
+    "CER_Power_Station_Name": "Poatina",
+    "Installed_Capacity_MW": 327.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
+    "Avg_MW": 113.0767706,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Reece Power Station",
+    "CER_Power_Station_Name": "Reece",
+    "Installed_Capacity_MW": 231.2,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
+    "Avg_MW": 4.00570526,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Repulse Power Station",
+    "CER_Power_Station_Name": "Repulse",
+    "Installed_Capacity_MW": 28.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
+    "Avg_MW": 5.754204718,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Rowallan Power Station",
+    "CER_Power_Station_Name": "Rowallan",
+    "Installed_Capacity_MW": 10.45,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
   },
   {
     "Avg_MW": 4.405820072,
@@ -660,6 +957,17 @@
     "Accreditation_Year": 2014
   },
   {
+    "Avg_MW": 7.485703958,
+    "Fuel_Source": "Biomass",
+    "State": "QLD",
+    "AEMO_Station_Name": "Rocky Point Cogeneration Plant",
+    "CER_Power_Station_Name": "Rocky Point Sugar Mill",
+    "Installed_Capacity_MW": 30.0,
+    "Accreditation_Start_Date": "13/02/2007",
+    "Accreditation_Date_ISO": "2007-02-13",
+    "Accreditation_Year": 2007
+  },
+  {
     "Avg_MW": 5.591836767,
     "Fuel_Source": "Solar",
     "State": "QLD",
@@ -669,6 +977,17 @@
     "Accreditation_Start_Date": "24/08/2018",
     "Accreditation_Date_ISO": "2018-08-24",
     "Accreditation_Year": 2018
+  },
+  {
+    "Avg_MW": 0.0,
+    "Fuel_Source": "Hydro",
+    "State": "VIC",
+    "AEMO_Station_Name": "Rubicon Mountain Streams Station",
+    "CER_Power_Station_Name": "Rubicon System",
+    "Installed_Capacity_MW": 13.55,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
   },
   {
     "Avg_MW": 11.64778301,
@@ -737,6 +1056,17 @@
     "Accreditation_Year": 2007
   },
   {
+    "Avg_MW": 273.1904095,
+    "Fuel_Source": "Hydro",
+    "State": "NSW",
+    "AEMO_Station_Name": "Tumut",
+    "CER_Power_Station_Name": "Tumut",
+    "Installed_Capacity_MW": 1750.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 0.022867199,
     "Fuel_Source": "Solar",
     "State": "QLD",
@@ -781,6 +1111,17 @@
     "Accreditation_Year": 2014
   },
   {
+    "Avg_MW": 70.2191562,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Tarraleah Power Station",
+    "CER_Power_Station_Name": "Tarraleah",
+    "Installed_Capacity_MW": 90.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 0.0,
     "Fuel_Source": "Solar",
     "State": "SA",
@@ -792,11 +1133,44 @@
     "Accreditation_Year": 2019
   },
   {
+    "Avg_MW": 49.91972669,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Trevallyn Power Station",
+    "CER_Power_Station_Name": "Trevallyn",
+    "Installed_Capacity_MW": 83.6,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
+    "Avg_MW": 27.18373849,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Tribute Power Station",
+    "CER_Power_Station_Name": "Tribute",
+    "Installed_Capacity_MW": 82.8,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
+    "Avg_MW": 65.41289574,
+    "Fuel_Source": "Hydro",
+    "State": "TAS",
+    "AEMO_Station_Name": "Tungatinah Power Station",
+    "CER_Power_Station_Name": "Tungatinah",
+    "Installed_Capacity_MW": 125.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 45.58644682,
     "Fuel_Source": "Wind",
     "State": "SA",
-    "AEMO_Station_Name": "Waterloo Wind Farm",
-    "CER_Power_Station_Name": "Waterloo Wind Farm - SA",
+    "AEMO_Station_Name": "Hydroloo Wind Farm",
+    "CER_Power_Station_Name": "Hydroloo Wind Farm - SA",
     "Installed_Capacity_MW": 130.8,
     "Accreditation_Start_Date": "20/08/2010",
     "Accreditation_Date_ISO": "2010-08-20",
@@ -847,6 +1221,17 @@
     "Accreditation_Year": 2018
   },
   {
+    "Avg_MW": 15.49899543,
+    "Fuel_Source": "Hydro",
+    "State": "VIC",
+    "AEMO_Station_Name": "West Kiewa Power Station",
+    "CER_Power_Station_Name": "West Kiewa",
+    "Installed_Capacity_MW": 62.0,
+    "Accreditation_Start_Date": "1/04/2001",
+    "Accreditation_Date_ISO": "2001-04-01",
+    "Accreditation_Year": 2001
+  },
+  {
     "Avg_MW": 17.15035758,
     "Fuel_Source": "Wind",
     "State": "NSW",
@@ -862,33 +1247,22 @@
     "Fuel_Source": "Wind",
     "State": "TAS",
     "AEMO_Station_Name": "Woolnorth Studland Bay / Bluff Point Wind Farm",
-    "CER_Power_Station_Name": "Woolnorth Wind Farm",
-    "Installed_Capacity_MW": 64.75,
-    "Accreditation_Start_Date": "9/05/2002",
-    "Accreditation_Date_ISO": "2002-05-09",
-    "Accreditation_Year": 2002
+    "CER_Power_Station_Name": "Woolnorth Studland Bay",
+    "Installed_Capacity_MW": 75.0,
+    "Accreditation_Start_Date": "30/01/2007",
+    "Accreditation_Date_ISO": "2007-01-30",
+    "Accreditation_Year": 2007
   },
   {
     "Avg_MW": 30.3043958,
     "Fuel_Source": "Wind",
     "State": "SA",
     "AEMO_Station_Name": "Wattle Point Wind Farm",
-    "CER_Power_Station_Name": "Waterloo Wind Farm - SA",
-    "Installed_Capacity_MW": 130.8,
-    "Accreditation_Start_Date": "20/08/2010",
-    "Accreditation_Date_ISO": "2010-08-20",
-    "Accreditation_Year": 2010
-  },
-  {
-    "Avg_MW": 0.366647051,
-    "Fuel_Source": "Solar",
-    "State": "NSW",
-    "AEMO_Station_Name": "White Rock Solar Farm",
-    "CER_Power_Station_Name": "White Rock Wind Farm - NSW",
-    "Installed_Capacity_MW": 200.172,
-    "Accreditation_Start_Date": "16/06/2017",
-    "Accreditation_Date_ISO": "2017-06-16",
-    "Accreditation_Year": 2017
+    "CER_Power_Station_Name": "Wattle Point Wind farm",
+    "Installed_Capacity_MW": 90.75,
+    "Accreditation_Start_Date": "13/03/2005",
+    "Accreditation_Date_ISO": "2005-03-13",
+    "Accreditation_Year": 2005
   },
   {
     "Avg_MW": 59.43083607,

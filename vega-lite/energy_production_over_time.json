@@ -45,7 +45,7 @@
       "type": "nominal",
       "scale": {
         "domain": ["Coal", "Gas", "Biofuels", "Battery", "Hydro", "Wind", "Solar"],
-        "range": ["#8B4513", "#FF6B6B", "#4CAF50", "#9C27B0", "#2196F3", "#00BCD4", "#FFC107"]
+        "range": ["#1c1d1f", "#FF6B6B", "#8B4513", "#9C27B0", "#08306b", "#78909C", "#FFA726"]
       },
       "legend": { "title": "Energy Source" }
     },

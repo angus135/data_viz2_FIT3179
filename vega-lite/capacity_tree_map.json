@@ -143,7 +143,7 @@
       "name": "color",
       "type": "ordinal",
       "domain": ["Biomass", "Hydro", "Wind", "Solar"],
-      "range": ["#2ca02c", "#08306b", "#1f77b4", "#ff7f0e"]
+      "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
     },
     {
       "name": "labelColor",

@@ -10,17 +10,8 @@
   "height": 250,
   "background": "#FFFFFF",
   "data": {
-    "url": "https://angus135.github.io/data_viz2_FIT3179/data/historical-accredited-power-stations-and-projects-0.csv"
+    "url": "https://angus135.github.io/data_viz2_FIT3179/data/top20powerstations.json"
   },
-  "transform": [
-    {
-      "window": [{"op": "rank", "as": "rank"}],
-      "sort": [{"field": "Installed capacity", "order": "descending"}]
-    },
-    {
-      "filter": "datum.rank <= 10"
-    }
-  ],
   "mark": {
     "type": "bar",
     "tooltip": true
@@ -41,8 +32,8 @@
       "field": "Fuel source(s)",
       "type": "nominal",
       "scale": {
-        "domain": ["Hydro", "Wind", "Solar"],
-        "range": ["#08306b", "#1f77b4", "#ff7f0e"]
+        "domain": ["Biomass", "Hydro", "Wind", "Solar"],
+        "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
       },
       "legend": {"title": "Primary Fuel Source"}
     },

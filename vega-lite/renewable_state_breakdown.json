@@ -42,7 +42,7 @@
           "type": "nominal",
           "scale": {
             "domain": ["Biofuels", "Hydro", "Wind", "Solar"],
-            "range": ["#8B4513", "#1f77b4", "#2ca02c", "#ff7f0e"]
+            "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
           },
           "legend": { "title": "Technology", "titleFontSize": 13, "labelFontSize": 11 }
         },

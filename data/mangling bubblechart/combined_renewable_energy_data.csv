@@ -1,86 +1,119 @@
-DUID,Energy_MWh,Avg_MW,Fuel_Source,State,AEMO_Station_Name,CER_Power_Station_Name,Installed_Capacity_MW,Accreditation_Start_Date
-ARWF1,592464.1472,67.63289352,Wind,VIC,Ararat Wind Farm,Diapur Wind Farm - VIC,8,14/10/2021
-BALDHWF1,328460.5602,37.49549774,Wind,VIC,Bald Hills Wind Farm,Bald Hills Wind Farm - VIC,106.6,24/02/2015
-BANN1,25849.38392,2.950842913,Solar,VIC,Bannerton Solar Park,Bannerton Solar Park - VIC,110.1951,20/07/2018
-BARCSF1,58009.89167,6.622133752,Solar,QLD,Barcaldine Solar Farm,Barcaldine Solar Farm - QLD,25,20/03/2017
-BLUFF1,159259.2867,18.18028387,Wind,SA,The Bluff Wind Farm,The Bluff Wind Farm - SA,52.5,4/07/2011
-BNGSF1,115548.9307,13.1905172,Solar,SA,Bungala One Solar Farm,Bungala One Solar Farm SA,137.8296,11/05/2018
-BNGSF2,5389.419083,0.615230489,Solar,SA,Bungala Two Solar Farm,Bungala Two Solar Farm SA,137.9754,24/09/2018
-BOCORWF1,367275.3721,41.92641234,Wind,NSW,Boco Rock Wind Farm,Boco Rock Wind Farm - NSW,113.18,1/09/2014
-BODWF1,58774.03233,6.709364421,Wind,NSW,Bodangora Wind Farm ,Bodangora Wind Farm Pty Limited-NSW,113.19,6/08/2018
-BROKENH1,129557.3429,14.78965102,Solar,NSW,Broken Hill Solar Plant,Broken Hill Solar Plant - NSW,53,22/07/2015
-CAPTL_WF,362578.86,41.39028082,Wind,NSW,Capital Wind Farm,Capital Wind Farm - NSW,140.7,8/07/2009
-CATHROCK,170470.6467,19.46011949,Wind,SA,Cathedral Rocks,Cathedral Rocks Wind Farm,66,29/04/2005
-CHALLHWF,136349.1984,15.56497699,Wind,VIC,Challicum Hills Wind Farm,Bald Hills Wind Farm - VIC,106.6,24/02/2015
-CHILDSF1,0,0,Solar,QLD,Childers Solar Farm,Childers Solar Farm - QLD,75.0915,17/12/2018
-CLARESF1,125050.5541,14.27517741,Solar,QLD,Clare Solar Farm,Eagle Farm Solar - QLD,0.1512,15/11/2019
-CLEMGPWF,182664.8459,20.85215136,Wind,SA,Clements Gap Wind Farm,Clements Gap Wind Farm - SA,56.7,14/08/2009
-CNUNDAWF,125882.0118,14.37009267,Wind,SA,Canunda Wind Farm,Canunda Wind Farm,46,3/11/2004
-COLEASF1,107073.8462,12.2230418,Solar,NSW,Coleambally Solar Farm,Coleambally-Solar-NSW,7.2128,9/10/2023
-CROOKWF2,57909.41492,6.610663804,Wind,NSW,Crookwell 2 Wind Farm,Crookwell 3 Wind Farm - Wind - NSW,57.6,5/08/2024
-CROWLWF1,2446.265,0.279253995,Wind,VIC,Crowlands Wind Farm,Crowlands Windfarm - VIC,79.95,9/12/2018
-CSPVPS1,19224.10817,2.194532896,Solar,QLD,Collinsville Solar PV Power Station,Ratch-Collinsville Solar PV - Qld,58.6827,1/08/2018
-CULLRGWF,108979.0717,12.4405333,Wind,NSW,Cullerin Range Wind Farm,Cullerin Range Wind Farm - NSW,30,15/06/2009
-DAYDSF1,24332.66667,2.777701675,Solar,QLD,Daydream Solar Farm,Doomadgee Solar Farm - QLD,0.264,22/11/2013
-DDSF1,49639.9205,5.666657591,Solar ,QLD,Darling Downs Solar Farm,Darling Downs Solar Farm - QLD,137.592,27/07/2018
-EMERASF1,33061.25492,3.774115858,Solar,QLD,Emerald Solar Park,Emerald Solar Park - QLD,89.6308,18/09/2018
-GANNSF1,68631.74267,7.834673821,Solar,VIC,Gannawarra Solar Farm,Glenrowan Solar Farm - VIC,130.0018,5/12/2023
-GRIFSF1,39750.72092,4.53775353,Solar,NSW,Griffith Solar Farm,SV - Griffith - Solar - NSW,0.1519,8/12/2017
-GULLRSF1,20812.94958,2.375907486,Solar,NSW,Gullen Range Solar Farm,Gullen Range Wind and Solar Farm - NSW,293.8056,25/11/2013
-GULLRWF1,485191.8353,55.38719581,Wind,NSW,Gullen Range Wind Farm,Gullen Range Wind and Solar Farm - NSW,293.8056,25/11/2013
-GUNNING1,166078.7087,18.9587567,Wind,NSW,Gunning Wind Farm,Gunning Wind Farm - NSW,46.5,23/03/2011
-HALLWF1,324207.1042,37.0099434,Wind,SA,Hallett 1 Wind Farm,Hallett 2 Wind Farm - SA,71.4,27/04/2009
-HALLWF2,247158.6847,28.21446172,Wind,SA,Hallett 2 Wind Farm,Hallett 2 Wind Farm - SA,71.4,27/04/2009
-HAMISF1,37190.75683,4.245520186,Solar,QLD,Hamilton Solar Farm,Haughton Solar Farm - QLD,130.7453,28/05/2019
-HAYMSF1,0,0,Solar,QLD,Hayman Solar Farm,Haughton Solar Farm - QLD,130.7453,28/05/2019
-HDWF1,373759.8965,42.66665485,Wind,SA,Hornsdale Wind Farm,Hornsdale Wind Farm Stage 3 - SA,112,16/08/2017
-HDWF2,352882.0021,40.28333357,Wind,SA,Hornsdale Wind Farm 2,Hornsdale Wind Farm Stage 2 - SA,102.4,10/02/2017
-HDWF3,376928.2374,43.0283376,Wind,SA,Hornsdale Wind Farm 3,Hornsdale Wind Farm Stage 3 - SA,112,16/08/2017
-HUGSF1,1858.837417,0.212196052,Solar,QLD,Hughenden Solar Farm,Hughenden Solar Farm - QLD,20.1617,25/01/2018
-KARSF1,33439.31833,3.817273782,Solar,VIC,Karadoc Solar Farm,Karadoc Solar Farm - VIC,112.459,24/10/2018
-KIATAWF1,130927.0859,14.94601437,Wind,VIC,Kiata Wind Farm,Kiata Wind Farm - VIC,31.05,23/10/2017
-KSP1,121829.6102,13.90748975,Solar,QLD,Kidston Solar Project Phase One,Kidston Solar One - Solar - Qld,63.168,5/12/2017
-LILYSF1,0,0,Solar,QLD,Lilyvale Solar Farm,Lilyvale Solar Farm - QLD,126.2016,15/02/2019
-LKBONNY1,198089.2671,22.61293003,Wind,SA,Lake Bonney Wind Farm Stage 1,Lake Bonney Wind Farm Stage 3 - SA,39,28/05/2010
-LKBONNY2,392424.8862,44.79736144,Wind,SA,Lake Bonney Stage 2 Windfarm,Lake Bonney Wind Farm Stage 3 - SA,39,28/05/2010
-LKBONNY3,99606.5445,11.3706101,Wind,SA,Lake Bonney Stage 3 Wind Farm,Lake Bonney Wind Farm Stage 3 - SA,39,28/05/2010
-LRSF1,17497.7015,1.997454509,Solar,QLD,Longreach Solar Farm,Longreach Solar Farm QLD,17.3437,18/03/2018
-MACARTH1,1069397.643,122.0773565,Wind,VIC,Macarthur Wind Farm,Macarthur Wind Farm - VIC,420,30/09/2012
-MANSLR1,50293.12342,5.741224135,Solar,NSW,Manildra solar Farm,Manildra Solar Farm - NSW,55.872,1/05/2018
-MERCER01,374411.7583,42.7410683,Wind,VIC,Mt Mercer Wind Farm,Mt Mercer Wind Farm - VIC,131.2,17/11/2013
-MEWF1,114342.7458,13.05282486,Wind,QLD,Mount Emerald Wind Farm,Mount Emerald Wind Farm - Qld,180.45,20/08/2018
-MLSP1,25801.1345,2.945334989,Solar,NSW,Mugga Lane Solar Park,Lindt Marsden Park Solar - NSW,0.3541,16/05/2019
-MLWF1,66331.50825,7.572089983,Wind,VIC,Mortons Lane Wind Farm,Mortons Lane Wind Farm - VIC,19.5,1/11/2012
-MOREESF1,152413.6997,17.39882417,Solar,NSW,Moree Solar Farm,Manildra Solar Farm - NSW,55.872,1/05/2018
-MTGELWF1,103254.0292,11.78698963,Wind,VIC,Mt Gellibrand Wind Farm,Mt Gellibrand Wind Farm - VIC,138.6,12/06/2018
-MTMILLAR,190198.243,21.7121282,Wind,SA,Mt Millar Wind Farm,Mt Millar Wind Farm,70,1/12/2005
-MUSSELR1,581409.2152,66.37091498,Wind,TAS,Musselroe Wind Farm,Musselroe Wind Farm - TAS,168,23/04/2013
-NBHWF1,459287.1427,52.43003912,Wind,SA,North Brown Hill Wind Farm,North Brown Hill Wind Farm - SA,132.3,13/08/2010
-NYNGAN1,247002.2472,28.19660356,Solar,NSW,Nyngan Solar Plant,Nyngan Solar Plant - NSW,102,21/03/2015
-OAKLAND1,184557.4815,21.06820565,Wind,VIC,Oaklands Hill Wind Farm,Oaklands Hill Wind Farm - VIC,67.2,19/08/2011
-PARSF1,99093.26217,11.31201623,Solar,NSW,Parkes Solar Farm,Parkes Solar Farm - Solar - NSW,65.9232,20/12/2017
-ROYALLA1,38594.98383,4.405820072,Solar,NSW,Royalla Solar Farm,Manildra Solar Farm - NSW,55.872,1/05/2018
-RRSF1,48984.49008,5.591836767,Solar,QLD,Ross River Solar Farm,Ross River Solar Farm - QLD,148.368,24/08/2018
-SALTCRK1,102034.5792,11.64778301,Wind,VIC,Salt Creek Wind Farm,Salt Creek Wind Farm - VIC,54,6/06/2018
-SAPHWF1,393779.8545,44.95203818,Wind,NSW,Sapphire Wind Farm,Sapphire Wind Farm - NSW,270,20/12/2017
-SMCSF1,133213.9883,15.20707629,Solar,QLD,Sun Metals Solar Farm,Susan River Solar Farm - QLD,95.545,20/11/2018
-SNOWNTH1,459188.4416,52.41877187,Wind,SA,Snowtown Wind Farm Stage 2 North,Snowtown Wind Farm Stage 2 - SA,144,1/10/2013
-SNOWSTH1,444928.9668,50.79097795,Wind,SA,Snowtown South Wind Farm,Snowtown South Wind Farm - SA,126,2/10/2013
-SNOWTWN1,351187.0595,40.08984697,Wind,SA,Snowtown Wind Farm Units 1 And 47,Snowtown Wind Farm Stage 2 - SA,144,1/10/2013
-SRSF1,200.3166667,0.022867199,Solar,QLD,Susan River Solar Farm,Susan River Solar Farm - QLD,95.545,20/11/2018
-STARHLWF,96576.93692,11.02476449,Wind,SA,Starfish Hill Wind Farm,Starfish Hill Wind Farm,33,3/01/2003
-STWF1,98260.81558,11.21698808,Wind,NSW,Silverton Wind Farm,Silverton Wind Farm - NSW,198.94,12/05/2018
-TARALGA1,299342.0622,34.17146829,Wind,NSW,Taralga Wind Farm,Taralga Wind Farm - NSW,106.8,22/12/2014
-TBSF1,0,0,Solar,SA,Tailem Bend Solar Project 1,Tailem Bend Solar - SA,127.2375,13/02/2019
-WATERLWF,399337.2741,45.58644682,Wind,SA,Waterloo Wind Farm,Waterloo Wind Farm - SA,130.8,20/08/2010
-WAUBRAWF,642748.4305,73.3731085,Wind,VIC,Waubra Wind Farm,Waubra Wind Farm - VIC,192,10/03/2009
-WEMENSF1,7368.604167,0.841164859,Solar,VIC,Wemen Solar Farm,Winton Solar Farm - VIC,100.2481,9/02/2021
-WGWF1,21902.69117,2.500307211,Wind,SA,Willogoleche Wind Farm,Willogoleche Wind Farm - SA,119.36,24/07/2018
-WHITSF1,31331.84758,3.576694929,Solar,QLD,Whitsunday Solar Farm,Whitsunday Plaza - Solar - QLD,0.3067,11/09/2020
-WOODLWN1,150237.1324,17.15035758,Wind,NSW,Woodlawn Wind Farm,Woodlawn Wind Farm - Tarago - NSW,48.3,31/05/2011
-WOOLNTH1,510649.7838,58.29335432,Wind,TAS,Woolnorth Studland Bay / Bluff Point Wind Farm,Woolnorth Wind Farm,64.75,9/05/2002
-WPWF,265466.5072,30.3043958,Wind,SA,Wattle Point Wind Farm,Waterloo Wind Farm - SA,130.8,20/08/2010
-WRSF1,3211.828167,0.366647051,Solar,NSW,White Rock Solar Farm,White Rock Wind Farm - NSW,200.172,16/06/2017
-WRWF1,520614.124,59.43083607,Wind,NSW,White Rock Wind Farm,White Rock Wind Farm - NSW,200.172,16/06/2017
-YAMBUKWF,89176.96267,10.18001857,Wind,VIC,Yambuk Wind Farm,Yawong Wind Farm - VIC,7.2,22/11/2018
-YSWF1,83774.612,9.563311872,Wind,VIC,Yaloak South Wind Farm,Yaloak South Windfarm - VIC,28.7,1/12/2017
+DUID,Energy_MWh,Avg_MW,Fuel_Source,State,AEMO_Station_Name,CER_Power_Station_Name,Installed_Capacity_MW,Accreditation_Start_Date,,
+ARWF1,592464.1472,67.63289352,Wind,VIC,Ararat Wind Farm,"Ararat Wind Farm, VIC",242,15/08/2016,,
+BALDHWF1,328460.5602,37.49549774,Wind,VIC,Bald Hills Wind Farm,Bald Hills Wind Farm - VIC,106.6,24/02/2015,,
+BANN1,25849.38392,2.950842913,Solar,VIC,Bannerton Solar Park,Bannerton Solar Park - VIC,110.1951,20/07/2018,,
+BARCSF1,58009.89167,6.622133752,Solar,QLD,Barcaldine Solar Farm,Barcaldine Solar Farm - QLD,25,20/03/2017,,
+BARRON-1,101463.62,23.35549467,Hydro,QLD,Barron Gorge Power Station,Barron Gorge,60,1/04/2001,,
+BASTYAN,333142.4967,38.02996538,Hydro,TAS,Bastyan Power Station,Bastyan,79.9,1/04/2001,,
+BLOWERNG,201191.4927,22.96706538,Hydro,NSW,Blowering Power Station,Blowering,80,1/04/2001,,
+BLUFF1,159259.2867,18.18028387,Wind,SA,The Bluff Wind Farm,The Bluff Wind Farm - SA,52.5,4/07/2011,,
+BNGSF1,115548.9307,13.1905172,Solar,SA,Bungala One Solar Farm,Bungala One Solar Farm SA,137.8296,11/05/2018,,
+BNGSF2,5389.419083,0.615230489,Solar,SA,Bungala Two Solar Farm,Bungala Two Solar Farm SA,137.9754,24/09/2018,,
+BOCORWF1,367275.3721,41.92641234,Wind,NSW,Boco Rock Wind Farm,Boco Rock Wind Farm - NSW,113.18,1/09/2014,,
+BODWF1,58774.03233,6.709364421,Wind,NSW,Bodangora Wind Farm ,Bodangora Wind Farm Pty Limited-NSW,113.19,6/08/2018,,
+BROKENH1,129557.3429,14.78965102,Solar,NSW,Broken Hill Solar Plant,Broken Hill Solar Plant - NSW,53,22/07/2015,,
+BUTLERSG,80179.283,9.152886187,Hydro,TAS,Butlers Gorge Power Station,Butlers Gorge,14.4,1/04/2001,,
+CAPTL_WF,362578.86,41.39028082,Wind,NSW,Capital Wind Farm,Capital Wind Farm - NSW,140.7,8/07/2009,,
+CATHROCK,170470.6467,19.46011949,Wind,SA,Cathedral Rocks,Cathedral Rocks Wind Farm,66,29/04/2005,,
+CETHANA,426946.3228,48.7381647,Hydro,TAS,Cethana Power Station,Cethana,85,1/04/2001,,
+CHALLHWF,136349.1984,15.56497699,Wind,VIC,Challicum Hills Wind Farm,Challicum Hills Wind Farm,52.5,13/12/2002,,
+CHILDSF1,0,0,Solar,QLD,Childers Solar Farm,Childers Solar Farm - QLD,75.0915,17/12/2018,,
+CLARESF1,125050.5541,14.27517741,Solar,QLD,Clare Solar Farm,CLARE SOLAR FARM - QLD,127.8225,16/03/2018,,
+CLEMGPWF,182664.8459,20.85215136,Wind,SA,Clements Gap Wind Farm,Clements Gap Wind Farm - SA,56.7,14/08/2009,,
+CLOVER,46549.735,5.313896689,Hydro,VIC,Clover Power Station,Clover,24,1/04/2001,,
+CLUNY,73098.74875,8.344606022,Hydro,TAS,Cluny Power Station,Cluny,17,1/04/2001,,
+CNUNDAWF,125882.0118,14.37009267,Wind,SA,Canunda Wind Farm,Canunda Wind Farm,46,3/11/2004,,
+COLEASF1,107073.8462,12.2230418,Solar,NSW,Coleambally Solar Farm,Coleambally Solar Farm - NSW - Solar,188.6799,6/09/2018,,
+CROOKWF2,57909.41492,6.610663804,Wind,NSW,Crookwell 2 Wind Farm,Crookwell 2 Wind Farm NSW,96.04,15/06/2018,,
+CROWLWF1,2446.265,0.279253995,Wind,VIC,Crowlands Wind Farm,Crowlands Windfarm - VIC,79.95,9/12/2018,,
+CSPVPS1,19224.10817,2.194532896,Solar,QLD,Collinsville Solar PV Power Station,Collinsville Hydro Treatment Plant - Solar - QLD,0.2527,8/07/2024,,
+CULLRGWF,108979.0717,12.4405333,Wind,NSW,Cullerin Range Wind Farm,Cullerin Range Wind Farm - NSW,30,15/06/2009,,
+DARTM1,406597.4667,46.41523592,Hydro,VIC,Dartmouth Power Station,Dartmouth,150,20/06/2001,,
+DAYDSF1,24332.66667,2.777701675,Solar,QLD,Daydream Solar Farm,DAYDREAM SOLAR FARM  - QLD,180.7488,20/09/2018,,
+DDSF1,49639.9205,5.666657591,Solar ,QLD,Darling Downs Solar Farm,Darling Downs Solar Farm - QLD,137.592,27/07/2018,,
+DEVILS_G,271025.5409,30.93898869,Hydro,TAS,Devils Gate Power Station,Devils Gate,63.5,1/04/2001,,
+EILDON1,"210,269.38",24.00335408,Hydro,VIC,Eildon Power Station,Eildon Power Station,135,20/06/2001,,
+EMERASF1,33061.25492,3.774115858,Solar,QLD,Emerald Solar Park,Emerald Solar Park - QLD,89.6308,18/09/2018,,
+FISHER,247632.79,28.26858333,Hydro,TAS,Fisher Power Station,Fisher,43.2,1/04/2001,,
+GANNSF1,68631.74267,7.834673821,Solar,VIC,Gannawarra Solar Farm,GANNAWARRA SOLAR FARM - VIC,60.236,21/03/2018,,
+GORDON,1690194.278,192.9445523,Hydro,TAS,Gordon Power Station,Gordon,432,1/04/2001,,
+GRIFSF1,39750.72092,4.53775353,Solar,NSW,Griffith Solar Farm,SV - Griffith - Solar - NSW,0.1519,8/12/2017,,
+GUNNING1,166078.7087,18.9587567,Wind,NSW,Gunning Wind Farm,Gunning Wind Farm - NSW,46.5,23/03/2011,,
+GUTHEGA,134271.6066,15.32780897,Hydro,NSW,Guthega Power Station,Guthega,65,1/04/2001,,
+HALLWF1,324207.1042,37.0099434,Wind,SA,Hallett 1 Wind Farm,Hallett Wind Farm SA,92.4,14/05/2007,,
+HALLWF2,247158.6847,28.21446172,Wind,SA,Hallett 2 Wind Farm,Hallett 2 Wind Farm - SA,71.4,27/04/2009,,
+HAMISF1,37190.75683,4.245520186,Solar,QLD,Hamilton Solar Farm,HAMILTON SOLAR FARM - QLD,68.889,3/07/2018,,
+HAYMSF1,0,0,Solar,QLD,Hayman Solar Farm,HAYMAN SOLAR FARM - QLD,60.24,23/09/2018,,
+HDWF1,373759.8965,42.66665485,Wind,SA,Hornsdale Wind Farm,Hornsdale Wind Farm Stage 1 - SA,102.4,22/06/2016,,
+HDWF2,352882.0021,40.28333357,Wind,SA,Hornsdale Wind Farm 2,Hornsdale Wind Farm Stage 2 - SA,102.4,10/02/2017,,
+HDWF3,376928.2374,43.0283376,Wind,SA,Hornsdale Wind Farm 3,Hornsdale Wind Farm Stage 3 - SA,112,16/08/2017,,
+HUGSF1,1858.837417,0.212196052,Solar,QLD,Hughenden Solar Farm,Hughenden Solar Farm - QLD,20.1617,25/01/2018,,
+HUMENSW,"207,320.97",23.66677715,Hydro,NSW,Hume (NSW) Hydro Power Station,Hume Power Station,58,1/04/2001,,
+JBUTTERS,702786.4058,80.22675865,Hydro,TAS,John Butters Power Station,John Butters,144,1/04/2001,,
+KAREEYA1,"489,258.57",55.85143495,Hydro,QLD,Kareeya Power Station,Kareeya,86.4,1/04/2001,,
+KARSF1,33439.31833,3.817273782,Solar,VIC,Karadoc Solar Farm,Karadoc Solar Farm - VIC,112.459,24/10/2018,,
+KIATAWF1,130927.0859,14.94601437,Wind,VIC,Kiata Wind Farm,Kiata Wind Farm - VIC,31.05,23/10/2017,,
+KSP1,121829.6102,13.90748975,Solar,QLD,Kidston Solar Project Phase One,Kidston Solar One - Solar - Qld,63.168,5/12/2017,,
+LEM_WIL,424961.21,48.51155365,Hydro,TAS,Lemonthyme / Wilmot Power Station,Lemonthyme/Wilmot,81.6,1/04/2001,,
+LILYSF1,0,0,Solar,QLD,Lilyvale Solar Farm,Lilyvale Solar Farm - QLD,126.2016,15/02/2019,,
+LI_WY_CA,910637.4882,103.9540512,Hydro,TAS,Catagunya / Liapootah / Wayatinah Power Station,Catagunya / Liapootah / Wayatinah Power Station - TAS,173.6,1/04/2001,,
+LKBONNY1,198089.2671,22.61293003,Wind,SA,Lake Bonney Wind Farm Stage 1,Lake Bonney Wind Farm Stage 1,80.5,24/07/2004,,
+LKBONNY2,392424.8862,44.79736144,Wind,SA,Lake Bonney Stage 2 Windfarm,Lake Bonney Wind Farm Stage 2,159,2/07/2007,,
+LKBONNY3,99606.5445,11.3706101,Wind,SA,Lake Bonney Stage 3 Wind Farm,Lake Bonney Wind Farm Stage 3 - SA,39,28/05/2010,,
+LK_ECHO,75209.75417,8.585588376,Hydro,TAS,Lake Echo Power Station,Lake Echo,32.4,1/04/2001,,
+LRSF1,17497.7015,1.997454509,Solar,QLD,Longreach Solar Farm,Longreach Solar Farm QLD,17.3437,18/03/2018,,
+MACARTH1,1069397.643,122.0773565,Wind,VIC,Macarthur Wind Farm,Macarthur Wind Farm - VIC,420,30/09/2012,,
+MACKNTSH,373439.7083,42.63010369,Hydro,TAS,Mackintosh Power Station,Mackintosh,79.9,1/04/2001,,
+MANSLR1,50293.12342,5.741224135,Solar,NSW,Manildra solar Farm,Manildra Solar Farm - NSW,55.872,1/05/2018,,
+MCKAY1,168267.3392,19.20860037,Hydro,VIC,Bogong / Mackay Power Station,Bogong Hydro - VIC,147.6,5/10/2009,,
+MEADOWBK,174078.2166,19.87194253,Hydro,TAS,Meadowbank Power Station,Meadowbank,40,1/04/2001,,
+MERCER01,374411.7583,42.7410683,Wind,VIC,Mt Mercer Wind Farm,Mt Mercer Wind Farm - VIC,131.2,17/11/2013,,
+MEWF1,114342.7458,13.05282486,Wind,QLD,Mount Emerald Wind Farm,Mount Emerald Wind Farm - Qld,180.45,20/08/2018,,
+MLSP1,25801.1345,2.945334989,Solar,NSW,Mugga Lane Solar Park,Mugga Lane Solar Park - ACT,12.85,8/12/2016,,
+MLWF1,66331.50825,7.572089983,Wind,VIC,Mortons Lane Wind Farm,Mortons Lane Wind Farm - VIC,19.5,1/11/2012,,
+MOREESF1,152413.6997,17.39882417,Solar,NSW,Moree Solar Farm,MOREE SOLAR FARM,56,22/02/2016,,
+MTGELWF1,103254.0292,11.78698963,Wind,VIC,Mt Gellibrand Wind Farm,Mt Gellibrand Wind Farm - VIC,138.6,12/06/2018,,
+MTMILLAR,190198.243,21.7121282,Wind,SA,Mt Millar Wind Farm,Mt Millar Wind Farm,70,1/12/2005,,
+MURRAY,1785630.02,203.8390434,Hydro,VIC,Murray Power Station,Murray Power Station,"1,722.60",1/04/2001,,
+MUSSELR1,581409.2152,66.37091498,Wind,TAS,Musselroe Wind Farm,Musselroe Wind Farm - TAS,168,23/04/2013,,
+NBHWF1,459287.1427,52.43003912,Wind,SA,North Brown Hill Wind Farm,North Brown Hill Wind Farm - SA,132.3,13/08/2010,,
+NYNGAN1,247002.2472,28.19660356,Solar,NSW,Nyngan Solar Plant,Nyngan Solar Plant - NSW,102,21/03/2015,,
+OAKLAND1,184557.4815,21.06820565,Wind,VIC,Oaklands Hill Wind Farm,Oaklands Hill Wind Farm - VIC,67.2,19/08/2011,,
+PALOONA,136426.04,15.57374886,Hydro,TAS,Paloona Power Station,Paloona,28,1/04/2001,,
+PARSF1,99093.26217,11.31201623,Solar,NSW,Parkes Solar Farm,Parkes Solar Farm - Solar - NSW,65.9232,20/12/2017,,
+POAT110,"1,369,416.87",156.3261267,Hydro,TAS,Poatina Power Station,Poatina,327,1/04/2001,,
+REECE1,"990,552.51",113.0767706,Hydro,TAS,Reece Power Station,Reece,231.2,1/04/2001,,
+REPULSE,35089.97808,4.00570526,Hydro,TAS,Repulse Power Station,Repulse,28,1/04/2001,,
+ROWALLAN,50406.83333,5.754204718,Hydro,TAS,Rowallan Power Station,Rowallan,10.45,1/04/2001,,
+ROYALLA1,38594.98383,4.405820072,Solar,NSW,Royalla Solar Farm,Royalla Solar Farm - ACT,20,1/05/2014,,
+RPCG,65574.76667,7.485703958,Biomass,QLD,Rocky Point Cogeneration Plant,Rocky Point Sugar Mill,30,13/02/2007,,
+RRSF1,48984.49008,5.591836767,Solar,QLD,Ross River Solar Farm,Ross River Solar Farm - QLD,148.368,24/08/2018,,
+RUBICON,0,0,Hydro,VIC,Rubicon Mountain Streams Station,Rubicon System,13.55,1/04/2001,,
+SALTCRK1,102034.5792,11.64778301,Wind,VIC,Salt Creek Wind Farm,Salt Creek Wind Farm - VIC,54,6/06/2018,,
+SAPHWF1,393779.8545,44.95203818,Wind,NSW,Sapphire Wind Farm,Sapphire Wind Farm - NSW,270,20/12/2017,,
+SMCSF1,133213.9883,15.20707629,Solar,QLD,Sun Metals Solar Farm,Sun Metals -Solar- Qld,151.2249,15/03/2018,,
+SNOWNTH1,459188.4416,52.41877187,Wind,SA,Snowtown Wind Farm Stage 2 North,Snowtown Wind Farm Stage 2 - SA,144,1/10/2013,,
+SNOWSTH1,444928.9668,50.79097795,Wind,SA,Snowtown South Wind Farm,Snowtown South Wind Farm - SA,126,2/10/2013,,
+SNOWTWN1,351187.0595,40.08984697,Wind,SA,Snowtown Wind Farm Units 1 And 47,Snowtown Wind Farm - SA,100.8,24/12/2007,,
+SNOWYP,"2,393,147.99",273.1904095,Hydro,NSW,Tumut,Tumut,1750,1/04/2001,,
+SRSF1,200.3166667,0.022867199,Solar,QLD,Susan River Solar Farm,Susan River Solar Farm - QLD,95.545,20/11/2018,,
+STARHLWF,96576.93692,11.02476449,Wind,SA,Starfish Hill Wind Farm,Starfish Hill Wind Farm,33,3/01/2003,,
+STWF1,98260.81558,11.21698808,Wind,NSW,Silverton Wind Farm,Silverton Wind Farm - NSW,198.94,12/05/2018,,
+TARALGA1,299342.0622,34.17146829,Wind,NSW,Taralga Wind Farm,Taralga Wind Farm - NSW,106.8,22/12/2014,,
+TARRALEA,615119.8083,70.2191562,Hydro,TAS,Tarraleah Power Station,Tarraleah,90,1/04/2001,,
+TBSF1,0,0,Solar,SA,Tailem Bend Solar Project 1,Tailem Bend Solar - SA,127.2375,13/02/2019,,
+TREVALLN,437296.8058,49.91972669,Hydro,TAS,Trevallyn Power Station,Trevallyn,83.6,1/04/2001,,
+TRIBUTE,238129.5492,27.18373849,Hydro,TAS,Tribute Power Station,Tribute,82.8,1/04/2001,,
+TUNGATIN,573016.9667,65.41289574,Hydro,TAS,Tungatinah Power Station,Tungatinah,125,1/04/2001,,
+HydroLWF,399337.2741,45.58644682,Wind,SA,Hydroloo Wind Farm,Hydroloo Wind Farm - SA,130.8,20/08/2010,,
+WAUBRAWF,642748.4305,73.3731085,Wind,VIC,Waubra Wind Farm,Waubra Wind Farm - VIC,192,10/03/2009,,
+WEMENSF1,7368.604167,0.841164859,Solar,VIC,Wemen Solar Farm,Wemen Solar Farm - Vic,109.8714,7/11/2018,,
+WGWF1,21902.69117,2.500307211,Wind,SA,Willogoleche Wind Farm,Willogoleche Wind Farm - SA,119.36,24/07/2018,,
+WHITSF1,31331.84758,3.576694929,Solar,QLD,Whitsunday Solar Farm,WHITSUNDAY SOLAR FARM - QLD,68.8896,11/07/2018,,
+WKIEWA1,"135,771.20",15.49899543,Hydro,VIC,West Kiewa Power Station,West Kiewa,62,1/04/2001,,
+WOODLWN1,150237.1324,17.15035758,Wind,NSW,Woodlawn Wind Farm,Woodlawn Wind Farm - Tarago - NSW,48.3,31/05/2011,,
+WOOLNTH1,510649.7838,58.29335432,Wind,TAS,Woolnorth Studland Bay / Bluff Point Wind Farm,Woolnorth Studland Bay,75,30/01/2007,,
+WPWF,265466.5072,30.3043958,Wind,SA,Wattle Point Wind Farm,Wattle Point Wind farm,90.75,13/03/2005,,
+WRWF1,520614.124,59.43083607,Wind,NSW,White Rock Wind Farm,White Rock Wind Farm - NSW,200.172,16/06/2017,,
+YAMBUKWF,89176.96267,10.18001857,Wind,VIC,Yambuk Wind Farm,Yambuk Wind Farm,30,1/01/2007,,
+YSWF1,83774.612,9.563311872,Wind,VIC,Yaloak South Wind Farm,Yaloak South Windfarm - VIC,28.7,1/12/2017,,
