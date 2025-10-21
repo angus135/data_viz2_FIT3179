@@ -28,7 +28,11 @@
       "title": "Accreditation Date",
       "axis": {
         "format": "%Y",
-        "labelAngle": -45
+        "labelAngle": -45,
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
       }
     },
     "y": {
@@ -37,6 +41,12 @@
       "title": "Installed Capacity (MW)",
       "scale": {
         "type": "log"
+      },
+      "axis": {
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
       }
     },
     "size": {
@@ -45,6 +55,12 @@
       "title": "Average Output (MW)",
       "scale": {
         "range": [50, 2000]
+      },
+      "legend": {
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
       }
     },
     "color": {
@@ -54,6 +70,12 @@
       "scale": {
         "domain": ["Biomass", "Hydro", "Wind", "Solar"],
         "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
+      },
+      "legend": {
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
       }
     },
     "tooltip": [

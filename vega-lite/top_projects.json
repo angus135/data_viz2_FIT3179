@@ -27,12 +27,24 @@
       "field": "Power station name",
       "type": "nominal",
       "sort": "-x",
-      "title": "Power Station Name"
+      "axis": {
+        "title": "Power Station Name",
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
+      }
     },
     "x": {
       "field": "Installed capacity",
       "type": "quantitative",
-      "title": "Installed Capacity (MW)"
+      "axis": {
+        "title": "Installed Capacity (MW)",
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
+      }
     },
     "color": {
       "field": "Fuel source(s)",
@@ -41,7 +53,13 @@
         "domain": ["Biomass", "Hydro", "Wind", "Solar"],
         "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
       },
-      "legend": {"title": "Primary Fuel Source"}
+      "legend": {
+        "title": "Primary Fuel Source",
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
+      }
     },
     "tooltip": [
       {"field": "Power station name", "type": "nominal", "title": "Power Station"},

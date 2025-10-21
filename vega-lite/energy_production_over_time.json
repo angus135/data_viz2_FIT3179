@@ -5,7 +5,6 @@
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/Energy_split_History.json"
   },
-
   "params": [
     {
       "name": "source_select",
@@ -16,7 +15,6 @@
       "bind": "legend"
     }
   ],
-
   "transform": [
     {
       "fold": ["Coal", "Gas", "Biofuels", "Battery", "Hydro", "Wind", "Solar"],
@@ -26,18 +24,30 @@
       "filter": { "param": "source_select" }
     }
   ],
-
   "mark": "area",
   "encoding": {
     "x": {
       "field": "Year",
       "type": "quantitative",
-      "axis": { "title": "Year", "format": "d" }
+      "axis": { 
+        "title": "Year", 
+        "format": "d",
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
+      }
     },
     "y": {
       "field": "GWh",
       "type": "quantitative",
-      "axis": { "title": "Energy Generation (GWh)" },
+      "axis": { 
+        "title": "Energy Generation (GWh)",
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
+      },
       "stack": "zero"
     },
     "color": {
@@ -47,7 +57,13 @@
         "domain": ["Coal", "Gas", "Biofuels", "Battery", "Hydro", "Wind", "Solar"],
         "range": ["#1c1d1f", "#FF6B6B", "#8B4513", "#9C27B0", "#08306b", "#78909C", "#FFA726"]
       },
-      "legend": { "title": "Energy Source" }
+      "legend": { 
+        "title": "Energy Source",
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
+      }
     },
     "order": {
       "field": "Source",
@@ -60,7 +76,6 @@
       { "field": "GWh", "type": "quantitative", "title": "Generation (GWh)", "format": ",.2f" }
     ]
   },
-
   "title": {
     "text": "Energy Generation by Source Over Time",
     "fontSize": 20,

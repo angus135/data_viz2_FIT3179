@@ -31,16 +31,28 @@
       ],
       "mark": "bar",
       "encoding": {
-        "x": {
+        "y": {
           "field": "State Full Name",
           "type": "nominal",
           "sort": { "field": "value", "order": "descending" },
-          "axis": { "title": "State/Territory", "labelAngle": 0, "labelFontSize": 12 }
+          "axis": { 
+            "title": "State/Territory", 
+            "titleFontSize": 13,
+            "labelFontSize": 11,
+            "titleFont": "Helvetica Neue, Arial",
+            "labelFont": "Lato, sans-serif"
+          }
         },
-        "y": {
+        "x": {
           "field": "value",
           "type": "quantitative",
-          "axis": { "title": "Energy (GWh)", "labelFontSize": 11 }
+          "axis": { 
+            "title": "Energy (GWh)", 
+            "titleFontSize": 13,
+            "labelFontSize": 11,
+            "titleFont": "Helvetica Neue, Arial",
+            "labelFont": "Lato, sans-serif"
+          }
         },
         "color": {
           "field": "technology",
@@ -49,7 +61,21 @@
             "domain": ["Biofuels", "Hydro", "Wind", "Solar"],
             "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
           },
-          "legend": { "title": "Technology", "titleFontSize": 13, "labelFontSize": 11 }
+          "legend": { 
+            "title": "Technology (click to filter)", 
+            "titleFontSize": 13, 
+            "labelFontSize": 11,
+            "orient": "none",
+            "direction": "horizontal",
+            "legendX": 253,
+            "legendY": 340,
+            "fillColor": "white",
+            "strokeColor": "gray",
+            "padding": 10,
+            "cornerRadius": 3,
+            "titleFont": "Helvetica Neue, Arial",
+            "labelFont": "Lato, sans-serif"
+          }
         },
         "tooltip": [
           { "field": "State Full Name", "type": "nominal", "title": "State" },
@@ -66,13 +92,13 @@
         "baseline": "top",
         "fontSize": 11,
         "font": "Lato, sans-serif",
-        "dx": -10,
-        "dy": 10,
+        "dx": 0,
+        "dy": -20,
         "lineHeight": 16
       },
       "encoding": {
-        "x": { "value": 270 },
-        "y": { "value": 50 },
+        "x": { "value": 400 },
+        "y": { "value": 200 },
         "text": {
           "condition": {
             "test": "!length(data('tech_select_store'))",
@@ -93,10 +119,10 @@
         "opacity": 0.5
       },
       "encoding": {
-        "x": { "value": 250 },
-        "y": { "value": 110 },
-        "x2": { "value": 250 },
-        "y2": { "value": 240 },
+        "x": { "value": 200 },
+        "y": { "value": 200 },
+        "x2": { "value": 300 },
+        "y2": { "value": 200 },
         "opacity": {
           "condition": {
             "test": "!length(data('tech_select_store'))",
@@ -112,13 +138,13 @@
         "type": "point",
         "shape": "triangle-up",
         "size": 50,
-        "angle": 180,
+        "angle": 270,
         "filled": true,
         "color": "black"
       },
       "encoding": {
-        "x": { "value": 250 },
-        "y": { "value": 240 },
+        "x": { "value": 200 },
+        "y": { "value": 200 },
         "opacity": {
           "condition": {
             "test": "!length(data('tech_select_store'))",
@@ -142,7 +168,7 @@
       },
       "encoding": {
         "x": { "value": 400 },
-        "y": { "value": 150 },
+        "y": { "value": 275 },
         "text": {
           "condition": {
             "test": "!length(data('tech_select_store'))",
@@ -163,10 +189,10 @@
         "opacity": 0.5
       },
       "encoding": {
-        "x": { "value": 375 },
-        "y": { "value": 200 },
-        "x2": { "value": 330 },
-        "y2": { "value": 250 },
+        "x": { "value": 290 },
+        "y": { "value": 290 },
+        "x2": { "value": 180 },
+        "y2": { "value": 265 },
         "opacity": {
           "condition": {
             "test": "!length(data('tech_select_store'))",
@@ -182,13 +208,13 @@
         "type": "point",
         "shape": "triangle-up",
         "size": 50,
-        "angle": 220,
+        "angle": 290,
         "filled": true,
         "color": "black"
       },
       "encoding": {
-        "x": { "value": 330 },
-        "y": { "value": 250 },
+        "x": { "value": 180 },
+        "y": { "value": 265 },
         "opacity": {
           "condition": {
             "test": "!length(data('tech_select_store'))",

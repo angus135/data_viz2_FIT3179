@@ -61,7 +61,14 @@
     "x": {
       "field": "State Full Name",
       "type": "nominal",
-      "axis": {"title": "State", "labelAngle": 0},
+      "axis": {
+        "title": "State",
+        "labelAngle": 0,
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
+      },
       "sort": {
         "field": "Total_Energy",
         "op": "max",
@@ -72,7 +79,11 @@
       "field": "Value",
       "type": "quantitative",
       "axis": {
-        "title": "Energy Generation"
+        "title": "Energy Generation",
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
       }
     },
     "color": {
@@ -82,7 +93,13 @@
         "domain": ["Renewable", "Non-Renewable"],
         "range": ["#2ca02c", "#d62728"]
       },
-      "legend": {"title": "Energy Type"}
+      "legend": {
+        "title": "Energy Type",
+        "titleFont": "Helvetica Neue, Arial",
+        "titleFontSize": 13,
+        "labelFont": "Lato, sans-serif",
+        "labelFontSize": 11
+      }
     },
     "xOffset": {
       "field": "Energy_Type"
