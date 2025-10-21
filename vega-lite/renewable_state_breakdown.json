@@ -102,6 +102,7 @@
         "baseline": "top",
         "fontSize": 11,
         "font": "Lato, sans-serif",
+        "fontWeight": "bold",
         "dx": 0,
         "dy": -20,
         "lineHeight": 16
@@ -172,6 +173,7 @@
         "baseline": "top",
         "fontSize": 11,
         "font": "Lato, sans-serif",
+        "fontWeight": "bold",
         "dx": -10,
         "dy": 10,
         "lineHeight": 16

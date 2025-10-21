@@ -159,6 +159,7 @@
         "baseline": "middle",
         "fontSize": 11,
         "font": "Lato, sans-serif",
+        "fontWeight": "bold",
         "dx": 5,
         "dy": 0,
         "lineHeight": 16
@@ -211,6 +212,7 @@
         "baseline": "middle",
         "fontSize": 11,
         "font": "Lato, sans-serif",
+        "fontWeight": "bold",
         "dx": -5,
         "dy": 0,
         "lineHeight": 16
@@ -263,6 +265,7 @@
         "baseline": "top",
         "fontSize": 11,
         "font": "Lato, sans-serif",
+        "fontWeight": "bold",
         "dx": 0,
         "dy": 10,
         "lineHeight": 16
@@ -315,6 +318,7 @@
         "baseline": "middle",
         "fontSize": 11,
         "font": "Lato, sans-serif",
+        "fontWeight": "bold",
         "dx": 5,
         "dy": 0,
         "lineHeight": 16
