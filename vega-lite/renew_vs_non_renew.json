@@ -4,7 +4,8 @@
     "text": "Renewable vs Non-Renewable Energy Generation by State",
     "fontSize": 20,
     "anchor": "middle",
-    "font": "Helvetica Neue, Arial"
+    "font": "Helvetica Neue, Arial",
+    "color": "#00382f"
   },
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/state_renewable_vs_non_renewable.json"
@@ -17,7 +18,9 @@
         "input": "select",
         "options": ["Raw", "Per Capita", "Per GDP"],
         "labels": ["Raw Energy (GWh)", "Energy Per Capita (Wh/person)", "Energy Per GDP (Wh/$)"],
-        "name": "Metric: "
+        "name": "Metric: ",
+        "titleColor": "#00382f",
+        "labelColor": "#00382f"
       }
     }
   ],
@@ -67,7 +70,9 @@
         "titleFont": "Helvetica Neue, Arial",
         "titleFontSize": 13,
         "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
+        "labelFontSize": 11,
+        "titleColor": "#00382f",
+        "labelColor": "#00382f"
       },
       "sort": {
         "field": "Total_Energy",
@@ -83,7 +88,11 @@
         "titleFont": "Helvetica Neue, Arial",
         "titleFontSize": 13,
         "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
+        "labelFontSize": 11,
+        "grid": true,
+        "gridOpacity": 0.5,
+        "titleColor": "#00382f",
+        "labelColor": "#00382f"
       }
     },
     "color": {
@@ -106,7 +115,9 @@
         "fillColor": "white",
         "strokeColor": "gray",
         "padding": 10,
-        "cornerRadius": 3
+        "cornerRadius": 3,
+        "titleColor": "#00382f",
+        "labelColor": "#00382f"
       }
     },
     "yOffset": {

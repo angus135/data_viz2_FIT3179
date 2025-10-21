@@ -4,7 +4,8 @@
     "text": "Top 20 Australian Power Stations by Installed Capacity",
     "fontSize": 20,
     "anchor": "middle",
-    "font": "Helvetica Neue, Arial"
+    "font": "Helvetica Neue, Arial",
+    "color": "#00382f"
   },
   "width": 500,
   "height": 400,
@@ -34,7 +35,9 @@
             "titleFont": "Helvetica Neue, Arial",
             "titleFontSize": 13,
             "labelFont": "Lato, sans-serif",
-            "labelFontSize": 11
+            "labelFontSize": 11,
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
           }
         },
         "x": {
@@ -45,7 +48,11 @@
             "titleFont": "Helvetica Neue, Arial",
             "titleFontSize": 13,
             "labelFont": "Lato, sans-serif",
-            "labelFontSize": 11
+            "labelFontSize": 11,
+            "grid": true,
+            "gridOpacity": 0.5,
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
           }
         },
         "color": {
@@ -68,7 +75,9 @@
             "fillColor": "white",
             "strokeColor": "gray",
             "padding": 10,
-            "cornerRadius": 3
+            "cornerRadius": 3,
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
           }
         },
         "tooltip": [
@@ -102,7 +111,7 @@
         "text": {
           "value": ["Murray 1, Murray 2, Tumut 3 and Tumut 1", "are four of the ten projects that form part of", "the 4,000 MW Snowy Mountains Scheme."]
         },
-        "color": { "value": "black" }
+        "color": { "value": "#00382f" }
       }
     },
     {
@@ -216,7 +225,7 @@
         "text": {
           "value": ["Macarthur Wind Farm was the largest", "wind farm in the Southern Hemisphere", "when it was commissioned in 2013."]
         },
-        "color": { "value": "black" }
+        "color": { "value": "#00382f" }
       }
     },
     {
@@ -268,7 +277,7 @@
         "text": {
           "value": ["The Stockyard Hill Wind Farm is a", "facility consisting of 149 turbines", "at a cost of $900 million."]
         },
-        "color": { "value": "black" }
+        "color": { "value": "#00382f" }
       }
     },
     {

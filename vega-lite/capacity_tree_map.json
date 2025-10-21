@@ -4,7 +4,8 @@
     "text": "Australian Renewable Energy Installations by Capacity (2024)",
     "anchor": "middle",
     "fontSize": 20,
-    "font": "Helvetica Neue, Arial"
+    "font": "Helvetica Neue, Arial",
+    "color": "#00382f"
   },
   "description": "Australian Renewable Energy Installations by Capacity (2024)",
   "width": 1000,
@@ -172,7 +173,7 @@
       "name": "labelColor",
       "type": "ordinal",
       "domain": ["Biomass", "Hydro", "Wind", "Solar"],
-      "range": ["#ffffff", "#ffffff", "#000000", "#000000"]
+      "range": ["#ffffff", "#ffffff", "#00382f", "#00382f"]
     }
   ],
   "marks": [
@@ -238,7 +239,7 @@
         "update": {
           "x": { "signal": "datum.x0" },
           "y": { "signal": "datum.y1" },
-          "fill": { "signal": "datum.fuelSource === 'Hydro' || datum.fuelSource === 'Biomass' ? '#ffffff' : '#000000'" },
+          "fill": { "signal": "datum.fuelSource === 'Hydro' || datum.fuelSource === 'Biomass' ? '#ffffff' : '#00382f'" },
           "limit": { "signal": "datum.x1 - datum.x0 - 12" }
         }
       }

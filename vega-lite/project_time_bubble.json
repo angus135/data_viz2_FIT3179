@@ -4,7 +4,8 @@
     "text": "Power Station Installations by Capacity and Average Output",
     "fontSize": 20,
     "anchor": "middle",
-    "font": "Helvetica Neue, Arial"
+    "font": "Helvetica Neue, Arial",
+    "color": "#00382f"
   },
   "width": 1000,
   "height": 500,
@@ -17,121 +18,345 @@
       "as": "State Full Name"
     }
   ],
-  "mark": {
-    "type": "circle",
-    "opacity": 0.7
-  },
-  "encoding": {
-    "x": {
-      "field": "Accreditation_Date_ISO",
-      "type": "temporal",
-      "title": "Accreditation Date",
-      "scale": {
-        "domain": ["1999-01-01", "2020-01-01"]
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "opacity": 0.7
       },
-      "axis": {
-        "format": "%Y",
-        "labelAngle": 0,
-        "titleFont": "Helvetica Neue, Arial",
-        "titleFontSize": 13,
-        "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
+      "encoding": {
+        "x": {
+          "field": "Accreditation_Date_ISO",
+          "type": "temporal",
+          "title": "Accreditation Date",
+          "scale": {
+            "domain": ["2000-01-01", "2020-01-01"]
+          },
+          "axis": {
+            "format": "%Y",
+            "labelAngle": 0,
+            "titleFont": "Helvetica Neue, Arial",
+            "titleFontSize": 13,
+            "labelFont": "Lato, sans-serif",
+            "labelFontSize": 11,
+            "grid": true,
+            "gridOpacity": 0.5,
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
+          }
+        },
+        "y": {
+          "field": "Installed_Capacity_MW",
+          "type": "quantitative",
+          "title": "Log Scaled Installed Capacity (MW)",
+          "scale": {
+            "type": "log"
+          },
+          "axis": {
+            "titleFont": "Helvetica Neue, Arial",
+            "titleFontSize": 13,
+            "labelFont": "Lato, sans-serif",
+            "labelFontSize": 11,
+            "grid": true,
+            "gridOpacity": 0.5,
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
+          }
+        },
+        "size": {
+          "field": "Avg_MW",
+          "type": "quantitative",
+          "title": "Average Output (MW)",
+          "scale": {
+            "range": [10, 2000]
+          },
+          "legend": {
+            "titleFont": "Helvetica Neue, Arial",
+            "titleFontSize": 13,
+            "labelFont": "Lato, sans-serif",
+            "labelFontSize": 11,
+            "orient": "none",
+            "direction": "horizontal",
+            "values": [0, 50, 100, 200],
+            "legendX": 755,
+            "legendY": 10,
+            "fillColor": "white",
+            "strokeColor": "gray",
+            "padding": 10,
+            "cornerRadius": 3,
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
+          }
+        },
+        "color": {
+          "field": "Fuel_Source",
+          "type": "nominal",
+          "title": "Fuel Source",
+          "scale": {
+            "domain": ["Biomass", "Hydro", "Wind", "Solar"],
+            "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
+          },
+          "legend": {
+            "titleFont": "Helvetica Neue, Arial",
+            "titleFontSize": 13,
+            "labelFont": "Lato, sans-serif",
+            "labelFontSize": 11,
+            "orient": "none",
+            "direction": "horizontal",
+            "legendX": 505,
+            "legendY": 10,
+            "fillColor": "white",
+            "strokeColor": "gray",
+            "padding": 10,
+            "cornerRadius": 3,
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "AEMO_Station_Name",
+            "type": "nominal",
+            "title": "Station Name"
+          },
+          {
+            "field": "State Full Name",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "Fuel_Source",
+            "type": "nominal",
+            "title": "Fuel Source"
+          },
+          {
+            "field": "Accreditation_Date_ISO",
+            "type": "temporal",
+            "title": "Accreditation Date",
+            "format": "%d/%m/%Y"
+          },
+          {
+            "field": "Installed_Capacity_MW",
+            "type": "quantitative",
+            "title": "Installed Capacity (MW)",
+            "format": ".2f"
+          },
+          {
+            "field": "Avg_MW",
+            "type": "quantitative",
+            "title": "Average Output (MW)",
+            "format": ".2f"
+          }
+        ]
       }
     },
-    "y": {
-      "field": "Installed_Capacity_MW",
-      "type": "quantitative",
-      "title": "Log Scaled Installed Capacity (MW)",
-      "scale": {
-        "type": "log"
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
+        "dx": 5,
+        "dy": 0,
+        "lineHeight": 16
       },
-      "axis": {
-        "titleFont": "Helvetica Neue, Arial",
-        "titleFontSize": 13,
-        "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
+      "encoding": {
+        "x": { "value": 500 },
+        "y": { "value": 120 },
+        "text": {
+          "value": ["Large scale solar installations greatly incresed in the late", "2010s as solar panels became cheaper, becoming the dominant", "renewable energy source by 2015"]
+        },
+        "color": { "value": "#00382f" }
       }
     },
-    "size": {
-      "field": "Avg_MW",
-      "type": "quantitative",
-      "title": "Average Output (MW)",
-      "scale": {
-        "range": [10, 2000]
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 2],
+        "strokeWidth": 1.5,
+        "color": "#333",
+        "opacity": 0.5
       },
-      "legend": {
-        "titleFont": "Helvetica Neue, Arial",
-        "titleFontSize": 13,
-        "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11,
-        "orient": "none",
-        "direction": "horizontal",
-        "values": [0, 50, 100, 200],
-        "legendX": 755,
-        "legendY": 10,
-        "fillColor": "white",
-        "strokeColor": "gray",
-        "padding": 10,
-        "cornerRadius": 3
+      "encoding": {
+        "x": { "value": 600 },
+        "y": { "value": 165 },
+        "x2": { "value": 800 },
+        "y2": { "value": 350 }
       }
     },
-    "color": {
-      "field": "Fuel_Source",
-      "type": "nominal",
-      "title": "Fuel Source",
-      "scale": {
-        "domain": ["Biomass", "Hydro", "Wind", "Solar"],
-        "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 140,
+        "filled": true,
+        "color": "black"
       },
-      "legend": {
-        "titleFont": "Helvetica Neue, Arial",
-        "titleFontSize": 13,
-        "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11,
-        "orient": "none",
-        "direction": "horizontal",
-        "legendX": 505,
-        "legendY": 10,
-        "fillColor": "white",
-        "strokeColor": "gray",
-        "padding": 10,
-        "cornerRadius": 3
+      "encoding": {
+        "x": { "value": 800 },
+        "y": { "value": 350 }
       }
     },
-    "tooltip": [
-      {
-        "field": "AEMO_Station_Name",
-        "type": "nominal",
-        "title": "Station Name"
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
+        "dx": -5,
+        "dy": 0,
+        "lineHeight": 16
       },
-      {
-        "field": "State Full Name",
-        "type": "nominal",
-        "title": "State"
-      },
-      {
-        "field": "Fuel_Source",
-        "type": "nominal",
-        "title": "Fuel Source"
-      },
-      {
-        "field": "Accreditation_Date_ISO",
-        "type": "temporal",
-        "title": "Accreditation Date",
-        "format": "%d/%m/%Y"
-      },
-      {
-        "field": "Installed_Capacity_MW",
-        "type": "quantitative",
-        "title": "Installed Capacity (MW)",
-        "format": ".2f"
-      },
-      {
-        "field": "Avg_MW",
-        "type": "quantitative",
-        "title": "Average Output (MW)",
-        "format": ".2f"
+      "encoding": {
+        "x": { "value": 300 },
+        "y": { "value": 200 },
+        "text": {
+          "value": ["Wind power was the main area of large scale renewable expansion", "in the early 2000s, as small scale rooftop solar was the main area", "of expansion."]
+        },
+        "color": { "value": "#00382f" }
       }
-    ]
-  }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 2],
+        "strokeWidth": 1.5,
+        "color": "#333",
+        "opacity": 0.5
+      },
+      "encoding": {
+        "x": { "value": 290 },
+        "y": { "value": 240 },
+        "x2": { "value": 330 },
+        "y2": { "value": 340 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 150,
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 330 },
+        "y": { "value": 340 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
+        "dx": 0,
+        "dy": 10,
+        "lineHeight": 16
+      },
+      "encoding": {
+        "x": { "value": 150 },
+        "y": { "value": 25 },
+        "text": {
+          "value": ["Hydro-electric power stations were mostly", "installed before 2000 and achieved", "accreditation in 2001."]
+        },
+        "color": { "value": "#00382f" }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 2],
+        "strokeWidth": 1.5,
+        "color": "#333",
+        "opacity": 0.5
+      },
+      "encoding": {
+        "x": { "value": 150 },
+        "y": { "value": 80 },
+        "x2": { "value": 90 },
+        "y2": { "value": 140 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 230,
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 90 },
+        "y": { "value": 140 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
+        "dx": 5,
+        "dy": 0,
+        "lineHeight": 16
+      },
+      "encoding": {
+        "x": { "value": 825 },
+        "y": { "value": 175 },
+        "text": {
+          "value": ["Many recent projects have fairly low outputs compared to their", "capacity as they are in the process of coming online."]
+        },
+        "color": { "value": "#00382f" }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 2],
+        "strokeWidth": 1.5,
+        "color": "#333",
+        "opacity": 0.5
+      },
+      "encoding": {
+        "x": { "value": 920 },
+        "y": { "value": 200 },
+        "x2": { "value": 950 },
+        "y2": { "value": 300 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 150,
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 950 },
+        "y": { "value": 300 }
+      }
+    }
+  ]
 }

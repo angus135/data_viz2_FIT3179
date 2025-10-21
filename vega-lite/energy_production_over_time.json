@@ -1,10 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": 1000,
   "height": 400,
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/Energy_split_History.json"
   },
+
   "params": [
     {
       "name": "source_select",
@@ -15,6 +16,7 @@
       "bind": "legend"
     }
   ],
+
   "transform": [
     {
       "fold": ["Coal", "Gas", "Biofuels", "Battery", "Hydro", "Wind", "Solar"],
@@ -24,6 +26,7 @@
       "filter": { "param": "source_select" }
     }
   ],
+
   "mark": "area",
   "encoding": {
     "x": {
@@ -32,10 +35,12 @@
       "axis": { 
         "title": "Year", 
         "format": "d",
-        "titleFont": "Helvetica Neue, Arial",
         "titleFontSize": 13,
+        "labelFontSize": 11,
+        "titleFont": "Helvetica Neue, Arial",
         "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
+        "titleColor": "#00382f",
+        "labelColor": "#00382f"
       }
     },
     "y": {
@@ -43,10 +48,12 @@
       "type": "quantitative",
       "axis": { 
         "title": "Energy Generation (GWh)",
-        "titleFont": "Helvetica Neue, Arial",
         "titleFontSize": 13,
+        "labelFontSize": 11,
+        "titleFont": "Helvetica Neue, Arial",
         "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
+        "titleColor": "#00382f",
+        "labelColor": "#00382f"
       },
       "stack": "zero"
     },
@@ -58,17 +65,21 @@
         "range": ["#1c1d1f", "#FF6B6B", "#8B4513", "#9C27B0", "#08306b", "#78909C", "#FFA726"]
       },
       "legend": { 
-        "title": "Energy Source",
+        "title": "Energy Source (click to filter)",
+        "orient": "bottom",
+        "titleFontSize": 13, 
+        "labelFontSize": 11,
         "titleFont": "Helvetica Neue, Arial",
-        "titleFontSize": 13,
         "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
+        "titleLimit": 500,
+        "titleColor": "#00382f",
+        "labelColor": "#00382f"
       }
     },
     "order": {
       "field": "Source",
       "type": "nominal",
-      "sort": ["Coal", "Gas", "Biofuels", "Battery", "Hydro", "Wind", "Solar"]
+      "sort": "ascending"
     },
     "tooltip": [
       { "field": "Source", "type": "nominal", "title": "Energy Source" },
@@ -76,10 +87,12 @@
       { "field": "GWh", "type": "quantitative", "title": "Generation (GWh)", "format": ",.2f" }
     ]
   },
+
   "title": {
     "text": "Energy Generation by Source Over Time",
     "fontSize": 20,
     "anchor": "middle",
-    "font": "Helvetica Neue, Arial"
+    "font": "Helvetica Neue, Arial",
+    "color": "#00382f"
   }
 }

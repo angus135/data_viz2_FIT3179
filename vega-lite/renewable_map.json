@@ -4,11 +4,25 @@
     "text": "Australian Renewable Energy Installations Over 10 Mega Watts (2024)",
     "fontSize": 20,
     "anchor": "middle",
-    "font": "Helvetica Neue, Arial"
+    "font": "Helvetica Neue, Arial",
+    "color": "#00382f" 
   },
   "width": 1000,
   "height": 800,
-  "background": "#FFFFFF",  
+  "background": "#FFFFFF",
+  "config": {
+    "text": {
+      "color": "#00382f"
+    },
+    "legend": {
+      "titleColor": "#00382f",
+      "labelColor": "#00382f"
+    },
+    "axis": {
+      "labelColor": "#00382f",
+      "titleColor": "#00382f"
+    }
+  },
   "projection": {
     "type": "mercator",
     "center": [133, -28],
@@ -25,7 +39,7 @@
       },
       "mark": {
         "type": "geoshape",
-        "fill": "#f0e6d6", 
+        "fill": "#f0e6d6",
         "stroke": "black",
         "strokeWidth": 0.5
       }
@@ -45,16 +59,19 @@
       }
     },
     {
-        "data": {
-            "url": "https://angus135.github.io/data_viz2_FIT3179/data/ne_10m_rivers_australia.json",
-            "format": {"type": "topojson", "feature": "ne_10m_rivers_australia"}
-        },
-        "mark": {
-            "type": "geoshape",
-            "stroke": "#004991",
-            "strokeWidth": 0.25,
-            "fill": "f0e6d6"
+      "data": {
+        "url": "https://angus135.github.io/data_viz2_FIT3179/data/ne_10m_rivers_australia.json",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_10m_rivers_australia"
         }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#004991",
+        "strokeWidth": 0.25,
+        "fill": "f0e6d6"
+      }
     },
     {
       "data": {
@@ -96,7 +113,7 @@
           },
           "legend": {
             "title": "Primary Fuel Source",
-            "titleFontSize": 13, 
+            "titleFontSize": 13,
             "titleFont": "Helvetica Neue, Arial",
             "labelFontSize": 11,
             "labelFont": "Lato, sans-serif",
@@ -110,40 +127,40 @@
           }
         },
         "size": {
-            "field": "Installed capacity",
-            "type": "quantitative",
-            "scale": {
-                "type": "linear",
-                "domain": [10, 2000],
-                "range": [10, 500] 
-            },
-            "legend": {
-                "title": "Capacity (MW)",
-                "titleFontSize": 13, 
-                "titleFont": "Helvetica Neue, Arial",
-                "labelFontSize": 11,
-                "labelFont": "Lato, sans-serif",
-                "values": [10, 100, 500, 1000, 2000],
-                "orient": "none",
-                "legendX": 20,
-                "legendY": 20,
-                "fillColor": "white",
-                "strokeColor": "gray",
-                "padding": 10,
-                "cornerRadius": 3
-            }
+          "field": "Installed capacity",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "domain": [10, 2000],
+            "range": [10, 500]
+          },
+          "legend": {
+            "title": "Capacity (MW)",
+            "titleFontSize": 13,
+            "titleFont": "Helvetica Neue, Arial",
+            "labelFontSize": 11,
+            "labelFont": "Lato, sans-serif",
+            "values": [10, 100, 500, 1000, 2000],
+            "orient": "none",
+            "legendX": 20,
+            "legendY": 20,
+            "fillColor": "white",
+            "strokeColor": "gray",
+            "padding": 10,
+            "cornerRadius": 3
+          }
         },
         "tooltip": [
-            {"field": "Power station name", "type": "nominal"},
-            {"field": "Fuel source(s)", "type": "nominal"},
-            {
-                "field": "Installed capacity",
-                "type": "quantitative",
-                "format": ".1f",
-                "title": "Installed capacity (MW)"
-            },
-            {"field": "State Full Name", "type": "nominal", "title": "State"},
-            {"field": "Postcode", "type": "ordinal"}
+          {"field": "Power station name", "type": "nominal"},
+          {"field": "Fuel source(s)", "type": "nominal"},
+          {
+            "field": "Installed capacity",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Installed capacity (MW)"
+          },
+          {"field": "State Full Name", "type": "nominal", "title": "State"},
+          {"field": "Postcode", "type": "ordinal"}
         ]
       }
     },
@@ -197,7 +214,7 @@
             "fontSize": 11,
             "fontWeight": "bold",
             "font": "Lato, sans-serif",
-            "color": "#333"
+            "color": "#00382f" 
           },
           "encoding": {
             "longitude": {"field": "label_lon", "type": "quantitative"},
@@ -257,7 +274,7 @@
             "fontSize": 11,
             "fontWeight": "bold",
             "font": "Lato, sans-serif",
-            "color": "#333",
+            "color": "#00382f", 
             "lineHeight": 15
           },
           "encoding": {
@@ -267,7 +284,7 @@
           }
         }
       ]
-    }, 
+    },
     {
       "data": {
         "values": [
@@ -318,7 +335,7 @@
             "fontSize": 11,
             "fontWeight": "bold",
             "font": "Lato, sans-serif",
-            "color": "#333",
+            "color": "#00382f", 
             "lineHeight": 15
           },
           "encoding": {
@@ -379,7 +396,7 @@
             "fontSize": 11,
             "fontWeight": "bold",
             "font": "Lato, sans-serif",
-            "color": "#333",
+            "color": "#00382f", 
             "lineHeight": 15
           },
           "encoding": {
@@ -440,7 +457,7 @@
             "fontSize": 11,
             "fontWeight": "bold",
             "font": "Lato, sans-serif",
-            "color": "#333",
+            "color": "#00382f", 
             "lineHeight": 15
           },
           "encoding": {

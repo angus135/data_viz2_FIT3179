@@ -4,7 +4,8 @@
     "text": "Renewable Energy Capacity by Australian State (2023-24)",
     "fontSize": 20,
     "anchor": "middle",
-    "font": "Helvetica Neue, Arial"
+    "font": "Helvetica Neue, Arial",
+    "color": "#00382f"
   },
   "width": 500,
   "height": 400,
@@ -40,7 +41,9 @@
             "titleFontSize": 13,
             "labelFontSize": 11,
             "titleFont": "Helvetica Neue, Arial",
-            "labelFont": "Lato, sans-serif"
+            "labelFont": "Lato, sans-serif",
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
           }
         },
         "x": {
@@ -51,7 +54,11 @@
             "titleFontSize": 13,
             "labelFontSize": 11,
             "titleFont": "Helvetica Neue, Arial",
-            "labelFont": "Lato, sans-serif"
+            "labelFont": "Lato, sans-serif",
+            "grid": true,
+            "gridOpacity": 0.5,
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
           }
         },
         "color": {
@@ -74,7 +81,9 @@
             "padding": 10,
             "cornerRadius": 3,
             "titleFont": "Helvetica Neue, Arial",
-            "labelFont": "Lato, sans-serif"
+            "labelFont": "Lato, sans-serif",
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
           }
         },
         "tooltip": [
@@ -106,7 +115,7 @@
           },
           "value": ""
         },
-        "color": { "value": "black" }
+        "color": { "value": "#00382f" }
       }
     },
     {
@@ -176,7 +185,7 @@
           },
           "value": ""
         },
-        "color": { "value": "black" }
+        "color": { "value": "#00382f" }
       }
     },
     {
