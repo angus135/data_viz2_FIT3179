@@ -7,7 +7,7 @@
     "font": "Helvetica Neue, Arial",
     "color": "#00382f"
   },
-  "width": 500,
+  "width": 600,
   "height": 400,
   "background": "#FFFFFF",
   "data": {
@@ -70,7 +70,7 @@
             "labelFontSize": 11,
             "orient": "none",
             "direction": "horizontal",
-            "legendX": 250,
+            "legendX": 350,
             "legendY": 340,
             "fillColor": "white",
             "strokeColor": "gray",
@@ -106,7 +106,7 @@
         "lineHeight": 16
       },
       "encoding": {
-        "x": { "value": 375 },
+        "x": { "value": 450 },
         "y": { "value": 100 },
         "text": {
           "value": ["Murray 1, Murray 2, Tumut 3 and Tumut 1", "are four of the ten projects that form part of", "the 4,000 MW Snowy Mountains Scheme."]
@@ -124,9 +124,9 @@
         "opacity": 0.5
       },
       "encoding": {
-        "x": { "value": 375 },
+        "x": { "value": 450 },
         "y": { "value": 75 },
-        "x2": { "value": 400 },
+        "x2": { "value": 480 },
         "y2": { "value": 45 }
       }
     },
@@ -141,7 +141,7 @@
         "color": "black"
       },
       "encoding": {
-        "x": { "value": 400 },
+        "x": { "value": 480 },
         "y": { "value": 45 }
       }
     },
@@ -155,9 +155,9 @@
         "opacity": 0.5
       },
       "encoding": {
-        "x": { "value": 300 },
+        "x": { "value": 360 },
         "y": { "value": 75 },
-        "x2": { "value": 245 },
+        "x2": { "value": 295 },
         "y2": { "value": 50 }
       }
     },
@@ -172,7 +172,7 @@
         "color": "black"
       },
       "encoding": {
-        "x": { "value": 245 },
+        "x": { "value": 295 },
         "y": { "value": 50 }
       }
     },
@@ -186,9 +186,9 @@
         "opacity": 0.5
       },
       "encoding": {
-        "x": { "value": 260 },
+        "x": { "value": 312 },
         "y": { "value": 105 },
-        "x2": { "value": 165 },
+        "x2": { "value": 200 },
         "y2": { "value": 105 }
       }
     },
@@ -203,7 +203,7 @@
         "color": "black"
       },
       "encoding": {
-        "x": { "value": 165 },
+        "x": { "value": 200 },
         "y": { "value": 105 }
       }
     },
@@ -220,7 +220,7 @@
         "lineHeight": 16
       },
       "encoding": {
-        "x": { "value": 325 },
+        "x": { "value": 390 },
         "y": { "value": 300 },
         "text": {
           "value": ["Macarthur Wind Farm was the largest", "wind farm in the Southern Hemisphere", "when it was commissioned in 2013."]
@@ -238,9 +238,9 @@
         "opacity": 0.5
       },
       "encoding": {
-        "x": { "value": 225 },
+        "x": { "value": 270 },
         "y": { "value": 280 },
-        "x2": { "value": 110 },
+        "x2": { "value": 132 },
         "y2": { "value": 260 }
       }
     },
@@ -255,7 +255,7 @@
         "color": "black"
       },
       "encoding": {
-        "x": { "value": 110 },
+        "x": { "value": 132 },
         "y": { "value": 260 }
       }
     },
@@ -272,7 +272,7 @@
         "lineHeight": 16
       },
       "encoding": {
-        "x": { "value": 350 },
+        "x": { "value": 420 },
         "y": { "value": 200 },
         "text": {
           "value": ["The Stockyard Hill Wind Farm is a", "facility consisting of 149 turbines", "at a cost of $900 million."]
@@ -290,9 +290,9 @@
         "opacity": 0.5
       },
       "encoding": {
-        "x": { "value": 260 },
+        "x": { "value": 312 },
         "y": { "value": 185 },
-        "x2": { "value": 140 },
+        "x2": { "value": 170 },
         "y2": { "value": 125 }
       }
     },
@@ -307,7 +307,7 @@
         "color": "black"
       },
       "encoding": {
-        "x": { "value": 140 },
+        "x": { "value": 170 },
         "y": { "value": 125 }
       }
     }

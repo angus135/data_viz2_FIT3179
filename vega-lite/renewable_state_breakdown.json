@@ -1,14 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Renewable Energy Capacity by Australian State (2023-24)",
+    "text": "Renewable Energy Capacity by Australian State",
     "fontSize": 20,
     "anchor": "middle",
     "font": "Helvetica Neue, Arial",
     "color": "#00382f"
   },
-  "width": 500,
-  "height": 400,
+  "width": 400,
+  "height": 300,
   "data": { "url": "https://angus135.github.io/data_viz2_FIT3179/data/renewable_energy_by_state.csv" },
   "transform": [
     {
@@ -74,8 +74,8 @@
             "labelFontSize": 11,
             "orient": "none",
             "direction": "horizontal",
-            "legendX": 253,
-            "legendY": 340,
+            "legendX": 155,
+            "legendY": 245,
             "fillColor": "white",
             "strokeColor": "gray",
             "padding": 10,
@@ -106,8 +106,8 @@
         "lineHeight": 16
       },
       "encoding": {
-        "x": { "value": 400 },
-        "y": { "value": 200 },
+        "x": { "value": 310 },
+        "y": { "value": 160 },
         "text": {
           "condition": {
             "test": "!length(data('tech_select_store'))",
@@ -128,10 +128,10 @@
         "opacity": 0.5
       },
       "encoding": {
-        "x": { "value": 200 },
-        "y": { "value": 200 },
-        "x2": { "value": 300 },
-        "y2": { "value": 200 },
+        "x": { "value": 160 },
+        "y": { "value": 150 },
+        "x2": { "value": 220 },
+        "y2": { "value": 150 },
         "opacity": {
           "condition": {
             "test": "!length(data('tech_select_store'))",
@@ -152,8 +152,8 @@
         "color": "black"
       },
       "encoding": {
-        "x": { "value": 200 },
-        "y": { "value": 200 },
+        "x": { "value": 160 },
+        "y": { "value": 150 },
         "opacity": {
           "condition": {
             "test": "!length(data('tech_select_store'))",
@@ -176,8 +176,8 @@
         "lineHeight": 16
       },
       "encoding": {
-        "x": { "value": 400 },
-        "y": { "value": 275 },
+        "x": { "value": 320 },
+        "y": { "value": 195 },
         "text": {
           "condition": {
             "test": "!length(data('tech_select_store'))",
@@ -198,10 +198,10 @@
         "opacity": 0.5
       },
       "encoding": {
-        "x": { "value": 290 },
-        "y": { "value": 290 },
-        "x2": { "value": 180 },
-        "y2": { "value": 265 },
+        "x": { "value": 210 },
+        "y": { "value": 210 },
+        "x2": { "value": 144 },
+        "y2": { "value": 200 },
         "opacity": {
           "condition": {
             "test": "!length(data('tech_select_store'))",
@@ -217,13 +217,13 @@
         "type": "point",
         "shape": "triangle-up",
         "size": 50,
-        "angle": 290,
+        "angle": 280,
         "filled": true,
         "color": "black"
       },
       "encoding": {
-        "x": { "value": 180 },
-        "y": { "value": 265 },
+        "x": { "value": 144 },
+        "y": { "value": 200 },
         "opacity": {
           "condition": {
             "test": "!length(data('tech_select_store'))",

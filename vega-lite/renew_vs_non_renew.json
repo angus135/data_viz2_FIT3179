@@ -1,7 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Renewable vs Non-Renewable Energy Generation by State",
+    "text": {
+      "value": ["Renewable vs Non-Renewable", "Energy Generation by State"]
+    },
     "fontSize": 20,
     "anchor": "middle",
     "font": "Helvetica Neue, Arial",
@@ -18,9 +20,7 @@
         "input": "select",
         "options": ["Raw", "Per Capita", "Per GDP"],
         "labels": ["Raw Energy (GWh)", "Energy Per Capita (Wh/person)", "Energy Per GDP (Wh/$)"],
-        "name": "Metric: ",
-        "titleColor": "#00382f",
-        "labelColor": "#00382f"
+        "name": "Metric: "
       }
     }
   ],
@@ -110,8 +110,8 @@
         "labelFontSize": 11,
         "orient": "none",
         "direction": "horizontal",
-        "legendX": 295,
-        "legendY": 340,
+        "legendX": 200,
+        "legendY": 240,
         "fillColor": "white",
         "strokeColor": "gray",
         "padding": 10,
@@ -129,6 +129,6 @@
       {"field": "Value", "type": "quantitative", "title": "Value", "format": ",.2f"}
     ]
   },
-  "width": 500,
-  "height": 400
+  "width": 400,
+  "height": 300
 }
