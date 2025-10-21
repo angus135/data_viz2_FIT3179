@@ -62,14 +62,20 @@ main {
 /* Vega-Lite visualization containers */
 .vega-container {
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 400px;
 }
 
 .vega-container > div {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
+.vega-container .vega-embed {
+    margin: 0 auto;
+}
 
 /* Side images (for left-right layouts) */
 .side-image {

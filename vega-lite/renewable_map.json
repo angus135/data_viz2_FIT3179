@@ -6,13 +6,13 @@
     "anchor": "middle",
     "font": "Helvetica Neue, Arial"
   },
-  "width": 800,
-  "height": 600,
+  "width": 1000,
+  "height": 800,
   "background": "#FFFFFF",  
   "projection": {
     "type": "mercator",
     "center": [133, -28],
-    "scale": 850
+    "scale": 1100
   },
   "layer": [
     {
@@ -73,6 +73,10 @@
         },
         {
           "filter": "datum['Installed capacity'] >= 10"
+        },
+        {
+          "calculate": "datum.State == 'VIC' ? 'Victoria' : datum.State == 'NSW' ? 'New South Wales' : datum.State == 'QLD' ? 'Queensland' : datum.State == 'SA' ? 'South Australia' : datum.State == 'NT' ? 'Northern Territory' : datum.State == 'WA' ? 'Western Australia' : datum.State == 'ACT' ? 'Australian Capital Territory' : datum.State == 'TAS' ? 'Tasmania' : datum.State",
+          "as": "State Full Name"
         }
       ],
       "mark": {
@@ -90,7 +94,18 @@
             "domain": ["Biomass", "Hydro", "Wind", "Solar"],
             "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
           },
-          "legend": {"title": "Primary Fuel Source"}
+          "legend": {
+            "title": "Primary Fuel Source",
+            "titleFontSize": 13, 
+            "labelFontSize": 11,
+            "orient": "none",
+            "legendX": 835,
+            "legendY": 20,
+            "fillColor": "white",
+            "strokeColor": "gray",
+            "padding": 10,
+            "cornerRadius": 3
+          }
         },
         "size": {
             "field": "Installed capacity",
@@ -98,11 +113,20 @@
             "scale": {
                 "type": "linear",
                 "domain": [10, 2000],
-                "range": [20, 200] 
+                "range": [10, 500] 
             },
             "legend": {
                 "title": "Capacity (MW)",
-                "values": [10, 100, 500, 1000, 2000]
+                "titleFontSize": 13, 
+                "labelFontSize": 11,
+                "values": [10, 100, 500, 1000, 2000],
+                "orient": "none",
+                "legendX": 20,
+                "legendY": 20,
+                "fillColor": "white",
+                "strokeColor": "gray",
+                "padding": 10,
+                "cornerRadius": 3
             }
         },
         "tooltip": [
@@ -114,10 +138,309 @@
                 "format": ".1f",
                 "title": "Installed capacity (MW)"
             },
-            {"field": "State", "type": "nominal"},
+            {"field": "State Full Name", "type": "nominal", "title": "State"},
             {"field": "Postcode", "type": "ordinal"}
         ]
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "name": "Snow Hydro",
+            "lon": 148.2449,
+            "lat": -35.2628,
+            "label_lon": 150.0,
+            "label_lat": -40.0,
+            "annotation": "Snowy Mountains Hydro-electric"
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeDash": [4, 2],
+            "strokeWidth": 1.5,
+            "color": "#333",
+            "opacity": 0.5
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "longitude2": {"field": "label_lon"},
+            "latitude2": {"field": "label_lat"}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "size": 0,
+            "filled": false,
+            "color": "black"
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": -10,
+            "dy": 10,
+            "fontSize": 11,
+            "fontWeight": "bold",
+            "color": "#333"
+          },
+          "encoding": {
+            "longitude": {"field": "label_lon", "type": "quantitative"},
+            "latitude": {"field": "label_lat", "type": "quantitative"},
+            "text": {"field": "annotation", "type": "nominal"}
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "name": "Victorian Wind Farms",
+            "lon": 142.9833,
+            "lat": -37.85,
+            "label_lon": 135.0,
+            "label_lat": -36.0,
+            "annotation": "In 2023, wind farms generated around 21% of Victoria's electricity."
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeDash": [4, 2],
+            "strokeWidth": 1.5,
+            "color": "#333",
+            "opacity": 0.5
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "longitude2": {"field": "label_lon"},
+            "latitude2": {"field": "label_lat"}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "size": 0,
+            "filled": false,
+            "color": "black"
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": -350,
+            "dy": 0,
+            "fontSize": 11,
+            "fontWeight": "bold",
+            "color": "#333",
+            "lineHeight": 15
+          },
+          "encoding": {
+            "longitude": {"field": "label_lon", "type": "quantitative"},
+            "latitude": {"field": "label_lat", "type": "quantitative"},
+            "text": {"field": "annotation", "type": "nominal"}
+          }
+        }
+      ]
+    }, 
+    {
+      "data": {
+        "values": [
+          {
+            "name": "Tasmanian Hydro",
+            "lon": 146.4,
+            "lat": -42.3,
+            "label_lon": 135.0,
+            "label_lat": -40.0,
+            "annotation": "Tasmania has over a third of Australia's hydro-electric capacity."
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeDash": [4, 2],
+            "strokeWidth": 1.5,
+            "color": "#333",
+            "opacity": 0.5
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "longitude2": {"field": "label_lon"},
+            "latitude2": {"field": "label_lat"}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "size": 0,
+            "filled": false,
+            "color": "black"
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": -340,
+            "dy": 0,
+            "fontSize": 11,
+            "fontWeight": "bold",
+            "color": "#333",
+            "lineHeight": 15
+          },
+          "encoding": {
+            "longitude": {"field": "label_lon", "type": "quantitative"},
+            "latitude": {"field": "label_lat", "type": "quantitative"},
+            "text": {"field": "annotation", "type": "nominal"}
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "name": "Queensland Solar",
+            "lon": 148.4,
+            "lat": -23.3,
+            "label_lon": 150.0,
+            "label_lat": -16.5,
+            "annotation": "Queensland's climate makes it ideal for solar."
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeDash": [4, 2],
+            "strokeWidth": 1.5,
+            "color": "#333",
+            "opacity": 0.5
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "longitude2": {"field": "label_lon"},
+            "latitude2": {"field": "label_lat"}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "size": 0,
+            "filled": false,
+            "color": "black"
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": -80,
+            "dy": -10,
+            "fontSize": 11,
+            "fontWeight": "bold",
+            "color": "#333",
+            "lineHeight": 15
+          },
+          "encoding": {
+            "longitude": {"field": "label_lon", "type": "quantitative"},
+            "latitude": {"field": "label_lat", "type": "quantitative"},
+            "text": {"field": "annotation", "type": "nominal"}
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "name": "Remote WA",
+            "lon": 119.7355,
+            "lat": -23.3564,
+            "label_lon": 125.0,
+            "label_lat": -10,
+            "annotation": "Remote mining operations increasingly use hybrid renewable systems."
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeDash": [4, 2],
+            "strokeWidth": 1.5,
+            "color": "#333",
+            "opacity": 0.5
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "longitude2": {"field": "label_lon"},
+            "latitude2": {"field": "label_lat"}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "size": 0,
+            "filled": false,
+            "color": "black"
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": -150,
+            "dy": -10,
+            "fontSize": 11,
+            "fontWeight": "bold",
+            "color": "#333",
+            "lineHeight": 15
+          },
+          "encoding": {
+            "longitude": {"field": "label_lon", "type": "quantitative"},
+            "latitude": {"field": "label_lat", "type": "quantitative"},
+            "text": {"field": "annotation", "type": "nominal"}
+          }
+        }
+      ]
     }
   ]
 }
