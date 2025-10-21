@@ -9,6 +9,7 @@
   },
   "width": 1000,
   "height": 500,
+  "background": "#FFFDF7",
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/project_time_data.json"
   },
@@ -80,7 +81,7 @@
             "values": [0, 50, 100, 200],
             "legendX": 755,
             "legendY": 10,
-            "fillColor": "white",
+            "fillColor": "#FFFDF7",
             "strokeColor": "gray",
             "padding": 10,
             "cornerRadius": 3,
@@ -105,7 +106,7 @@
             "direction": "horizontal",
             "legendX": 505,
             "legendY": 10,
-            "fillColor": "white",
+            "fillColor": "#FFFDF7",
             "strokeColor": "gray",
             "padding": 10,
             "cornerRadius": 3,

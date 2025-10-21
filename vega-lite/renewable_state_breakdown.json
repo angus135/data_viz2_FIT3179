@@ -7,6 +7,7 @@
     "font": "Helvetica Neue, Arial",
     "color": "#00382f"
   },
+  "background": "#FFFDF7",
   "width": 400,
   "height": 300,
   "data": { "url": "https://angus135.github.io/data_viz2_FIT3179/data/renewable_energy_by_state.csv" },
@@ -76,7 +77,7 @@
             "direction": "horizontal",
             "legendX": 155,
             "legendY": 245,
-            "fillColor": "white",
+            "fillColor": "#FFFDF7",
             "strokeColor": "gray",
             "padding": 10,
             "cornerRadius": 3,

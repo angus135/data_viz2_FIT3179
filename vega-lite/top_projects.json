@@ -9,7 +9,7 @@
   },
   "width": 600,
   "height": 400,
-  "background": "#FFFFFF",
+  "background": "#FFFDF7",
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/top20powerstations.json"
   },
@@ -72,7 +72,7 @@
             "direction": "horizontal",
             "legendX": 350,
             "legendY": 340,
-            "fillColor": "white",
+            "fillColor": "#FFFDF7",
             "strokeColor": "gray",
             "padding": 10,
             "cornerRadius": 3,

@@ -9,7 +9,7 @@
   },
   "width": 1000,
   "height": 800,
-  "background": "#FFFFFF",
+  "background": "#FFFDF7",
   "config": {
     "text": {
       "color": "#00382f"
@@ -120,7 +120,7 @@
             "orient": "none",
             "legendX": 835,
             "legendY": 20,
-            "fillColor": "white",
+            "fillColor": "#FFFDF7",
             "strokeColor": "gray",
             "padding": 10,
             "cornerRadius": 3
@@ -144,7 +144,7 @@
             "orient": "none",
             "legendX": 20,
             "legendY": 20,
-            "fillColor": "white",
+            "fillColor": "#FFFDF7",
             "strokeColor": "gray",
             "padding": 10,
             "cornerRadius": 3

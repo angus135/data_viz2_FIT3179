@@ -9,6 +9,7 @@
     "font": "Helvetica Neue, Arial",
     "color": "#00382f"
   },
+  "background": "#FFFDF7",
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/state_renewable_vs_non_renewable.json"
   },
@@ -112,7 +113,7 @@
         "direction": "horizontal",
         "legendX": 200,
         "legendY": 240,
-        "fillColor": "white",
+        "fillColor": "#FFFDF7",
         "strokeColor": "gray",
         "padding": 10,
         "cornerRadius": 3,

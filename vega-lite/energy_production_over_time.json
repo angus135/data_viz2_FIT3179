@@ -5,7 +5,7 @@
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/Energy_split_History.json"
   },
-
+  "background": "#FFFDF7",
   "params": [
     {
       "name": "source_select",
