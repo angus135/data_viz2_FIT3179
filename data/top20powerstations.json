@@ -1,7 +1,7 @@
 [
   {
     "Accreditation code": "BEBMNS01",
-    "Power station name": "Liddell Power Station",
+    "Power station name": "Liddell",
     "State": "NSW",
     "Installed capacity": 2000.0,
     "Postcode": 2333.0,
@@ -37,7 +37,7 @@
   },
   {
     "Accreditation code": "WD00QL08",
-    "Power station name": "MacIntyre Wind Farm - Wind - QLD",
+    "Power station name": "MacIntyre",
     "State": "QLD",
     "Installed capacity": 923.4,
     "Postcode": 4352.0,
@@ -49,7 +49,7 @@
   },
   {
     "Accreditation code": "WD00VC51",
-    "Power station name": "Golden Plains Wind Farm East - Wind - VIC",
+    "Power station name": "Golden Plains",
     "State": "VIC",
     "Installed capacity": 756.4,
     "Postcode": 3330.0,
@@ -73,7 +73,7 @@
   },
   {
     "Accreditation code": "WD00VC39",
-    "Power station name": "Stockyard Hill - Wind - VIC",
+    "Power station name": "Stockyard Hill",
     "State": "VIC",
     "Installed capacity": 531.93,
     "Postcode": 3373.0,
@@ -85,7 +85,7 @@
   },
   {
     "Accreditation code": "SRPXNS94",
-    "Power station name": "New England Solar Farm - NSW",
+    "Power station name": "New England",
     "State": "NSW",
     "Installed capacity": 522.3953,
     "Postcode": 2358.0,
@@ -109,7 +109,7 @@
   },
   {
     "Accreditation code": "SRPVQLS8",
-    "Power station name": "Western Downs Green Power Hub - Solar - QLD",
+    "Power station name": "Western Downs",
     "State": "QLD",
     "Installed capacity": 460.011,
     "Postcode": 4413.0,
@@ -121,7 +121,7 @@
   },
   {
     "Accreditation code": "WD00QL04",
-    "Power station name": "Coopers Gap Wind Farm - Wind - QLD",
+    "Power station name": "Coopers Gap",
     "State": "QLD",
     "Installed capacity": 452.89,
     "Postcode": 4610.0,
@@ -145,7 +145,7 @@
   },
   {
     "Accreditation code": "SRPXNSP7",
-    "Power station name": "Wellington North Solar Farm Pty Ltd - Solar - NSW",
+    "Power station name": "Wellington North",
     "State": "NSW",
     "Installed capacity": 425.068,
     "Postcode": 2820.0,
@@ -157,7 +157,7 @@
   },
   {
     "Accreditation code": "WD00VC14",
-    "Power station name": "Macarthur Wind Farm - VIC",
+    "Power station name": "Macarthur",
     "State": "VIC",
     "Installed capacity": 420.0,
     "Postcode": 3286.0,
@@ -169,7 +169,7 @@
   },
   {
     "Accreditation code": "WD00NS21",
-    "Power station name": "Rye Park Wind Farm - Wind - NSW",
+    "Power station name": "Rye Park ",
     "State": "NSW",
     "Installed capacity": 396.0,
     "Postcode": 2586.0,
@@ -181,7 +181,7 @@
   },
   {
     "Accreditation code": "SRPXNS61",
-    "Power station name": "Walla Walla Solar Farm 1 and 2 - Solar - NSW",
+    "Power station name": "Walla Walla",
     "State": "NSW",
     "Installed capacity": 353.0186,
     "Postcode": 2659.0,
@@ -193,7 +193,7 @@
   },
   {
     "Accreditation code": "WD00VC37",
-    "Power station name": "Dundonnell Wind Farm - VIC",
+    "Power station name": "Dundonnell",
     "State": "VIC",
     "Installed capacity": 336.0,
     "Postcode": 3271.0,
@@ -205,7 +205,7 @@
   },
   {
     "Accreditation code": "SRPVNSN8",
-    "Power station name": "Darlington Point Solar Farm - Solar - NSW",
+    "Power station name": "Darlington Point",
     "State": "NSW",
     "Installed capacity": 332.8055,
     "Postcode": 2706.0,
@@ -241,7 +241,7 @@
   },
   {
     "Accreditation code": "SRWDSA02",
-    "Power station name": "PAREP 1 PTY LIMITED-WIND SOLAR- SA",
+    "Power station name": "PAREP 1",
     "State": "SA",
     "Installed capacity": 316.8818,
     "Postcode": 5700.0,

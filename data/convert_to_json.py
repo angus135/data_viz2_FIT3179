@@ -40,8 +40,8 @@ def csv_to_json(csv_filename, json_filename='output.json'):
 
 if __name__ == "__main__":
     # Convert the CSV file
-    csv_file = 'top10powerstations.csv'
-    json_file = 'top10powerstations.json'
+    csv_file = 'top20powerstations.csv'
+    json_file = 'top20powerstations.json'
     
     result = csv_to_json(csv_file, json_file)
     
