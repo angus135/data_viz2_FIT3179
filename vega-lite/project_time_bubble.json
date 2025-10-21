@@ -6,7 +6,7 @@
     "anchor": "middle",
     "font": "Helvetica Neue, Arial"
   },
-  "width": 800,
+  "width": 1000,
   "height": 500,
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/project_time_data.json"
@@ -26,9 +26,12 @@
       "field": "Accreditation_Date_ISO",
       "type": "temporal",
       "title": "Accreditation Date",
+      "scale": {
+        "domain": ["1999-01-01", "2020-01-01"]
+      },
       "axis": {
         "format": "%Y",
-        "labelAngle": -45,
+        "labelAngle": 0,
         "titleFont": "Helvetica Neue, Arial",
         "titleFontSize": 13,
         "labelFont": "Lato, sans-serif",
@@ -38,7 +41,7 @@
     "y": {
       "field": "Installed_Capacity_MW",
       "type": "quantitative",
-      "title": "Installed Capacity (MW)",
+      "title": "Log Scaled Installed Capacity (MW)",
       "scale": {
         "type": "log"
       },
@@ -54,13 +57,22 @@
       "type": "quantitative",
       "title": "Average Output (MW)",
       "scale": {
-        "range": [50, 2000]
+        "range": [10, 2000]
       },
       "legend": {
         "titleFont": "Helvetica Neue, Arial",
         "titleFontSize": 13,
         "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
+        "labelFontSize": 11,
+        "orient": "none",
+        "direction": "horizontal",
+        "values": [0, 50, 100, 200],
+        "legendX": 755,
+        "legendY": 10,
+        "fillColor": "white",
+        "strokeColor": "gray",
+        "padding": 10,
+        "cornerRadius": 3
       }
     },
     "color": {
@@ -75,7 +87,15 @@
         "titleFont": "Helvetica Neue, Arial",
         "titleFontSize": 13,
         "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
+        "labelFontSize": 11,
+        "orient": "none",
+        "direction": "horizontal",
+        "legendX": 505,
+        "legendY": 10,
+        "fillColor": "white",
+        "strokeColor": "gray",
+        "padding": 10,
+        "cornerRadius": 3
       }
     },
     "tooltip": [

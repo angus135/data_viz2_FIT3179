@@ -6,8 +6,8 @@
     "anchor": "middle",
     "font": "Helvetica Neue, Arial"
   },
-  "width": 300,
-  "height": 250,
+  "width": 500,
+  "height": 400,
   "background": "#FFFFFF",
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/top20powerstations.json"
@@ -18,59 +18,289 @@
       "as": "State Full Name"
     }
   ],
-  "mark": {
-    "type": "bar",
-    "tooltip": true
-  },
-  "encoding": {
-    "y": {
-      "field": "Power station name",
-      "type": "nominal",
-      "sort": "-x",
-      "axis": {
-        "title": "Power Station Name",
-        "titleFont": "Helvetica Neue, Arial",
-        "titleFontSize": 13,
-        "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
-      }
-    },
-    "x": {
-      "field": "Installed capacity",
-      "type": "quantitative",
-      "axis": {
-        "title": "Installed Capacity (MW)",
-        "titleFont": "Helvetica Neue, Arial",
-        "titleFontSize": 13,
-        "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
-      }
-    },
-    "color": {
-      "field": "Fuel source(s)",
-      "type": "nominal",
-      "scale": {
-        "domain": ["Biomass", "Hydro", "Wind", "Solar"],
-        "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "tooltip": true
       },
-      "legend": {
-        "title": "Primary Fuel Source",
-        "titleFont": "Helvetica Neue, Arial",
-        "titleFontSize": 13,
-        "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
+      "encoding": {
+        "y": {
+          "field": "Power station name",
+          "type": "nominal",
+          "sort": "-x",
+          "axis": {
+            "title": "Power Station Name",
+            "titleFont": "Helvetica Neue, Arial",
+            "titleFontSize": 13,
+            "labelFont": "Lato, sans-serif",
+            "labelFontSize": 11
+          }
+        },
+        "x": {
+          "field": "Installed capacity",
+          "type": "quantitative",
+          "axis": {
+            "title": "Installed Capacity (MW)",
+            "titleFont": "Helvetica Neue, Arial",
+            "titleFontSize": 13,
+            "labelFont": "Lato, sans-serif",
+            "labelFontSize": 11
+          }
+        },
+        "color": {
+          "field": "Fuel source(s)",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Biomass", "Hydro", "Wind", "Solar"],
+            "range": ["#8B4513", "#08306b", "#78909C", "#FFA726"]
+          },
+          "legend": {
+            "title": "Primary Fuel Source",
+            "titleFont": "Helvetica Neue, Arial",
+            "titleFontSize": 13,
+            "labelFont": "Lato, sans-serif",
+            "labelFontSize": 11,
+            "orient": "none",
+            "direction": "horizontal",
+            "legendX": 250,
+            "legendY": 340,
+            "fillColor": "white",
+            "strokeColor": "gray",
+            "padding": 10,
+            "cornerRadius": 3
+          }
+        },
+        "tooltip": [
+          {"field": "Power station name", "type": "nominal", "title": "Power Station"},
+          {"field": "Fuel source(s)", "type": "nominal", "title": "Fuel Source"},
+          {
+            "field": "Installed capacity",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Installed Capacity (MW)"
+          },
+          {"field": "State Full Name", "type": "nominal", "title": "State"}
+        ]
       }
     },
-    "tooltip": [
-      {"field": "Power station name", "type": "nominal", "title": "Power Station"},
-      {"field": "Fuel source(s)", "type": "nominal", "title": "Fuel Source"},
-      {
-        "field": "Installed capacity",
-        "type": "quantitative",
-        "format": ".1f",
-        "title": "Installed Capacity (MW)"
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
+        "dx": 0,
+        "dy": -20,
+        "lineHeight": 16
       },
-      {"field": "State Full Name", "type": "nominal", "title": "State"}
-    ]
-  }
+      "encoding": {
+        "x": { "value": 375 },
+        "y": { "value": 100 },
+        "text": {
+          "value": ["Murray 1, Murray 2, Tumut 3 and Tumut 1", "are four of the ten projects that form part of", "the 4,000 MW Snowy Mountains Scheme."]
+        },
+        "color": { "value": "black" }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 2],
+        "strokeWidth": 1.5,
+        "color": "#333",
+        "opacity": 0.5
+      },
+      "encoding": {
+        "x": { "value": 375 },
+        "y": { "value": 75 },
+        "x2": { "value": 400 },
+        "y2": { "value": 45 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 40,
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 400 },
+        "y": { "value": 45 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 2],
+        "strokeWidth": 1.5,
+        "color": "#333",
+        "opacity": 0.5
+      },
+      "encoding": {
+        "x": { "value": 300 },
+        "y": { "value": 75 },
+        "x2": { "value": 245 },
+        "y2": { "value": 50 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 295,
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 245 },
+        "y": { "value": 50 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 2],
+        "strokeWidth": 1.5,
+        "color": "#333",
+        "opacity": 0.5
+      },
+      "encoding": {
+        "x": { "value": 260 },
+        "y": { "value": 105 },
+        "x2": { "value": 165 },
+        "y2": { "value": 105 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 270,
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 165 },
+        "y": { "value": 105 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
+        "dx": 0,
+        "dy": -20,
+        "lineHeight": 16
+      },
+      "encoding": {
+        "x": { "value": 325 },
+        "y": { "value": 300 },
+        "text": {
+          "value": ["Macarthur Wind Farm was the largest", "wind farm in the Southern Hemisphere", "when it was commissioned in 2013."]
+        },
+        "color": { "value": "black" }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 2],
+        "strokeWidth": 1.5,
+        "color": "#333",
+        "opacity": 0.5
+      },
+      "encoding": {
+        "x": { "value": 225 },
+        "y": { "value": 280 },
+        "x2": { "value": 110 },
+        "y2": { "value": 260 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 285,
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 110 },
+        "y": { "value": 260 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
+        "dx": 0,
+        "dy": -20,
+        "lineHeight": 16
+      },
+      "encoding": {
+        "x": { "value": 350 },
+        "y": { "value": 200 },
+        "text": {
+          "value": ["The Stockyard Hill Wind Farm is a", "facility consisting of 149 turbines", "at a cost of $900 million."]
+        },
+        "color": { "value": "black" }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 2],
+        "strokeWidth": 1.5,
+        "color": "#333",
+        "opacity": 0.5
+      },
+      "encoding": {
+        "x": { "value": 260 },
+        "y": { "value": 185 },
+        "x2": { "value": 140 },
+        "y2": { "value": 125 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 300,
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": 140 },
+        "y": { "value": 125 }
+      }
+    }
+  ]
 }

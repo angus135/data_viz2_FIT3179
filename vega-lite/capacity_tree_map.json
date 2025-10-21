@@ -131,7 +131,26 @@
       "name": "stateNodes",
       "source": "tree",
       "transform": [
-        { "type": "filter", "expr": "datum.children && datum.depth === 2" }
+        { "type": "filter", "expr": "datum.children && datum.depth === 2" },
+        {
+          "type": "formula",
+          "as": "fuelSource",
+          "expr": "split(datum.id, ' - ')[0]"
+        },
+        {
+          "type": "formula",
+          "as": "stateName",
+          "expr": "split(datum.id, ' - ')[1]"
+        },
+        {
+          "type": "formula",
+          "as": "showLabel",
+          "expr": "((datum.fuelSource === 'Biomass' && !(datum.stateName === 'New South Wales' || datum.stateName === 'Queensland')) || (datum.fuelSource === 'Wind' && (datum.stateName === 'Tasmania' || datum.stateName === 'Northern Territory' || datum.stateName === 'Western Australia')) || (datum.fuelSource === 'Solar' && (datum.stateName === 'Western Australia' || datum.stateName === 'Northern Territory' || datum.stateName === 'Australian Capital Territory' || datum.stateName === 'Tasmania')) || (datum.fuelSource === 'Hydro' && (datum.stateName === 'Queensland' || datum.stateName === 'Western Australia' || datum.stateName === 'Australian Capital Territory' || datum.stateName === 'South Australia'))) ? false : true"
+        },
+        {
+          "type": "filter",
+          "expr": "datum.showLabel"
+        }
       ]
     },
     {
@@ -153,7 +172,7 @@
       "name": "labelColor",
       "type": "ordinal",
       "domain": ["Biomass", "Hydro", "Wind", "Solar"],
-      "range": ["#ffffff", "#ffffff", "#ffffff", "#000000"]
+      "range": ["#ffffff", "#ffffff", "#000000", "#000000"]
     }
   ],
   "marks": [
@@ -186,39 +205,41 @@
       "encode": {
         "enter": {
           "font": { "value": "Helvetica Neue, Arial" },
-          "align": { "value": "center" },
-          "baseline": { "value": "middle" },
+          "align": { "value": "left" },
+          "baseline": { "value": "top" },
           "fontWeight": { "value": "bold" },
           "fontSize": { "value": 32 },
-          "text": { "field": "id" }
+          "text": { "field": "id" },
+          "dx": { "value": 8 },
+          "dy": { "value": 8 }
         },
         "update": {
-          "x": { "signal": "0.5 * (datum.x0 + datum.x1)" },
-          "y": { "signal": "0.5 * (datum.y0 + datum.y1)" },
+          "x": { "signal": "datum.x0" },
+          "y": { "signal": "datum.y0" },
           "fill": { "scale": "labelColor", "field": "id" },
-          "limit": { "signal": "datum.x1 - datum.x0 - 8" }
+          "limit": { "signal": "datum.x1 - datum.x0 - 16" }
         }
       }
     },
-    {
+{
       "type": "text",
       "from": { "data": "stateNodes" },
       "encode": {
         "enter": {
           "font": { "value": "Helvetica Neue, Arial" },
           "align": { "value": "left" },
-          "baseline": { "value": "top" },
+          "baseline": { "value": "bottom" },
           "fontWeight": { "value": "600" },
-          "fontSize": { "value": 12 },
-          "dx": { "value": 4 },
-          "dy": { "value": 4 },
-          "text": { "signal": "split(datum.id, ' - ')[1]" }
+          "fontSize": { "value": 15 },
+          "dx": { "value": 6 },
+          "dy": { "value": -6 },
+          "text": { "signal": "datum.stateName" }
         },
         "update": {
-          "x": { "signal": "datum.x0 + 4" },
-          "y": { "signal": "datum.y0 + 4" },
-          "fill": { "value": "#000000" },
-          "limit": { "signal": "datum.x1 - datum.x0 - 8" }
+          "x": { "signal": "datum.x0" },
+          "y": { "signal": "datum.y1" },
+          "fill": { "signal": "datum.fuelSource === 'Hydro' || datum.fuelSource === 'Biomass' ? '#ffffff' : '#000000'" },
+          "limit": { "signal": "datum.x1 - datum.x0 - 12" }
         }
       }
     }

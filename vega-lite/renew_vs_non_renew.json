@@ -58,7 +58,7 @@
   ],
   "mark": "bar",
   "encoding": {
-    "x": {
+    "y": {
       "field": "State Full Name",
       "type": "nominal",
       "axis": {
@@ -75,7 +75,7 @@
         "order": "descending"
       }
     },
-    "y": {
+    "x": {
       "field": "Value",
       "type": "quantitative",
       "axis": {
@@ -98,10 +98,18 @@
         "titleFont": "Helvetica Neue, Arial",
         "titleFontSize": 13,
         "labelFont": "Lato, sans-serif",
-        "labelFontSize": 11
+        "labelFontSize": 11,
+        "orient": "none",
+        "direction": "horizontal",
+        "legendX": 295,
+        "legendY": 340,
+        "fillColor": "white",
+        "strokeColor": "gray",
+        "padding": 10,
+        "cornerRadius": 3
       }
     },
-    "xOffset": {
+    "yOffset": {
       "field": "Energy_Type"
     },
     "tooltip": [
