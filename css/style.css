@@ -26,6 +26,17 @@ header h1 {
     margin: 0;
 }
 
+/* Section title styling */
+.section-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #00382f;
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
 /* Main content */
 main {
     max-width: 1200px;
@@ -187,5 +198,9 @@ footer {
     
     .full-width-section {
         padding: 20px;
+    }
+    
+    .section-title {
+        font-size: 28px;
     }
 }
