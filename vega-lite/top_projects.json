@@ -12,6 +12,12 @@
   "data": {
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/top20powerstations.json"
   },
+  "transform": [
+    {
+      "calculate": "datum.State == 'VIC' ? 'Victoria' : datum.State == 'NSW' ? 'New South Wales' : datum.State == 'QLD' ? 'Queensland' : datum.State == 'SA' ? 'South Australia' : datum.State == 'NT' ? 'Northern Territory' : datum.State == 'WA' ? 'Western Australia' : datum.State == 'ACT' ? 'Australian Capital Territory' : datum.State == 'TAS' ? 'Tasmania' : datum.State",
+      "as": "State Full Name"
+    }
+  ],
   "mark": {
     "type": "bar",
     "tooltip": true
@@ -46,7 +52,7 @@
         "format": ".1f",
         "title": "Installed Capacity (MW)"
       },
-      {"field": "State", "type": "nominal"}
+      {"field": "State Full Name", "type": "nominal", "title": "State"}
     ]
   }
 }

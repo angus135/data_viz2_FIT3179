@@ -30,6 +30,11 @@
         },
         {
           "type": "formula",
+          "as": "StateFullName",
+          "expr": "datum.State == 'VIC' ? 'Victoria' : datum.State == 'NSW' ? 'New South Wales' : datum.State == 'QLD' ? 'Queensland' : datum.State == 'SA' ? 'South Australia' : datum.State == 'NT' ? 'Northern Territory' : datum.State == 'WA' ? 'Western Australia' : datum.State == 'ACT' ? 'Australian Capital Territory' : datum.State == 'TAS' ? 'Tasmania' : datum.State"
+        },
+        {
+          "type": "formula",
           "as": "id",
           "expr": "datum['Power station name']"
         },
@@ -41,12 +46,12 @@
         {
           "type": "formula",
           "as": "parentState",
-          "expr": "datum['Fuel source(s)'] + ' - ' + datum['State']"
+          "expr": "datum['Fuel source(s)'] + ' - ' + datum.StateFullName"
         },
         {
           "type": "formula",
           "as": "parent",
-          "expr": "datum['Fuel source(s)'] + ' - ' + datum['State']"
+          "expr": "datum['Fuel source(s)'] + ' - ' + datum.StateFullName"
         },
         {
           "type": "formula",

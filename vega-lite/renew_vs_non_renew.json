@@ -23,6 +23,10 @@
   ],
   "transform": [
     {
+      "calculate": "datum.State == 'VIC' ? 'Victoria' : datum.State == 'NSW' ? 'New South Wales' : datum.State == 'QLD' ? 'Queensland' : datum.State == 'SA' ? 'South Australia' : datum.State == 'NT' ? 'Northern Territory' : datum.State == 'WA' ? 'Western Australia' : datum.State == 'ACT' ? 'Australian Capital Territory' : datum.State == 'TAS' ? 'Tasmania' : datum.State",
+      "as": "State Full Name"
+    },
+    {
       "fold": ["Renewable", "Non-Renewable", "Renewable per capita", "Non-Renewable per capita", "Renewable per GDP", "Non-Renewable per GDP"],
       "as": ["Type_Full", "Value"]
     },
@@ -49,13 +53,13 @@
           "as": "Total_Energy"
         }
       ],
-      "groupby": ["State"]
+      "groupby": ["State Full Name"]
     }
   ],
   "mark": "bar",
   "encoding": {
     "x": {
-      "field": "State",
+      "field": "State Full Name",
       "type": "nominal",
       "axis": {"title": "State", "labelAngle": 0},
       "sort": {
@@ -84,7 +88,7 @@
       "field": "Energy_Type"
     },
     "tooltip": [
-      {"field": "State", "type": "nominal", "title": "State"},
+      {"field": "State Full Name", "type": "nominal", "title": "State"},
       {"field": "Energy_Type", "type": "nominal", "title": "Type"},
       {"field": "Value", "type": "quantitative", "title": "Value", "format": ",.2f"}
     ]

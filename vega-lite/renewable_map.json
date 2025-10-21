@@ -192,6 +192,7 @@
             "dy": 10,
             "fontSize": 11,
             "fontWeight": "bold",
+            "font": "Lato, sans-serif",
             "color": "#333"
           },
           "encoding": {
@@ -251,6 +252,7 @@
             "dy": 0,
             "fontSize": 11,
             "fontWeight": "bold",
+            "font": "Lato, sans-serif",
             "color": "#333",
             "lineHeight": 15
           },
@@ -311,6 +313,7 @@
             "dy": 0,
             "fontSize": 11,
             "fontWeight": "bold",
+            "font": "Lato, sans-serif",
             "color": "#333",
             "lineHeight": 15
           },
@@ -371,6 +374,7 @@
             "dy": -10,
             "fontSize": 11,
             "fontWeight": "bold",
+            "font": "Lato, sans-serif",
             "color": "#333",
             "lineHeight": 15
           },
@@ -431,6 +435,7 @@
             "dy": -10,
             "fontSize": 11,
             "fontWeight": "bold",
+            "font": "Lato, sans-serif",
             "color": "#333",
             "lineHeight": 15
           },

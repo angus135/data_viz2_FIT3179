@@ -9,7 +9,12 @@
   "width": 500,
   "height": 400,
   "data": { "url": "https://angus135.github.io/data_viz2_FIT3179/data/renewable_energy_by_state.csv" },
-
+  "transform": [
+    {
+      "calculate": "datum.state == 'VIC' ? 'Victoria' : datum.state == 'NSW' ? 'New South Wales' : datum.state == 'QLD' ? 'Queensland' : datum.state == 'SA' ? 'South Australia' : datum.state == 'NT' ? 'Northern Territory' : datum.state == 'WA' ? 'Western Australia' : datum.state == 'ACT' ? 'Australian Capital Territory' : datum.state == 'TAS' ? 'Tasmania' : datum.state",
+      "as": "State Full Name"
+    }
+  ],
   "layer": [
     {
       "params": [
@@ -27,7 +32,7 @@
       "mark": "bar",
       "encoding": {
         "x": {
-          "field": "state",
+          "field": "State Full Name",
           "type": "nominal",
           "sort": { "field": "value", "order": "descending" },
           "axis": { "title": "State/Territory", "labelAngle": 0, "labelFontSize": 12 }
@@ -47,7 +52,7 @@
           "legend": { "title": "Technology", "titleFontSize": 13, "labelFontSize": 11 }
         },
         "tooltip": [
-          { "field": "state", "type": "nominal", "title": "State" },
+          { "field": "State Full Name", "type": "nominal", "title": "State" },
           { "field": "technology", "type": "nominal", "title": "Technology" },
           { "field": "value", "type": "quantitative", "title": "Energy (GWh)", "format": ",.2f" }
         ]
@@ -59,7 +64,8 @@
         "type": "text",
         "align": "center",
         "baseline": "top",
-        "fontSize": 12,
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
         "dx": -10,
         "dy": 10,
         "lineHeight": 16
@@ -81,8 +87,10 @@
       "data": { "values": [{}] },
       "mark": {
         "type": "rule",
-        "strokeWidth": 1,
-        "color": "black"
+        "strokeDash": [4, 2],
+        "strokeWidth": 1.5,
+        "color": "#333",
+        "opacity": 0.5
       },
       "encoding": {
         "x": { "value": 250 },
@@ -126,7 +134,8 @@
         "type": "text",
         "align": "center",
         "baseline": "top",
-        "fontSize": 12,
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
         "dx": -10,
         "dy": 10,
         "lineHeight": 16
@@ -148,8 +157,10 @@
       "data": { "values": [{}] },
       "mark": {
         "type": "rule",
-        "strokeWidth": 1,
-        "color": "black"
+        "strokeDash": [4, 2],
+        "strokeWidth": 1.5,
+        "color": "#333",
+        "opacity": 0.5
       },
       "encoding": {
         "x": { "value": 375 },
