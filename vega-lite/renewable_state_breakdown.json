@@ -3,7 +3,8 @@
   "title": {
     "text": "Renewable Energy Capacity by Australian State",
     "fontSize": 20,
-    "anchor": "middle",
+    "anchor": "start",
+    "dx": 50,
     "font": "Helvetica Neue, Arial",
     "color": "#00382f"
   },

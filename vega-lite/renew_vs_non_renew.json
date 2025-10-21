@@ -5,7 +5,9 @@
       "value": ["Renewable vs Non-Renewable", "Energy Generation by State"]
     },
     "fontSize": 20,
-    "anchor": "middle",
+    "anchor": "start",
+    "dx": 270,
+    "align": "center",
     "font": "Helvetica Neue, Arial",
     "color": "#00382f"
   },

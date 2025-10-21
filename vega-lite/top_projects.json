@@ -3,7 +3,8 @@
   "title": {
     "text": "Top 20 Australian Power Stations by Installed Capacity",
     "fontSize": 20,
-    "anchor": "middle",
+    "anchor": "start",
+    "dx": 100,
     "font": "Helvetica Neue, Arial",
     "color": "#00382f"
   },
