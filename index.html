@@ -31,12 +31,17 @@
         <!-- Introduction Section -->
         <section class="full-width-section">
             <p class="standard-text">
-                This report guides the reader through Australia current renewable energy landscape using maps and charts that show where 
-                projects sit, how much capacity each state has, and how generation has changed over time. It is written for an average
-                Australian with no prior technical background and uses simple explanations of terms where needed. A megawatt MW measures how 
-                much power a site can produce at a single moment while a gigawatt hour GWh measures how much energy is produced over time for 
-                example one GWh equals one thousand megawatt hours. The narrative begins with the map of major installations, then compares 
-                states and technologies, highlights large projects, and ends with an analysis of long term generation trends.
+                Australia stands at a critical juncture in its energy history. By the end of 2024, coal's share in electricity generation 
+                dropped below 50% for the first time, a watershed moment for a nation that has built its prosperity on fossil fuel exports. 
+                This visualization maps the geographic, technological, and temporal dimensions of Australia's renewable energy transition, 
+                revealing both the remarkable progress achieved and the substantial challenges that lie ahead.
+            </p>
+
+            <p class="standard-text">
+                Two key measurements help us understand this transformation. A megawatt (MW) measures instantaneous power capacity, how much 
+                electricity a facility can generate at peak performance. A gigawatt-hour (GWh) measures actual energy production over time, 
+                capturing what was delivered to homes and businesses. The distinction matters: a solar farm might have high MW capacity but 
+                lower annual GWh output due to nighttime and weather variability.
             </p>
         </section>
 
@@ -44,17 +49,35 @@
         <section class="full-width-section">
             <h2 class="section-title">Overview: Australia's Renewable Landscape</h2>
             <p class="standard-text">
-                This map plots major renewable installations of 10 MW and larger across Australia and shows where different technologies are 
-                concentrated. Points are sized by installed capacity in megawatts MW and coloured by the primary fuel such as solar, wind and 
-                hydro so the map makes it easy to see both density and technology type. A megawatt MW is a common measure of generation capacity 
-                and indicates how much power a site can produce at a moment in time. The map shows most large projects clustered along the 
-                eastern and southeastern coast and on some regional corridors while more isolated projects appear in other states.
+                Australia's renewable installations of 10 MW and larger cluster dramatically along the eastern seaboard, reflecting both 
+                population density and grid infrastructure that evolved over a century of centralized coal-fired generation. The concentration 
+                is no coincidence—connecting renewable projects to the existing grid remains far more economically viable than building entirely 
+                new transmission corridors to remote locations, however abundant their wind or solar resources might be.
+            </p>
+            <p class="standard-text">
+                AEMO's 2024 Integrated System Plan forecasts that an estimated 4,581 km of new transmission lines are needed to meet 2030 targets,
+                 with some scenarios requiring double that by 2050. This represents Australia's most acute infrastructure bottleneck. 
+                 The federal government's $20 billion Rewiring the Nation program aims to address this through priority projects like VNI West 
+                 (connecting Victoria and New South Wales) and Marinus Link (Tasmania to Victoria), but transmission costs have increased by 
+                 approximately 25% to 55% in real terms compared to 2024 estimates after accounting for inflation, driven by competition for labour 
+                 and materials across the entire economy.
             </p>
         </section>
 
         <!-- Large Image 1 -->
         <section class="vega-container">
             <div id="renewable_map"></div>
+        </section>
+
+        <!-- Map analysis -->
+        <section class="full-width-section">
+            <p class="standard-text">
+                The map also reveals Australia's renewable energy zones (REZs)—designated areas with strong resources and streamlined planning 
+                approvals designed to accelerate development. Yet progress remains uneven: in New South Wales, large renewable project approvals 
+                take four to seven years and cost over $4 million, while Queensland's system takes just one to two years and costs $30,000. This 
+                regulatory fragmentation across states creates perverse outcomes where projects cluster in jurisdictions with faster approvals 
+                rather than optimal resource locations.
+            </p>
         </section>
 
         <!-- Two Images Left, Text Right -->
@@ -67,17 +90,24 @@
                 </div>
                 <div class="pure-u-1-2">
                     <p class="standard-text">
-                        This stacked bar chart shows the total annual generation by state split into renewable and non renewable components so the reader can compare 
-                        each state overall supply mix. The vertical axis reports energy produced in GWh which makes it easy to see which states produce the most energy 
-                        and how much of that comes from renewables. Readers should look for states where the renewable portion forms a large share of total generation and 
-                        for states where non renewable sources still dominate. Insert discussion about regional grid constraints and interstate transmission capacity here.
-                        <br><br></p>
+                        Total electricity generation reveals Australia's fundamental regional inequality. New South Wales and Queensland generate the
+                         most energy simply because they have the largest populations and industrial bases, but their grids remain heavily dependent 
+                         on aging coal plants. Victoria's substantial brown coal fleet at Latrobe Valley has been in managed decline, with the 
+                         catastrophic Hazelwood closure in 2017 removing 1,600 MW overnight and sending shockwaves through the market.</p>
                     <p class="standard-text">
-                        This stacked bar chart breaks each state total down by renewable technology such as solar, wind and hydro so the reader can see the technology 
-                        mix behind each state total. The vertical axis shows energy in GWh which helps compare how much each technology actually produced during 2023 
-                        24 rather than simply showing installed capacity. The chart highlights that some states rely heavily on wind while others show strong solar or 
-                        hydro contributions and the annotations point out that South Australia is a large wind producer while Tasmania produces a large amount of renewable 
-                        energy per person. Insert discussion about how seasonal patterns and storage affect annual output here.
+                        Tasmania tells a different story entirely—virtually 100% renewable through hydroelectricity from schemes built decades ago. 
+                        South Australia has achieved something even more remarkable: transitioning from coal dependence to majority renewable generation 
+                        within 15 years, now regularly operating at 70-80% instantaneous renewable penetration. This wasn't without pain—the state 
+                        experienced a statewide blackout in 2016 during the transition, forcing hard lessons about system stability that the rest of 
+                        Australia is now applying.
+                    </p>
+                    <p class="standard-text">
+                        The interstate transmission constraints visible in this data create market distortions and reliability challenges. South 
+                        Australia often generates more renewable energy than it can use domestically but faces limits on how much can flow to other 
+                        states through the interconnectors. Some solar farms experienced curtailment rates above 25% in 2024, with generators literally 
+                        switching off during midday peaks because the grid cannot absorb the power. Tasmania's massive hydro resources could firm the 
+                        entire eastern seaboard's variable renewables, but the proposed Marinus Link connecting it to Victoria faces years of planning 
+                        battles and cost escalations.
                     </p>
 
                 </div>
@@ -88,6 +118,19 @@
         <section class="full-width-section">
             <h2 class="section-title">Technology Breakdown</h2>
             <div class="vega-container" id="capacity_tree_map"></div>
+            <p class="standard-text">
+                When we break down renewable generation by technology, wind and solar's complementary patterns become clear. South Australia's 
+                wind resources are exceptional—consistent, strong, and located relatively close to grid infrastructure. Queensland and New South 
+                Wales are rapidly scaling solar, benefiting from cheaper technology costs and faster construction times. Australia produced 92,700 
+                GWh of renewable energy in 2024, an increase of more than 30% since 2021, with rooftop solar alone adding 3.2 GW of new capacity.
+            </p>
+            <p class="standard-text">
+                But this technology mix creates new system management challenges. Solar generation peaks in spring and summer afternoons then 
+                disappears entirely overnight. Wind varies by weather patterns and seasons. Hydroelectricity depends on rainfall and dam 
+                management—Tasmania's output can swing dramatically between wet and dry years. As at the end of 2024, there was over 8.7 GW/23.3 GWh 
+                of large-scale battery capacity under construction, essential infrastructure to time-shift renewable generation and provide grid 
+                stability services that coal plants once delivered through their rotating mass.
+            </p>
         </section>
 
         <!-- Image Left, Text Right -->
@@ -99,11 +142,10 @@
                 </div>
                 <div class="pure-u-1-4">
                     <p class="standard-text">
-                        The horizontal bar chart lists the 20 largest renewable power stations by installed capacity in MW 
-                        and groups them by their primary fuel source. Installed capacity in MW measures how much power a plant 
-                        can generate under optimal conditions rather than how much energy it generates over a year. This view 
-                        helps identify the single largest projects and shows whether wind or solar dominate the top end of the 
-                        market. Insert discussion about local community and grid integration impacts here.
+                        The 20 largest renewable power stations by installed MW capacity reveal which technologies are achieving scale. Large wind 
+                        farms dominate the top ranks—projects like Stockyard Hill (530 MW) and Coopers Gap (453 MW) represent investments of over 
+                        $1 billion each and require years of development, community consultation, and grid connection studies before construction 
+                        even begins.
                     </p>
                 </div>
             </div>
@@ -112,18 +154,24 @@
         <!-- Large Image 3 -->
         <section class="full-width-section">
             <div class="vega-container" id="project_time_bubble"></div>
+            <p class="standard-text">
+                These mega-projects face intense scrutiny from local communities concerned about visual impact, noise, and property values. Unlike 
+                coal plants that employed hundreds of permanent workers, large renewable installations typically need only a handful of ongoing 
+                operations staff after construction, fundamentally changing regional employment patterns. Financial investment in large-scale renewable 
+                generation projects skyrocketed by 500% in 2024, jumping from $1.5 billion in 2023 to $9 billion, but this capital flows differently 
+                through regional economies than the multi-decade industrial operations that coal mining and power generation represented.
+            </p>
+            <p class="standard-text">
+                Grid integration at this scale requires sophisticated forecasting and coordination. The Australian Energy Market Operator now manages 
+                a system with thousands of distributed generators rather than a few dozen predictable coal plants. Weather forecasting has become 
+                critical infrastructure—predicting tomorrow's wind speeds and cloud cover now determines grid stability and wholesale electricity 
+                prices more than fuel availability ever did.
+            </p>
         </section>
 
         <!-- Full Width Text Section -->
         <section class="full-width-section">
-            <h2 class="section-title">The Big Picture: Trends Over Time</h2>
-            <p class="standard-text">
-                The area chart shows national energy generation by source from 2000 through 2024 and stacks each fuel so the 
-                reader can see both totals and how the mix has changed. The large brown area indicates historical dominance by coal 
-                while the rising bands of solar and wind toward the right show the growing contribution of renewable generation. 
-                Battery and biofuel contributions are smaller but visible in recent years reflecting new technologies and deployments. 
-                The vertical axis is energy in GWh so the reader can compare yearly energy production across sources.
-            </p>
+            <h2 class="section-title">Two Decades of Transformation</h2>
         </section>
 
         <!-- Large Image 4 -->
@@ -134,29 +182,47 @@
         <!-- Full Width Text Section -->
         <section class="full-width-section">
             <p class="standard-text">
-                Over the last two decades the chart shows a clear decline in coal generation alongside steady increases in 
-                wind and a rapid rise in solar generation especially after about 2015. Wind farms add consistent output 
-                over many years while solar has grown quickly because of large utility farms and rooftop installations. 
-                Battery storage appears as an emerging category and helps explain how variable renewables can be balanced 
-                during peak times. Hydro remains a steady, seasonally variable contributor and helps to firm supply in some 
-                regions.
+                The area chart spanning 2000 to 2024 tells Australia's energy transformation story in stark visual terms. Coal's share fell from 64% 
+                a decade ago to 47% in 2022-23 and 46% in calendar year 2023, with the decline accelerating as plants reach end-of-life and become 
+                economically unviable against zero-marginal-cost renewables. The coal generation dominating the chart's early years represents not 
+                just electricity but Australia's industrial identity—the Hunter Valley and Latrobe Valley built entire communities around coal, with 
+                generational employment and social infrastructure all tied to an industry now in terminal decline. Victoria's brown coal is among the 
+                most emissions-intensive in the world, making its reduction particularly significant for climate commitments.
+            </p>
+            <p class="standard-text">
+                Wind's steady climb from negligible in 2000 to substantial contributor by 2024 reflects the bipartisan Renewable Energy Target that 
+                provided investment certainty through the 2010s, demonstrating how policy stability drives private capital into infrastructure with 
+                20-30 year lifespans. Solar's explosive surge after 2015 tells multiple overlapping stories: utility-scale farms became cost-competitive 
+                at USD 36 per MWh while Australia achieved the world's highest per-capita rooftop adoption—over 35% of Western Australian homes now 
+                have arrays. This distributed generation fundamentally changed grid management, as power now flows bidirectionally with residential areas 
+                exporting significant electricity midday.
+            </p>
+            <p class="standard-text">
+                Battery storage's emergence represents technological maturation, with $3.8 billion invested in 2024 alone following the success of Tesla's 
+                Hornsdale Power Reserve in South Australia. Hydro's relatively flat contribution masks critical roles—Tasmania's schemes and Snowy Hydro 
+                provide flexible generation that ramps up when wind and solar dip, though Snowy 2.0's troubled expansion now exceeds $20 billion in costs, 
+                more than ten times initial estimates.
             </p>
         </section>
 
         <!-- Full Width Text Section -->
         <section class="full-width-section">
-            <p class="standard-text"></p>
+            <h2 class="section-title">Where To From Here?</h2>
         </section>
         
         <!-- Full Width Text Section -->
         <section class="full-width-section">
             <p class="standard-text">
-                Taken together the trends suggest the electricity system is moving from a few large thermal plants toward 
-                a more diverse mix that includes many renewable sites and increasing storage capacity. Continued growth of 
-                renewables will require more grid upgrades, more storage to manage variability and new approaches to system 
-                planning to keep supply reliable as old plants retire. This chart shows the direction of travel but not 
-                detailed forecasts or the costs of transition so further analysis is needed to assess emissions pathways 
-                and affordability. Insert discussion about forecasts, firming capacity needs and policy scenarios here.
+                The trajectory is clear but not inevitable. Achieving Australia's commitment of 82% renewable electricity by 2030 requires sustaining the 
+                recent investment pace while solving transmission constraints, managing grid stability with high renewable penetration, and ensuring just 
+                transitions for coal-dependent communities. The Australian government announced an additional funding of 1.2 billion euros for its 
+                "green bank," aimed at accelerating the transition, recognizing that despite remarkable progress, the hardest challenges lie ahead. The 
+                coal generation that remains is increasingly critical for system stability during periods of low renewable output, creating a complex 
+                phaseout dance where too-early closures risk blackouts but delayed closures lock in emissions and slow the transition.
+            </p>
+            <p class="standard-text">
+                Australia's energy transformation has progressed from impossible to inevitable in just two decades, but the final stretch—replacing the 
+                last coal plants while maintaining reliability and affordability—will test both our technical capabilities and social cohesion.
             </p>
         </section>
     </main>
