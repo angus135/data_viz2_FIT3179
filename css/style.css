@@ -52,12 +52,21 @@ main {
     padding: 20px 40px;
 }
 
-/* Standard text styling - easily adjustable */
+/* Standard text styling */
 .standard-text {
-    font-size: 15px; /* Change this value to adjust all standard text */
+    font-size: 15px;
     line-height: 1.8;
     font-family: "Montserrat", sans-serif;
 }
+
+/* Energy source color coding */
+.energy-coal { color: #38393d; font-weight: 800; }
+.energy-gas { color: #FF6B6B; font-weight: 800; }
+.energy-biofuels { color: #8B4513; font-weight: 800; }
+.energy-battery { color: #9C27B0; font-weight: 800; }
+.energy-hydro { color: #08306b; font-weight: 800; }
+.energy-wind { color: #78909C; font-weight: 800; }
+.energy-solar { color: #FFA726; font-weight: 800; }
 
 /* Full width image placeholders */
 .full-width-image {
@@ -90,7 +99,7 @@ main {
     margin: 0 auto;
 }
 
-/* Side images (for left-right layouts) */
+/* Side images */
 .side-image {
     width: 100%;
     height: 300px;
@@ -116,7 +125,7 @@ main {
     display: inline-block;
 }
 
-/* Stacked images (for two images on left) */
+/* Stacked images */
 .stacked-image {
     width: 100%;
     height: 200px;
@@ -180,7 +189,6 @@ footer {
     font-family: 'Lato', sans-serif !important;
     font-weight: 400 !important;
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
