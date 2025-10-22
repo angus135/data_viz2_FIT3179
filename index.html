@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
@@ -31,37 +32,23 @@
         <!-- Introduction Section -->
         <section class="full-width-section">
             <p class="standard-text">
-                Australia stands at a critical juncture in its energy history. By the end of 2024, coal's share in electricity generation 
-                dropped below 50% for the first time, a watershed moment for a nation that has built its prosperity on fossil fuel exports. 
-                This visualization maps the geographic, technological, and temporal dimensions of Australia's renewable energy transition, 
-                revealing both the remarkable progress achieved and the substantial challenges that lie ahead.
-            </p>
+                Australia stands at a critical point in its energy history. By the end of 2024, coal's share in electricity generation 
+                dropped below 50% for the first time, a huge moment for a nation that has built its economy on fossil fuel exports. 
+                This visualization maps the dimensions of Australia's renewable energy transition, 
+                showing the progress made so far and the work that is yet to be done.
+            <br></br></p></p>
 
             <p class="standard-text">
-                Two key measurements help us understand this transformation. A megawatt (MW) measures instantaneous power capacity, how much 
-                electricity a facility can generate at peak performance. A gigawatt-hour (GWh) measures actual energy production over time, 
-                capturing what was delivered to homes and businesses. The distinction matters: a solar farm might have high MW capacity but 
-                lower annual GWh output due to nighttime and weather variability.
+                Two key measurements are important for this. A megawatt (MW) measures power capacity, how much 
+                electricity a facility can generate. Compare this to a gigawatt-hour (GWh) which measures the actual energy production over a period of time, 
+                this value describes what was actually delivered to homes and businesses. The distinction is important as a solar farm might have high MW capacity but 
+                lower annual GWh output due to there being no electricity produced at night time or when the weather is poor.
             </p>
         </section>
 
         <!-- Map analysis -->
         <section class="full-width-section">
             <h2 class="section-title">Overview: Australia's Renewable Landscape</h2>
-            <p class="standard-text">
-                Australia's renewable installations of 10 MW and larger cluster dramatically along the eastern seaboard, reflecting both 
-                population density and grid infrastructure that evolved over a century of centralized coal-fired generation. The concentration 
-                is no coincidence—connecting renewable projects to the existing grid remains far more economically viable than building entirely 
-                new transmission corridors to remote locations, however abundant their wind or solar resources might be.
-            </p>
-            <p class="standard-text">
-                AEMO's 2024 Integrated System Plan forecasts that an estimated 4,581 km of new transmission lines are needed to meet 2030 targets,
-                 with some scenarios requiring double that by 2050. This represents Australia's most acute infrastructure bottleneck. 
-                 The federal government's $20 billion Rewiring the Nation program aims to address this through priority projects like VNI West 
-                 (connecting Victoria and New South Wales) and Marinus Link (Tasmania to Victoria), but transmission costs have increased by 
-                 approximately 25% to 55% in real terms compared to 2024 estimates after accounting for inflation, driven by competition for labour 
-                 and materials across the entire economy.
-            </p>
         </section>
 
         <!-- Large Image 1 -->
@@ -72,11 +59,18 @@
         <!-- Map analysis -->
         <section class="full-width-section">
             <p class="standard-text">
-                The map also reveals Australia's renewable energy zones (REZs)—designated areas with strong resources and streamlined planning 
-                approvals designed to accelerate development. Yet progress remains uneven: in New South Wales, large renewable project approvals 
+                Australia's renewable installations of 10 MW and larger cluster dramatically along the eastern seaboard, reflecting both 
+                population density and grid infrastructure that evolved over a century of centralized coal-fired generation. The concentration 
+                exists because connecting renewable projects to the existing grid remains far more economically viable than building entirely 
+                new transmission corridors to remote locations, even if there is an abundance of wind or solar elsewhere.
+            <br></br></p>
+            <p class="standard-text">
+                Through the map the higher density of renewable projects (such as in the west of Victoria) reveals Australia's renewable energy zones.
+                These are designated areas with strong resources and faster and easier planning approvals designed to accelerate development. 
+                Despite these, progress remains uneven. In New South Wales, large renewable project approvals 
                 take four to seven years and cost over $4 million, while Queensland's system takes just one to two years and costs $30,000. This 
-                regulatory fragmentation across states creates perverse outcomes where projects cluster in jurisdictions with faster approvals 
-                rather than optimal resource locations.
+                difference across states results in projects clustering in jurisdictions with faster approvals 
+                rather than the best resource locations.
             </p>
         </section>
 
@@ -85,31 +79,35 @@
             <h2 class="section-title">State-by-State Comparison</h2>
             <div class="pure-g">
                 <div class="pure-u-1-2">
-                    <div class="vega-container-stacked" id="renewable_state_breakdown"></div>
                     <div class="vega-container-stacked" id="renew_vs_non_renew"></div>
+                    <div class="vega-container-stacked" id="renewable_state_breakdown"></div>
                 </div>
                 <div class="pure-u-1-2">
                     <p class="standard-text">
                         Total electricity generation reveals Australia's fundamental regional inequality. New South Wales and Queensland generate the
-                         most energy simply because they have the largest populations and industrial bases, but their grids remain heavily dependent 
-                         on aging coal plants. Victoria's substantial brown coal fleet at Latrobe Valley has been in managed decline, with the 
-                         catastrophic Hazelwood closure in 2017 removing 1,600 MW overnight and sending shockwaves through the market.</p>
+                        most energy simply because they have the largest populations and industrial bases, but their grids remain heavily dependent 
+                        on aging coal plants.
+                    <br></br></p>
                     <p class="standard-text">
-                        Tasmania tells a different story entirely—virtually 100% renewable through hydroelectricity from schemes built decades ago. 
-                        South Australia has achieved something even more remarkable: transitioning from coal dependence to majority renewable generation 
-                        within 15 years, now regularly operating at 70-80% instantaneous renewable penetration. This wasn't without pain—the state 
-                        experienced a statewide blackout in 2016 during the transition, forcing hard lessons about system stability that the rest of 
+                        Tasmania tells a completely different story. Nearly 100% renewable from hydro projects built decades ago. 
+                        Compare this to South Australia which has transitioned from coal dependence to majority renewable generation 
+                        within 15 years, now regularly operating at 70-80% of electricity being renewable. However, this wasn't without difficulty. The state 
+                        experienced a statewide blackout in 2016 during the transition, teaching lessons about the transition process that the rest of 
                         Australia is now applying.
-                    </p>
+                    <br></br></p>
                     <p class="standard-text">
-                        The interstate transmission constraints visible in this data create market distortions and reliability challenges. South 
-                        Australia often generates more renewable energy than it can use domestically but faces limits on how much can flow to other 
-                        states through the interconnectors. Some solar farms experienced curtailment rates above 25% in 2024, with generators literally 
-                        switching off during midday peaks because the grid cannot absorb the power. Tasmania's massive hydro resources could firm the 
-                        entire eastern seaboard's variable renewables, but the proposed Marinus Link connecting it to Victoria faces years of planning 
-                        battles and cost escalations.
+                        The interstate transmission constraints create problems in this data. South 
+                        Australia often generates more renewable energy than it can use domestically but limits how much can flow to other 
+                        states. Some solar farms experienced reduction rates of production above 25% in 2024, with generators literally 
+                        switching off during midday peaks because the grid cannot absorb the power. Tasmania's massive hydro resources could help all 
+                        the eastern state's variable renewables, but the proposed Marinus Link connecting it to Victoria faces many years of planning.
+                    <br></br></p>
+                    <p class="standard-text">
+                        Western Australia is completely isolated from the eastern grid, making its transition unique. The state's  
+                        geography and mining have increased solar installations, particularly in remote mining operations. Meanwhile, 
+                        the Northern Territory, despite abundant solar resources and sparse population, remains the least developed in renewable infrastructure, 
+                        presenting both a challenge and an opportunity for future growth.
                     </p>
-
                 </div>
             </div>
         </section>
@@ -118,18 +116,17 @@
         <section class="full-width-section">
             <h2 class="section-title">Technology Breakdown</h2>
             <div class="vega-container" id="capacity_tree_map"></div>
+            <p class="standard-text"><br></br>
+                This treemap reveals the dramatic scale differences between renewable technologies and their geographic concentration. 
+                Solar dominates by sheer number of installations across Queensland, New South Wales, and South Australia, while hydro's deep blue 
+                blocks in Tasmania and the Snowy Hydro Scheme in New South Wales represent fewer but much larger individual projects.
+            <br></br></p>
             <p class="standard-text">
-                When we break down renewable generation by technology, wind and solar's complementary patterns become clear. South Australia's 
-                wind resources are exceptional—consistent, strong, and located relatively close to grid infrastructure. Queensland and New South 
-                Wales are rapidly scaling solar, benefiting from cheaper technology costs and faster construction times. Australia produced 92,700 
-                GWh of renewable energy in 2024, an increase of more than 30% since 2021, with rooftop solar alone adding 3.2 GW of new capacity.
-            </p>
-            <p class="standard-text">
-                But this technology mix creates new system management challenges. Solar generation peaks in spring and summer afternoons then 
+                But this technology mix creates new challenges. Solar generation peaks in spring and summer afternoons then 
                 disappears entirely overnight. Wind varies by weather patterns and seasons. Hydroelectricity depends on rainfall and dam 
-                management—Tasmania's output can swing dramatically between wet and dry years. As at the end of 2024, there was over 8.7 GW/23.3 GWh 
-                of large-scale battery capacity under construction, essential infrastructure to time-shift renewable generation and provide grid 
-                stability services that coal plants once delivered through their rotating mass.
+                management, Tasmania's output can swing between wet and dry years. As at the end of 2024, there was over 8.7 GW/23.3 GWh 
+                of large-scale battery capacity under construction, essential infrastructure for the transition to renewable will be to provide grid 
+                stability that coal plants once delivered through their rotating mass.
             </p>
         </section>
 
@@ -142,30 +139,36 @@
                 </div>
                 <div class="pure-u-1-4">
                     <p class="standard-text">
-                        The 20 largest renewable power stations by installed MW capacity reveal which technologies are achieving scale. Large wind 
-                        farms dominate the top ranks—projects like Stockyard Hill (530 MW) and Coopers Gap (453 MW) represent investments of over 
-                        $1 billion each and require years of development, community consultation, and grid connection studies before construction 
-                        even begins.
-                    </p>
+                        The 20 largest renewable power stations by installed MW capacity reveal which technologies are achieving scale. Besides large 
+                        scale converted fossil fuel plants like Liddell and Swanbank and the projects that make up the Snow Hydro Scheme, large wind 
+                        farms dominate the top ranks—projects. With MacIntyre (923 MW), Stockyard Hill (530 MW) and Coopers Gap (453 MW) representing 
+                        investments of over $1 billion each and requiring years of development, community consultation, and grid connection studies before 
+                        construction even begins.
+                    <br></br></p>
                 </div>
             </div>
+            <p class="standard-text">
+                These mega-projects face intense scrutiny from local communities concerned about visual impact, noise, and property values. Unlike 
+                coal plants that employed hundreds of permanent workers, large renewable installations typically need only a handful of ongoing 
+                operations staff after construction, fundamentally changing regional employment patterns. Financial investment in large-scale renewable 
+                generation projects skyrocketed by 500% in 2024, jumping from $1.5 billion in 2023 to $9 billion, but this money flows differently 
+                through regional economies than the huge long-term industrial operations that coal mining and power generation represented.
+            </p>
         </section>
 
         <!-- Large Image 3 -->
         <section class="full-width-section">
             <div class="vega-container" id="project_time_bubble"></div>
-            <p class="standard-text">
-                These mega-projects face intense scrutiny from local communities concerned about visual impact, noise, and property values. Unlike 
-                coal plants that employed hundreds of permanent workers, large renewable installations typically need only a handful of ongoing 
-                operations staff after construction, fundamentally changing regional employment patterns. Financial investment in large-scale renewable 
-                generation projects skyrocketed by 500% in 2024, jumping from $1.5 billion in 2023 to $9 billion, but this capital flows differently 
-                through regional economies than the multi-decade industrial operations that coal mining and power generation represented.
-            </p>
-            <p class="standard-text">
-                Grid integration at this scale requires sophisticated forecasting and coordination. The Australian Energy Market Operator now manages 
-                a system with thousands of distributed generators rather than a few dozen predictable coal plants. Weather forecasting has become 
-                critical infrastructure—predicting tomorrow's wind speeds and cloud cover now determines grid stability and wholesale electricity 
-                prices more than fuel availability ever did.
+            
+            <p class="standard-text"><br></br>
+                The bubble plot shows two decades of Australia's renewable energy transformation through the lens of individual power station installations. 
+                The logarithmic scale reveals stark differences in project design philosophy across eras and technologies. Hydro-electric stations, clustered 
+                densely around 2001 (when they were accreddited under new legislation), represent large-scale infrastructure with high installed capacity.
+                These projects were designed to power cities by themselves and provide flexible power that can easily be turned on or off rather than constant 
+                generation. Wind farms projects were the main source of the 2000s expansion, showing consistent, with consistent capacity-to-output ratios. 
+                Then solar's explosion after 2015 fundamentally changed the renewable energy in Australia. Hundreds of 
+                installations spanning from utility-scale solar farms to smaller distributed projects, many still ramping up to full production capacity as 
+                indicated by their small areas.
             </p>
         </section>
 
@@ -182,47 +185,44 @@
         <!-- Full Width Text Section -->
         <section class="full-width-section">
             <p class="standard-text">
-                The area chart spanning 2000 to 2024 tells Australia's energy transformation story in stark visual terms. Coal's share fell from 64% 
-                a decade ago to 47% in 2022-23 and 46% in calendar year 2023, with the decline accelerating as plants reach end-of-life and become 
-                economically unviable against zero-marginal-cost renewables. The coal generation dominating the chart's early years represents not 
-                just electricity but Australia's industrial identity—the Hunter Valley and Latrobe Valley built entire communities around coal, with 
-                generational employment and social infrastructure all tied to an industry now in terminal decline. Victoria's brown coal is among the 
-                most emissions-intensive in the world, making its reduction particularly significant for climate commitments.
-            </p>
+                The area chart spanning 2000 to 2024 gives a view at Australia's energy transformation history. Coal's share fell from 64% a decade 
+                ago to 46% in 2023, with the decline accelerating as plants reach end-of-life and become economically unviable compared to 
+                renewables. The coal generation dominating the chart's early years represents not just electricity but part of Australia's industrial identity,
+                the Hunter Valley and Latrobe Valley built entire communities around an industry now in terminal decline.
+            <br></br></p>
             <p class="standard-text">
-                Wind's steady climb from negligible in 2000 to substantial contributor by 2024 reflects the bipartisan Renewable Energy Target that 
-                provided investment certainty through the 2010s, demonstrating how policy stability drives private capital into infrastructure with 
-                20-30 year lifespans. Solar's explosive surge after 2015 tells multiple overlapping stories: utility-scale farms became cost-competitive 
-                at USD 36 per MWh while Australia achieved the world's highest per-capita rooftop adoption—over 35% of Western Australian homes now 
-                have arrays. This distributed generation fundamentally changed grid management, as power now flows bidirectionally with residential areas 
-                exporting significant electricity midday.
-            </p>
+                Wind's steady climb from negligible in 2000 to major contributor by 2024 reflects the bipartisan Renewable Energy Target that provided 
+                investment certainty through the 2010s. Solar's explosive surge after 2015 combines utility-scale farms at competitive prices with the world's 
+                highest per-capita rooftop adoption (over 35% of Western Australian homes now have arrays). This distributed generation fundamentally changed 
+                grid management, as power now flows not just from power stations but also from residential areas exporting significant electricity midday.
+            <br></br></p>
             <p class="standard-text">
-                Battery storage's emergence represents technological maturation, with $3.8 billion invested in 2024 alone following the success of Tesla's 
-                Hornsdale Power Reserve in South Australia. Hydro's relatively flat contribution masks critical roles—Tasmania's schemes and Snowy Hydro 
-                provide flexible generation that ramps up when wind and solar dip, though Snowy 2.0's troubled expansion now exceeds $20 billion in costs, 
-                more than ten times initial estimates.
+                The emergence of battery storage (too small to see but filter by Battery) represents the start of large-scale adoption and a critical turning 
+                point for renewable reliability. While batteries contributed minimal electricity generation through 2023, $3.8 billion was invested in 2024 alone, 
+                signaling large future growth. Tesla's Hornsdale Power Reserve in South Australia proved the concept in 2017, a 150 MW/194 MWh system that paid 
+                for itself within three years by allowing the grid to be stabilised. This success created a pipeline of large projects: the 
+                Victorian Big Battery (300 MW/450 MWh), Waratah Super Battery in NSW (850 MW/1,680 MWh under construction), and dozens of grid-scale installations 
+                across all states. These batteries don't just store excess solar for evening use, they provide instant response to grid fluctuations that coal 
+                plants physically cannot match, effectively replacing the rotational inertia that stabilized grids for a century. As battery costs continue falling 
+                and installations scale up, this tiny sliver on the chart will expand rapidly, becoming the critical infrastructure that enables grids to operate 
+                reliably at 80-100% renewable generation.
             </p>
         </section>
 
         <!-- Full Width Text Section -->
         <section class="full-width-section">
             <h2 class="section-title">Where To From Here?</h2>
-        </section>
-        
-        <!-- Full Width Text Section -->
-        <section class="full-width-section">
             <p class="standard-text">
                 The trajectory is clear but not inevitable. Achieving Australia's commitment of 82% renewable electricity by 2030 requires sustaining the 
-                recent investment pace while solving transmission constraints, managing grid stability with high renewable penetration, and ensuring just 
-                transitions for coal-dependent communities. The Australian government announced an additional funding of 1.2 billion euros for its 
-                "green bank," aimed at accelerating the transition, recognizing that despite remarkable progress, the hardest challenges lie ahead. The 
+                recent investment pace while solving transmission constraints, managing grid stability with greater renewables, and ensuring a fair 
+                transitions for coal-dependent communities. The Australian government announced an additional funding of $1.2 billion for its 
+                "green bank," aimed at accelerating the transition, recognizing that despite the progress, many challenges lie ahead. The 
                 coal generation that remains is increasingly critical for system stability during periods of low renewable output, creating a complex 
-                phaseout dance where too-early closures risk blackouts but delayed closures lock in emissions and slow the transition.
-            </p>
+                situation where too-early closures risk blackouts but delayed closures lock in emissions and slow the transition.
+            <br></br></p>
             <p class="standard-text">
-                Australia's energy transformation has progressed from impossible to inevitable in just two decades, but the final stretch—replacing the 
-                last coal plants while maintaining reliability and affordability—will test both our technical capabilities and social cohesion.
+                Australia's energy transformation has progressed from impossible to inevitable in just two decades, but the final stretch, replacing the 
+                last coal plants while maintaining reliability and affordability, will test both our technical capabilities and social cohesion.
             </p>
         </section>
     </main>
