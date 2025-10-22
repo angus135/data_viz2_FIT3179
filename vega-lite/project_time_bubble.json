@@ -197,7 +197,7 @@
         "size": 50,
         "angle": 140,
         "filled": true,
-        "color": "black"
+        "color": "#333"
       },
       "encoding": {
         "x": { "value": 800 },
@@ -250,7 +250,7 @@
         "size": 50,
         "angle": 150,
         "filled": true,
-        "color": "black"
+        "color": "#333"
       },
       "encoding": {
         "x": { "value": 330 },
@@ -303,7 +303,7 @@
         "size": 50,
         "angle": 230,
         "filled": true,
-        "color": "black"
+        "color": "#333"
       },
       "encoding": {
         "x": { "value": 90 },
@@ -356,7 +356,7 @@
         "size": 50,
         "angle": 150,
         "filled": true,
-        "color": "black"
+        "color": "#333"
       },
       "encoding": {
         "x": { "value": 950 },

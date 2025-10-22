@@ -26,7 +26,7 @@
   "projection": {
     "type": "mercator",
     "center": [133, -28],
-    "scale": 1100
+    "scale": 1000
   },
   "layer": [
     {
@@ -169,11 +169,12 @@
         "values": [
           {
             "name": "Snow Hydro",
-            "lon": 148.2449,
-            "lat": -35.2628,
+            "lon": 147.7449,
+            "lat": -35.7628,
+            "line_end_lon": 148.7449,
+            "line_end_lat": -36.7628,
             "label_lon": 150.0,
-            "label_lat": -40.0,
-            "annotation": "Snowy Mountains Hydro-electric"
+            "label_lat": -40.0
           }
         ]
       },
@@ -187,39 +188,45 @@
             "opacity": 0.5
           },
           "encoding": {
-            "longitude": {"field": "lon", "type": "quantitative"},
-            "latitude": {"field": "lat", "type": "quantitative"},
+            "longitude": {"field": "line_end_lon", "type": "quantitative"},
+            "latitude": {"field": "line_end_lat", "type": "quantitative"},
             "longitude2": {"field": "label_lon"},
             "latitude2": {"field": "label_lat"}
           }
         },
         {
           "mark": {
-            "type": "point",
-            "size": 0,
-            "filled": false,
-            "color": "black"
-          },
-          "encoding": {
-            "longitude": {"field": "lon", "type": "quantitative"},
-            "latitude": {"field": "lat", "type": "quantitative"}
-          }
-        },
-        {
-          "mark": {
             "type": "text",
-            "align": "left",
-            "dx": -10,
+            "align": "center",
+            "baseline": "top",
+            "dx": 88,
             "dy": 10,
             "fontSize": 11,
             "fontWeight": "bold",
             "font": "Lato, sans-serif",
-            "color": "#00382f" 
+            "color": "#00382f",
+            "lineHeight": 16
           },
           "encoding": {
             "longitude": {"field": "label_lon", "type": "quantitative"},
             "latitude": {"field": "label_lat", "type": "quantitative"},
-            "text": {"field": "annotation", "type": "nominal"}
+            "text": {"value": ["The Snowy Mountains Hydro-electric", "Scheme, consists of 10 hydro plants in this area.", "It was one of the most complex engineering", "projects undertaken in Australian history,", "built between 1949 and 1974."]}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "shape": "circle",
+            "size": 3000,
+            "filled": false,
+            "stroke": "#333",
+            "strokeWidth": 2,
+            "strokeDash": [4, 2],
+            "opacity": 0.6
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"}
           }
         }
       ]
@@ -231,9 +238,10 @@
             "name": "Victorian Wind Farms",
             "lon": 142.9833,
             "lat": -37.85,
+            "line_end_lon": 141.5233,
+            "line_end_lat": -37.55,
             "label_lon": 135.0,
-            "label_lat": -36.0,
-            "annotation": "In 2023, wind farms generated around 21% of Victoria's electricity."
+            "label_lat": -36.0
           }
         ]
       },
@@ -247,40 +255,45 @@
             "opacity": 0.5
           },
           "encoding": {
-            "longitude": {"field": "lon", "type": "quantitative"},
-            "latitude": {"field": "lat", "type": "quantitative"},
+            "longitude": {"field": "line_end_lon", "type": "quantitative"},
+            "latitude": {"field": "line_end_lat", "type": "quantitative"},
             "longitude2": {"field": "label_lon"},
             "latitude2": {"field": "label_lat"}
           }
         },
         {
           "mark": {
-            "type": "point",
-            "size": 0,
-            "filled": false,
-            "color": "black"
-          },
-          "encoding": {
-            "longitude": {"field": "lon", "type": "quantitative"},
-            "latitude": {"field": "lat", "type": "quantitative"}
-          }
-        },
-        {
-          "mark": {
             "type": "text",
-            "align": "left",
-            "dx": -350,
-            "dy": 0,
+            "align": "center",
+            "baseline": "top",
+            "dx": -220,
+            "dy": -15,
             "fontSize": 11,
             "fontWeight": "bold",
             "font": "Lato, sans-serif",
             "color": "#00382f", 
-            "lineHeight": 15
+            "lineHeight": 16
           },
           "encoding": {
             "longitude": {"field": "label_lon", "type": "quantitative"},
             "latitude": {"field": "label_lat", "type": "quantitative"},
-            "text": {"field": "annotation", "type": "nominal"}
+            "text": {"value": ["Victoria has significant wind energy infrastructure with multiple wind farms across the state", "In 2023, wind farms generated around 21% of Victoria's electricity."]}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "shape": "circle",
+            "size": 3000,
+            "filled": false,
+            "stroke": "#333",
+            "strokeWidth": 2,
+            "strokeDash": [4, 2],
+            "opacity": 0.6
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"}
           }
         }
       ]
@@ -292,9 +305,10 @@
             "name": "Tasmanian Hydro",
             "lon": 146.4,
             "lat": -42.3,
-            "label_lon": 135.0,
-            "label_lat": -40.0,
-            "annotation": "Tasmania has over a third of Australia's hydro-electric capacity."
+            "line_end_lon": 144.8,
+            "line_end_lat": -42.3,
+            "label_lon": 133.0,
+            "label_lat": -42.0
           }
         ]
       },
@@ -308,40 +322,45 @@
             "opacity": 0.5
           },
           "encoding": {
-            "longitude": {"field": "lon", "type": "quantitative"},
-            "latitude": {"field": "lat", "type": "quantitative"},
+            "longitude": {"field": "line_end_lon", "type": "quantitative"},
+            "latitude": {"field": "line_end_lat", "type": "quantitative"},
             "longitude2": {"field": "label_lon"},
             "latitude2": {"field": "label_lat"}
           }
         },
         {
           "mark": {
-            "type": "point",
-            "size": 0,
-            "filled": false,
-            "color": "black"
-          },
-          "encoding": {
-            "longitude": {"field": "lon", "type": "quantitative"},
-            "latitude": {"field": "lat", "type": "quantitative"}
-          }
-        },
-        {
-          "mark": {
             "type": "text",
-            "align": "left",
-            "dx": -340,
-            "dy": 0,
+            "align": "center",
+            "baseline": "top",
+            "dx": -180,
+            "dy": -20,
             "fontSize": 11,
             "fontWeight": "bold",
             "font": "Lato, sans-serif",
             "color": "#00382f", 
-            "lineHeight": 15
+            "lineHeight": 16
           },
           "encoding": {
             "longitude": {"field": "label_lon", "type": "quantitative"},
             "latitude": {"field": "label_lat", "type": "quantitative"},
-            "text": {"field": "annotation", "type": "nominal"}
+            "text": {"value": ["Tasmania generates the majority of its electricity from hydropower,", "making it one of the most renewable-powered grids in the world.", "Giving it over a third of Australia's hydro-electric capacity."]}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "shape": "circle",
+            "size": 3000,
+            "filled": false,
+            "stroke": "#333",
+            "strokeWidth": 2,
+            "strokeDash": [4, 2],
+            "opacity": 0.6
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"}
           }
         }
       ]
@@ -351,11 +370,10 @@
         "values": [
           {
             "name": "Queensland Solar",
-            "lon": 148.4,
-            "lat": -23.3,
-            "label_lon": 150.0,
-            "label_lat": -16.5,
-            "annotation": "Queensland's climate makes it ideal for solar."
+            "lon": 149,
+            "lat": -21.8,
+            "label_lon": 152.0,
+            "label_lat": -18.5
           }
         ]
       },
@@ -377,32 +395,35 @@
         },
         {
           "mark": {
-            "type": "point",
-            "size": 0,
-            "filled": false,
-            "color": "black"
-          },
-          "encoding": {
-            "longitude": {"field": "lon", "type": "quantitative"},
-            "latitude": {"field": "lat", "type": "quantitative"}
-          }
-        },
-        {
-          "mark": {
             "type": "text",
-            "align": "left",
-            "dx": -80,
-            "dy": -10,
+            "align": "center",
+            "baseline": "top",
+            "dx": 20,
+            "dy": -50,
             "fontSize": 11,
             "fontWeight": "bold",
             "font": "Lato, sans-serif",
             "color": "#00382f", 
-            "lineHeight": 15
+            "lineHeight": 16
           },
           "encoding": {
             "longitude": {"field": "label_lon", "type": "quantitative"},
             "latitude": {"field": "label_lat", "type": "quantitative"},
-            "text": {"field": "annotation", "type": "nominal"}
+            "text": {"value": ["Queensland has some of the best solar radiation", "levels in Australia with high average sunshine", "year-round, solar is highly productive."]}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "shape": "triangle-up",
+            "size": 50,
+            "filled": true,
+            "color": "#333",
+            "angle": 220
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"}
           }
         }
       ]
@@ -412,11 +433,10 @@
         "values": [
           {
             "name": "Remote WA",
-            "lon": 119.7355,
+            "lon": 120.7355,
             "lat": -23.3564,
-            "label_lon": 125.0,
-            "label_lat": -10,
-            "annotation": "Remote mining operations increasingly use hybrid renewable systems."
+            "label_lon": 121.0,
+            "label_lat": -13
           }
         ]
       },
@@ -438,32 +458,35 @@
         },
         {
           "mark": {
-            "type": "point",
-            "size": 0,
-            "filled": false,
-            "color": "black"
-          },
-          "encoding": {
-            "longitude": {"field": "lon", "type": "quantitative"},
-            "latitude": {"field": "lat", "type": "quantitative"}
-          }
-        },
-        {
-          "mark": {
             "type": "text",
-            "align": "left",
-            "dx": -150,
-            "dy": -10,
+            "align": "center",
+            "baseline": "top",
+            "dx": 0,
+            "dy": -65,
             "fontSize": 11,
             "fontWeight": "bold",
             "font": "Lato, sans-serif",
             "color": "#00382f", 
-            "lineHeight": 15
+            "lineHeight": 16
           },
           "encoding": {
             "longitude": {"field": "label_lon", "type": "quantitative"},
             "latitude": {"field": "label_lat", "type": "quantitative"},
-            "text": {"field": "annotation", "type": "nominal"}
+            "text": {"value": ["Many WA mines operate in remote locations far from", "the main electricity grid. Remote mines are increasingly", "adopting hybrid systems combining solar, wind, battery storage,", "and diesel backup"]}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "shape": "triangle-up",
+            "size": 50,
+            "filled": true,
+            "color": "#333",
+            "angle": 183
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"}
           }
         }
       ]
