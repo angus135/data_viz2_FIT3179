@@ -103,7 +103,7 @@
       "type": "nominal",
       "scale": {
         "domain": ["Renewable", "Non-Renewable"],
-        "range": ["#2ca02c", "#d62728"]
+        "range": ["#1c701c", "#ad1011"]
       },
       "legend": {
         "title": "Energy Type",
@@ -129,7 +129,7 @@
     "tooltip": [
       {"field": "State Full Name", "type": "nominal", "title": "State"},
       {"field": "Energy_Type", "type": "nominal", "title": "Type"},
-      {"field": "Value", "type": "quantitative", "title": "Value", "format": ",.2f"}
+      {"field": "Value", "type": "quantitative", "title": "Energy Value", "format": ",.2f"}
     ]
   },
   "width": 400,
