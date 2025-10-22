@@ -18,7 +18,7 @@ header {
     height: 100px;
     font-size: 2em;
     font-family: 'EB Garamond', serif;
-    background-color: #f5f5f5;
+    background-color: #dae5f7;
     color: #00382f;
 }
 
@@ -161,7 +161,7 @@ main {
 footer {
     text-align: left;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #dae5f7;
     margin-top: 40px;
 }
 
