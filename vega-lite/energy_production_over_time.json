@@ -6,88 +6,470 @@
     "url": "https://angus135.github.io/data_viz2_FIT3179/data/Energy_split_History.json"
   },
   "background": "#FFFDF7",
-  "params": [
+  "layer": [
     {
-      "name": "source_select",
-      "select": {
+      "params": [
+        {
+          "name": "source_select",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Source"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "transform": [
+        {
+          "fold": [
+            "Coal",
+            "Gas",
+            "Biofuels",
+            "Battery",
+            "Hydro",
+            "Wind",
+            "Solar"
+          ],
+          "as": [
+            "Source",
+            "GWh"
+          ]
+        },
+        {
+          "filter": {
+            "param": "source_select"
+          }
+        }
+      ],
+      "mark": "area",
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative",
+          "axis": {
+            "title": "Year",
+            "format": "d",
+            "titleFontSize": 13,
+            "labelFontSize": 11,
+            "titleFont": "Helvetica Neue, Arial",
+            "labelFont": "Lato, sans-serif",
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
+          }
+        },
+        "y": {
+          "field": "GWh",
+          "type": "quantitative",
+          "axis": {
+            "title": "Energy Generation (GWh)",
+            "titleFontSize": 13,
+            "labelFontSize": 11,
+            "titleFont": "Helvetica Neue, Arial",
+            "labelFont": "Lato, sans-serif",
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
+          },
+          "stack": "zero"
+        },
+        "color": {
+          "field": "Source",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Coal",
+              "Gas",
+              "Biofuels",
+              "Battery",
+              "Hydro",
+              "Wind",
+              "Solar"
+            ],
+            "range": [
+              "#1c1d1f",
+              "#FF6B6B",
+              "#8B4513",
+              "#9C27B0",
+              "#08306b",
+              "#78909C",
+              "#FFA726"
+            ]
+          },
+          "legend": {
+            "title": "Energy Source (click to filter)",
+            "orient": "bottom",
+            "titleFontSize": 13,
+            "labelFontSize": 11,
+            "titleFont": "Helvetica Neue, Arial",
+            "labelFont": "Lato, sans-serif",
+            "titleLimit": 500,
+            "titleColor": "#00382f",
+            "labelColor": "#00382f"
+          }
+        },
+        "order": {
+          "field": "Source",
+          "type": "nominal",
+          "sort": "ascending"
+        },
+        "tooltip": [
+          {
+            "field": "Source",
+            "type": "nominal",
+            "title": "Energy Source"
+          },
+          {
+            "field": "Year",
+            "type": "quantitative",
+            "title": "Year"
+          },
+          {
+            "field": "GWh",
+            "type": "quantitative",
+            "title": "Generation (GWh)",
+            "format": ",.2f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
+        "fontWeight": "bold",
+        "dx": 20,
+        "dy": 20,
+        "lineHeight": 16
+      },
+      "encoding": {
+        "x": {
+          "value": 100
+        },
+        "y": {
+          "value": 200
+        },
+        "text": {
+          "condition": {
+            "test": "!length(data('source_select_store'))",
+            "value": [
+              "In 2000, less than 10% of Australia's",
+              "energy generation was from renewables.",
+              "With the majority coming from hydro."
+            ]
+          },
+          "value": ""
+        },
+        "color": {
+          "value": "#ffffff"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          4,
+          2
+        ],
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "value": 80
+        },
+        "y": {
+          "value": 200
+        },
+        "x2": {
+          "value": 25
+        },
+        "y2": {
+          "value": 120
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "opacity": {
+          "condition": {
+            "test": "!length(data('source_select_store'))",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
         "type": "point",
-        "fields": ["Source"]
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 330,
+        "filled": true
       },
-      "bind": "legend"
-    }
-  ],
-
-  "transform": [
-    {
-      "fold": ["Coal", "Gas", "Biofuels", "Battery", "Hydro", "Wind", "Solar"],
-      "as": ["Source", "GWh"]
-    },
-    {
-      "filter": { "param": "source_select" }
-    }
-  ],
-
-  "mark": "area",
-  "encoding": {
-    "x": {
-      "field": "Year",
-      "type": "quantitative",
-      "axis": { 
-        "title": "Year", 
-        "format": "d",
-        "titleFontSize": 13,
-        "labelFontSize": 11,
-        "titleFont": "Helvetica Neue, Arial",
-        "labelFont": "Lato, sans-serif",
-        "titleColor": "#00382f",
-        "labelColor": "#00382f"
+      "encoding": {
+        "x": {
+          "value": 25
+        },
+        "y": {
+          "value": 120
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "opacity": {
+          "condition": {
+            "test": "!length(data('source_select_store'))",
+            "value": 1
+          },
+          "value": 0
+        }
       }
     },
-    "y": {
-      "field": "GWh",
-      "type": "quantitative",
-      "axis": { 
-        "title": "Energy Generation (GWh)",
-        "titleFontSize": 13,
-        "labelFontSize": 11,
-        "titleFont": "Helvetica Neue, Arial",
-        "labelFont": "Lato, sans-serif",
-        "titleColor": "#00382f",
-        "labelColor": "#00382f"
+    {
+      "data": {
+        "values": [
+          {}
+        ]
       },
-      "stack": "zero"
-    },
-    "color": {
-      "field": "Source",
-      "type": "nominal",
-      "scale": {
-        "domain": ["Coal", "Gas", "Biofuels", "Battery", "Hydro", "Wind", "Solar"],
-        "range": ["#1c1d1f", "#FF6B6B", "#8B4513", "#9C27B0", "#08306b", "#78909C", "#FFA726"]
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
+        "fontWeight": "bold",
+        "dx": 20,
+        "dy": 20,
+        "lineHeight": 16
       },
-      "legend": { 
-        "title": "Energy Source (click to filter)",
-        "orient": "bottom",
-        "titleFontSize": 13, 
-        "labelFontSize": 11,
-        "titleFont": "Helvetica Neue, Arial",
-        "labelFont": "Lato, sans-serif",
-        "titleLimit": 500,
-        "titleColor": "#00382f",
-        "labelColor": "#00382f"
+      "encoding": {
+        "x": {
+          "value": 400
+        },
+        "y": {
+          "value": 170
+        },
+        "text": {
+          "condition": {
+            "test": "!length(data('source_select_store'))",
+            "value": [
+              "Natural gas was seen as a transition",
+              "fuel, since it produces about half the",
+              "emissions compared to coal. Additionally,",
+              "gas plants can easily ramp up and down",
+              "electricity production."
+            ]
+          },
+          "value": ""
+        },
+        "color": {
+          "value": "#ffffff"
+        }
       }
     },
-    "order": {
-      "field": "Source",
-      "type": "nominal",
-      "sort": "ascending"
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          4,
+          2
+        ],
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "value": 420
+        },
+        "y": {
+          "value": 175
+        },
+        "x2": {
+          "value": 460
+        },
+        "y2": {
+          "value": 120
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "opacity": {
+          "condition": {
+            "test": "!length(data('source_select_store'))",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
     },
-    "tooltip": [
-      { "field": "Source", "type": "nominal", "title": "Energy Source" },
-      { "field": "Year", "type": "quantitative", "title": "Year" },
-      { "field": "GWh", "type": "quantitative", "title": "Generation (GWh)", "format": ",.2f" }
-    ]
-  },
-
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 30,
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "value": 460
+        },
+        "y": {
+          "value": 120
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "opacity": {
+          "condition": {
+            "test": "!length(data('source_select_store'))",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "fontSize": 11,
+        "font": "Lato, sans-serif",
+        "fontWeight": "bold",
+        "dx": -10,
+        "dy": 10,
+        "lineHeight": 16
+      },
+      "encoding": {
+        "x": {
+          "value": 750
+        },
+        "y": {
+          "value": 225
+        },
+        "text": {
+          "condition": {
+            "test": "!length(data('source_select_store'))",
+            "value": [
+              "There is a broad consensus in industry",
+              "that no new coal plants will ever be",
+              "built in Australia. With the industry",
+              "expected to be largely phased out over",
+              "the next 15-25 years."
+            ]
+          },
+          "value": ""
+        },
+        "color": {
+          "value": "#ffffff"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          4,
+          2
+        ],
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "value": 850
+        },
+        "y": {
+          "value": 265
+        },
+        "x2": {
+          "value": 975
+        },
+        "y2": {
+          "value": 225
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "opacity": {
+          "condition": {
+            "test": "!length(data('source_select_store'))",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "size": 50,
+        "angle": 65,
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "value": 975
+        },
+        "y": {
+          "value": 225
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "opacity": {
+          "condition": {
+            "test": "!length(data('source_select_store'))",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    }
+  ],
   "title": {
     "text": "Energy Generation by Source Over Time",
     "fontSize": 20,
